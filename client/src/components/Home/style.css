@@ -1,0 +1,389 @@
+/* normal font-size = 16px, then 2.8rem = 2.8 x 16*/
+h1{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+/* Adding display flex on section_home */
+.main_home{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Editing the section with the title, p tag and buttons and the section with the images */
+.section_home{
+    width: 40%;
+    padding: 35px;
+}
+
+/* h1 tag */
+.title{
+    line-height: 50px;
+    margin-bottom: 20px;
+    width: 70%
+}
+
+/* p tag (description) */
+.p_home{
+    width: 90%;
+}
+
+/* section with the buttons */
+.button_home_section{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* join button */
+.button_join{
+    width: 140px;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: var(--color2);
+    color: var(--color4);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+}
+
+.button_join:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+/* signIn button */
+.button_signIn{
+    width: 140px;
+    padding: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: var(--color1);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+}
+
+.button_signIn:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+/* Image class */
+.pic{
+    margin-top: 115px;
+    width: 550px;
+    height: 580px;
+    border-radius: 5px;
+    margin-left: 220px;
+    box-shadow: 0 0 5px black;
+}
+
+/* setting the movements */
+@keyframes display {
+    0% {
+      transform: translateX(60px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-60px);
+      opacity: 0;
+    }
+}
+
+/* making the image appear and disappear and setting the animation time */
+.pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 15s infinite;
+}
+
+/* Setting the animation for the second image */
+img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+/* Setting the animation for the first image */
+img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+/* setting the size of the images, size of the fonts, and margins on differents devices sizes*/
+@media only screen and (max-width: 1600px) {
+    *{
+        font-size: 1.1rem
+    }
+    
+    .pic{
+        width: 470px;
+        height: 500px;
+        margin-left: 200px;
+    }
+
+    .title{
+        width: 80%
+    }
+    
+    .p_home{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    h1{
+        font-size: 2.4rem
+    }
+    
+    .section_home{
+        padding: 15px;
+    }
+
+    .pic{
+        width: 390px;
+        height: 420px;
+        margin-left: 185px;
+    }
+
+    .title{
+        width: 90%
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    *{
+        font-size: 1rem
+    }
+    
+    h1{
+        font-size: 2.3rem
+    }
+    
+    .section_home{
+        padding: 0px;
+    }
+
+    .pic{
+        width: 330px;
+        height: 360px;
+        margin-left: 185px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    h1{
+        font-size: 2.2rem
+    }
+
+    .button_signIn, .button_join{
+        width: 100px;
+        margin-top: -20px
+    }
+    
+    .section_home{
+        margin-left: -30px;
+    }
+
+    .pic{
+        width: 265px;
+        height: 305px;
+        margin-left: 170px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section_home{
+        width: 100%;
+        margin-left: 18%
+    }
+    .title{
+        text-align: center;
+        width: 140%
+    }
+    .p_home{
+        text-align: center;
+        width: 140%
+    }
+    .button_home_section{
+        justify-content: center;
+        padding-left: 115px
+    }
+    .button_join{
+        margin-left: 25px
+    }
+    .pic{
+        margin-top: 480px;
+        width: 350px;
+        height: 380px;
+        margin-left: -55px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .section_home{
+        margin-left: 16%
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .section_home{
+        margin-left: 14%
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .section_home{
+        margin-left: 12%
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .section_home{
+        margin-left: 25%
+    }
+    .title{
+        text-align: center;
+        width: 120%
+    }
+    .p_home{
+        text-align: center;
+        width: 120%
+    }
+    .button_home_section{
+        padding-left: 20px
+    }
+    .pic{
+        margin-top: 520px;
+        width: 320px;
+        height: 350px;
+        margin-left: -55px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .section_home{
+        margin-left: 23%
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .section_home{
+        margin-left: 21%
+    }
+
+    .pic{
+        width: 280px;
+        height: 310px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .section_home{
+        margin-left: 19%
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .section_home{
+        margin-left: 17%
+    }
+    .pic{
+        margin-left: -25px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .section_home{
+        margin-left: 15%
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .section_home{
+        margin-left: 13%
+    }
+    .pic{
+        width: 240px;
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 407px) {
+    .section_home{
+        margin-left: 11%
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .section_home{
+        margin-left: 10%
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .section_home{
+        margin-left: 8%
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .section_home{
+        margin-left: 12%
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .section_home{
+        margin-left: 10%
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .section_home{
+        margin-left: 8%
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .section_home{
+        margin-left: 6%
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .pic{
+        margin-top: 530px;
+        width: 250px;
+        height: 280px;
+        margin-left: -0px;
+    }
+}
+
+@media only screen and (max-width: 220px) {
+    .pic{
+        margin-top: 580px;
+        width: 220px;
+        height: 250px;
+        margin-left: 15px;
+    }
+}

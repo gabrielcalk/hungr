@@ -1,0 +1,49 @@
+/* Editing the navbar, logo and the li */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    margin: 10px;
+    margin: 0 45px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+li:hover{
+    color: var(--color2)
+}
+
+.logo_hungr{
+    width: 135px;
+    height: 60px;
+}
+
+/* Changing the size of the logo and the li on differents devides */
+@media only screen and (max-width: 750px) {
+    li{
+        margin: 15px;
+    }
+    .logo_hungr{
+        width: 102px;
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .logo_hungr{
+        width: 76px;
+        height: 33px;
+    }
+    ul{
+        margin-right: -60px;
+    }
+}
