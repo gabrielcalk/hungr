@@ -1,0 +1,18 @@
+/* importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;800&display=swap');
+
+/* setting the default colors */
+:root {
+    --color1: #191919;
+    --color2: #EF1E4A;
+    --color3: #36F0C9;
+    --color4: white
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: 'Arima Madurai', 'sans-serif', cursive;
+}
