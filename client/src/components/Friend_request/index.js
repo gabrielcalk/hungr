@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
@@ -23,7 +23,7 @@ export default function RenderFriendRequest() {
       
     const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<FavoriteIcon/>}
+        expandIcon={<LocalDiningIcon/>}
         {...props}
     />
     ))(({ theme }) => ({
