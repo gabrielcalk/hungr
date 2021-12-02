@@ -15,7 +15,8 @@ import RenderButtonToSignIn from '../ButtonToSignIn/index'
 import RenderAbout from '../AboutHungr/index'
 
 // importing the navbar
-import RenderNavBar from '../Nav'
+import RenderNavBar from '../Nav/index'
+import RenderNavSignIn from '../NavLogin/index'
 
 // function that render the Home Page except the nav
 export default function RenderHome() {
@@ -41,7 +42,7 @@ export default function RenderHome() {
 
     return (
         <>
-            <RenderNavBar/>
+{/* We need to display different navigation bars based on whether the user is logged in or not.            <RenderNavBar/> */}
             <main className="main_home">
                 {renderComponentHome()}
                 <section className="section_home">
