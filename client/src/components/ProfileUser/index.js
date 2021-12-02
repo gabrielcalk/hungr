@@ -1,10 +1,16 @@
 // importing the nav bar to appear when the user is logged in
 import RenderNavSignIn from "../NavLogin/index";
-import heart from './images/heart.svg'
 import bill_gates from './images/bill_gates.jpg'
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import './style.css'
 
-export default function RenderProfileUser() {
+
+import RenderFriendRequest from '../Friend_request/index';
+import RenderAddFriend from '../Add_friend/index';
+import RenderRestaurantRequest from '../Restaurants_request/index';
+
+export default function RenderProfileComponent({setProfileComponent, profileBarComponent, setProfileBarComponent}) {
+    
     return (
         <>
             <RenderNavSignIn/>
@@ -17,26 +23,17 @@ export default function RenderProfileUser() {
                     </div>
                 </div>
                 <section className="itens_profile">
-                    <div className="item_profile_user">
-                        <img className="heart_icon" src={heart} alt="heart"/>
+                    <div onClick={() => setProfileComponent('find_restaurant')} className="item_profile_user">
+                        <FavoriteIcon className='heart_icon' color="action"/>
                         <h4>Find Restaurant</h4>
                     </div>
-                    <div className="item_profile_user">
-                        <img className="heart_icon" src={heart} alt="heart"/>
-                        <h4>Restaurant Request</h4>
-                    </div>
-                    <div className="item_profile_user">
-                        <img className="heart_icon" src={heart} alt="heart"/>
+                    <div onClick={() => setProfileComponent('profile_info')} className="item_profile_user">
+                        <FavoriteIcon className='heart_icon' color="action"/> 
                         <h4>Profile</h4>
                     </div>
-                    <div className="item_profile_user">
-                        <img className="heart_icon" src={heart} alt="heart"/>
-                        <h4>Add Friend</h4>
-                    </div>
-                    <div className="item_profile_user">
-                        <img className="heart_icon" src={heart} alt="heart"/>
-                        <h4>Friend Request</h4>
-                    </div>
+                    <RenderRestaurantRequest/>
+                    <RenderAddFriend/>
+                    <RenderFriendRequest/>
                 </section>
             </section>
         </>
