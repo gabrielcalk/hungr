@@ -53,8 +53,7 @@ h1{
 }
 
 .button_join:hover{
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    background-color: var(--color3)
 }
 
 /* signIn button */
@@ -71,8 +70,8 @@ h1{
 }
 
 .button_signIn:hover{
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    background-color: var(--color2);
+    color: var(--color4)
 }
 
 /* Image class */
