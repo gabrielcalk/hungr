@@ -48,12 +48,12 @@ module.exports = {
   async addFriend({ user, body }, res) {
     console.log(user);
     try {
-      const updatedUser = await User.findOneAndUpdate(
+      const updateUser = await User.findOneAndUpdate(
         { _id: user._id },
         { $addToSet: { userFriend: body } },
         { new: true, runValidators: true }
       );
-      return res.json(updatedUser);
+      return res.json(updateUser);
     } catch (err) {
       console.log(err);
       return res.status(400).json(err);
@@ -61,7 +61,7 @@ module.exports = {
   },
   // remove a friend from `friendlist`
   async deleteFriend({ user, params }, res) {
-    const updatedUser = await User.findOneAndUpdate(
+    const updateUser = await User.findOneAndUpdate(
       { _id: user._id },
       { $pull: { savedFriends: { friendId: params.friendId } } },
       { new: true }
@@ -69,6 +69,6 @@ module.exports = {
     if (!updatedUser) {
       return res.status(404).json({ message: "Couldn't find user with this id!" });
     }
-    return res.json(updatedUser);
+    return res.json(updateUser);
   },
 };
