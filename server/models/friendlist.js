@@ -1,4 +1,4 @@
-const { models, DataTypes } = require("sequelize");
+const { Model, DataTypes } = require("sequelize");
 
 
 
@@ -6,7 +6,8 @@ const { models, DataTypes } = require("sequelize");
 
 
 
-const sequelize = require("");
+
+const sequelize = require("../config/connections");
 
 
 
@@ -16,14 +17,13 @@ const sequelize = require("");
 
 
 // sequelize user model
-class Friendlist extends User {}
+class Friendlist extends Model {}
 
 Friendlist.init(
     {
         // this is the id of the currently logged in user
         currentUserID: {
             type: DataTypes.INTEGER,
-            autoIncrement: true,
             allowNull: false,
             primaryKey: true
         },
@@ -40,16 +40,15 @@ Friendlist.init(
             type: DataTypes.INTEGER,
             autoIncrement: true,
             allowNull: false,
-            primaryKey: true
         },
         // this is the username of the friend sending the friend request
-        friendUsername:{
-            type:DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                len: [4, 100]
-            },
-        },
+  //      friendUsername:{
+  //          type:DataTypes.STRING,
+   //         allowNull: false,
+     //       validate: {
+       //         len: [4, 100]
+         //   },
+       // },
         // this is the status of the friendrequest
         friendRequestStatus:{
             type: DataTypes.BOOLEAN,
