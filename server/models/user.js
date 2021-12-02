@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 
 
-
+class user
 
 
 
