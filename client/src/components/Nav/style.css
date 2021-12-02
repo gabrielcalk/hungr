@@ -18,6 +18,15 @@ li{
     cursor: pointer;
 }
 
+li:last-child {
+    color: var(--color2);
+}
+
+li:last-child:hover {
+    text-decoration: underline;
+}
+
+
 li:hover{
     color: var(--color2)
 }

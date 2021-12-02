@@ -8,7 +8,7 @@ import './style.css'
 export default function RenderNavBar() {
     return (
         <nav>
-            <img className="logo_hungr" src={logo} alt="hungr logo"/>
+            <a href='/'><img className="logo_hungr" src={logo} alt="hungr logo"/></a>
             <ul>
                 {/* <Link to="/about"> */}
                     <li>About Us</li>
