@@ -1,0 +1,26 @@
+[
+    {
+      "username": "faithelizagreen",
+      "email": "faithelizagreen@hungr.com",
+      "password": "testpassword1" 
+    },
+    {
+        "username": "gabrielcausin",
+        "email": "gabrielcausin@hungr.com",
+        "password": "testpassword2" 
+      },
+      {
+        "username": "brentgraves",
+        "email": "brentgraves@hungr.com",
+        "password": "testpassword3" 
+      },
+      {
+        "username": "fenixsampson",
+        "email": "fenixsampson@hungr.com",
+        "password": "testpassword4" 
+      },
+      {
+        "username": "meredithcoyne",
+        "email": "meredithcoyne@hungr.com",
+        "password": "testpassword5" 
+      },
