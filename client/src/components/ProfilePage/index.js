@@ -1,6 +1,7 @@
 // importing the nav bar to appear when the user is logged in
 import RenderNavSignIn from "../NavLogin/index";
 import RenderProfileComponent from '../ProfileUser/index'
+import RenderProfileInfo from '../ProfileInfo';
 import RenderFindRestaurant from '../FindRestaurant/index'
 import {useState} from 'react'
 import './style.css'
@@ -11,6 +12,8 @@ export default function RenderProfile() {
     function renderComponentOnRight(){
         if(profileComponent === 'find_restaurant'){
             return <RenderFindRestaurant/>
+        } else if(profileComponent === 'profile_info'){
+            return <RenderProfileInfo/>
         }
     }
     

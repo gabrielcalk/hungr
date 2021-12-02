@@ -1,3 +1,4 @@
+// importing the nav bar to appear when the user is logged in
 import bill_gates from './images/bill_gates.jpg'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './style.css'
