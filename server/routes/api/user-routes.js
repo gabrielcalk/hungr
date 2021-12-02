@@ -5,6 +5,7 @@ const {
     addFriend,
     deleteFriend,
     login,
+    signup,
   } = require('../../controllers/user-controller');
   
   // import middleware
