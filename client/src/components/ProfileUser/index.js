@@ -9,30 +9,32 @@ export default function RenderProfileUser() {
         <>
             <RenderNavSignIn/>
             <section className="user_profile">
-                <div>
-                    <img src={bill_gates} alt='Bill Gates'/>
-                    <h3>*username*</h3>
-                    <h3>*email*</h3>
+                <div className="photo_and_info">
+                    <img className="photo_user" src={bill_gates} alt='Bill Gates'/>
+                    <div className="info_user">
+                        <h3>*username*</h3>
+                        <h3>*email*</h3>
+                    </div>
                 </div>
-                <section>
+                <section className="itens_profile">
                     <div className="item_profile_user">
-                        <img src={heart} alt="heart"/>
+                        <img className="heart_icon" src={heart} alt="heart"/>
                         <h4>Find Restaurant</h4>
                     </div>
                     <div className="item_profile_user">
-                        <img src={heart} alt="heart"/>
+                        <img className="heart_icon" src={heart} alt="heart"/>
                         <h4>Restaurant Request</h4>
                     </div>
                     <div className="item_profile_user">
-                        <img src={heart} alt="heart"/>
+                        <img className="heart_icon" src={heart} alt="heart"/>
                         <h4>Profile</h4>
                     </div>
                     <div className="item_profile_user">
-                        <img src={heart} alt="heart"/>
+                        <img className="heart_icon" src={heart} alt="heart"/>
                         <h4>Add Friend</h4>
                     </div>
                     <div className="item_profile_user">
-                        <img src={heart} alt="heart"/>
+                        <img className="heart_icon" src={heart} alt="heart"/>
                         <h4>Friend Request</h4>
                     </div>
                 </section>
