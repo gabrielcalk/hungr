@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@mui/styles';
+import './style.css'
 
 export default function RenderAddFriend() {
 
@@ -23,7 +24,7 @@ export default function RenderAddFriend() {
       
     const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<FavoriteIcon/>}
+        expandIcon={<LocalDiningIcon/>}
         {...props}
     />
     ))(({ theme }) => ({
@@ -77,12 +78,13 @@ export default function RenderAddFriend() {
                     <Typography className={classes.title}>Add Friend</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className={classes.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
-                    </Typography>
+                    <div className="add_friend_invite">
+                        <h4>Add your friend username</h4>
+                        <input placeholder=" username..."/>
+                        <div className="button_invite_friend">
+                            <button>Send Invite</button>
+                        </div>
+                    </div>
                 </AccordionDetails>
             </Accordion>
         </>
