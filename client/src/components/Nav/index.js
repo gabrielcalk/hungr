@@ -11,7 +11,7 @@ export default function RenderNavBar() {
             <a href='/'><img className="logo_hungr" src={logo} alt="hungr logo"/></a>
             <ul>
                 {/* <Link to="/about"> */}
-                    <li>About Us</li>
+                    <li><a href="#about_hungr">About Hungr</a></li>
                 {/* </Link> */}
                 {/* <Link to="/SignIn"> */}
                     <li>Sign In</li>

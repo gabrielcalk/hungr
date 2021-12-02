@@ -12,6 +12,7 @@ import RenderInfo from '../infoHome/index'
 import RenderJoin from '../Join/index'
 import RenderSignIn from '../SignIn/index'
 import RenderButtonToSignIn from '../ButtonToSignIn/index'
+import RenderAbout from '../AboutHungr/index'
 
 // importing the navbar
 import RenderNavBar from '../Nav'
@@ -51,6 +52,7 @@ export default function RenderHome() {
                     </div>
                 </section>
             </main>
+            <RenderAbout/>
         </>
     )
 }
