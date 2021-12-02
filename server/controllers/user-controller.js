@@ -42,18 +42,25 @@ module.exports = {
     }
     const token = signToken(user);
     res.json({ token, user });
+    if (!user) {
+      return res.status(401).json({ message: 'User not found' });
+    }
+    if (!(await user.checkPassword(password))) {
+      return res.status(401).json({ message: 'Incorret password' });
+    }
+    
   },
 
   // add a friend from 'friendslist'
   async addFriend({ user, body }, res) {
     console.log(user);
     try {
-      const updateUser = await User.findOneAndUpdate(
+      const updatedUser = await User.findOneAndUpdate(
         { _id: user._id },
         { $addToSet: { userFriend: body } },
         { new: true, runValidators: true }
       );
-      return res.json(updateUser);
+      return res.json(updatedUser);
     } catch (err) {
       console.log(err);
       return res.status(400).json(err);
@@ -61,7 +68,7 @@ module.exports = {
   },
   // remove a friend from `friendlist`
   async deleteFriend({ user, params }, res) {
-    const updateUser = await User.findOneAndUpdate(
+    const updatedUser = await User.findOneAndUpdate(
       { _id: user._id },
       { $pull: { savedFriends: { friendId: params.friendId } } },
       { new: true }
@@ -69,6 +76,6 @@ module.exports = {
     if (!updatedUser) {
       return res.status(404).json({ message: "Couldn't find user with this id!" });
     }
-    return res.json(updateUser);
+    return res.json(updatedUser);
   },
 };
