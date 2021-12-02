@@ -11,6 +11,15 @@ ul{
     display: flex;
 }
 
+a{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+a:hover{
+    color: var(--color2)
+}
+
 li{
     margin: 10px;
     margin: 0 45px;
@@ -24,11 +33,6 @@ li:last-child {
 
 li:last-child:hover {
     text-decoration: underline;
-}
-
-
-li:hover{
-    color: var(--color2)
 }
 
 .logo_hungr{

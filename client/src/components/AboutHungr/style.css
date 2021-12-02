@@ -1,0 +1,56 @@
+.section_main_about{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 230px
+}
+
+.subtitle_about{
+    font-size: 2.1rem;
+    text-align: center
+}
+
+.title_about{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color2)
+}
+
+.info_about{
+    text-align: center
+}
+
+.section_images_and_steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px
+}
+
+.section_steps{
+    width: 30%;
+    margin-right: 65px;
+}
+
+.each_arrow_circle{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.each_tutorial{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.each_step{
+    font-weight: bold;
+    color: var(--color2);
+}
+
+.self_restaurant{
+    width: 540px;
+    height: 390px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+}
