@@ -58,11 +58,12 @@ h1{
 
 /* signIn button */
 .button_signIn{
+    background-color: var(--color2);
+    color: var(--color4);
     width: 140px;
     padding: 8px;
     margin-left: 10px;
     cursor: pointer;
-    color: var(--color1);
     font-weight: bold;
     border-radius: 5px;
     border: none;
@@ -70,7 +71,7 @@ h1{
 }
 
 .button_signIn:hover{
-    background-color: var(--color2);
+    background-color: var(--color3);
     color: var(--color4)
 }
 

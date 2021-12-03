@@ -84,29 +84,52 @@
 }
 
 .edit{
-    border: 1px solid rgb(180, 180, 180);
+    margin-top: 15px;
+    margin-right: 5px;
     font-size: 16px;
-    margin-top: 10px;
-    padding: auto;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    display: flex;
     width: 100px;
     height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 2px black;
     position: absolute;
     right: 6%;
     
 }
 
+.edit:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
 .notes{
-    border: 1px solid rgb(180, 180, 180);
-    font-size: 16px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 5px;
-    padding: auto;
+    font-size: 16px;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    display: flex;
     width: 100px;
     height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 2px black;
     position: inherit;
-    float: right;
-    right: -200px;
-    
+    float: right;   
+}
+
+.notes:hover{
+    background-color: var(--color2);
+    color: var(--color4)
 }
 
 .remove{
@@ -126,10 +149,11 @@
     box-shadow: 0 0 2px black;
     position: inherit;
     float: right;
-    right: -200px;
+}
 
-
-
+.remove:hover{
+    background-color: var(--color2);
+    color: var(--color4)
 }
 
 /* span.close{
