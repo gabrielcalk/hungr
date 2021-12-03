@@ -15,9 +15,9 @@ router.route('/signup').post(createUser).put(authMiddleware);
 
 router.route('/login').post(login);
 
-router.route('/').post(addFriend);
+router.route('/add').post(addFriend);
 
-router.route('/').post(deleteFriend);
+router.route('/delete').post(deleteFriend);
 
 router.route('/me').get(authMiddleware, getSingleUser);
 

@@ -30,8 +30,8 @@ export default function RenderProfileComponent({setProfileComponent, profileBarC
                         <h4>Profile</h4>
                     </div>
                     <RenderRestaurantRequest/>
-                    <RenderAddFriend/>
                     <RenderFriendRequest/>
+                    <RenderAddFriend/>
                 </section>
             </section>
         </>
