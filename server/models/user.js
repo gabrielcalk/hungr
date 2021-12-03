@@ -53,6 +53,6 @@ User.init(
 );
 
 /**
- * @exports user
+ * @exports User
  */
-module.exports = user;
+module.exports = User;
