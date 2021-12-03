@@ -32,4 +32,4 @@ export const ADD_NEW_FRIEND = gql`
         email
     }
   }
-`
+`;
