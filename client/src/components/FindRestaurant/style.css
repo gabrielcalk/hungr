@@ -1,0 +1,56 @@
+.component_right_restaurant{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    margin-left: 60px;
+}
+
+.div_title_component_right{
+    background-color: var(--color2);
+    width: 100%;
+    margin-left: 25px;
+    padding: 8px 0;
+}
+
+.title_component_right{
+    font-size: 1.2rem;
+    margin-left: 15px;
+    color: var(--color4);
+}
+
+.options_restaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+    width: 50%;
+    padding: 60px 0px;
+    margin: 50px;
+}
+
+.or_invite{
+    margin: 20px 0;
+}
+
+.button_invite{
+    width: 40%;
+    background-color: var(--color3);
+    padding: 8px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: var(--color4);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+}
+
+.button_invite:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
