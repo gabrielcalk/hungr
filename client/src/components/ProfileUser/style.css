@@ -1,6 +1,6 @@
 .user_profile{
-    height: 35vh;
-    width: 18vw;
+    height: 35%;
+    width: 17%;
 }
 
 .photo_and_info{
@@ -27,15 +27,15 @@
 }
 
 .item_profile_user{
-    background-color: rgb(235, 235, 235);
+    background-color: rgba(0, 0, 0, .03);
     display: flex;
     align-items: center;
-    padding: 8px 0 8px 15px;
-    border-bottom: 1px solid rgb(180, 180, 180);
+    padding: 12px 0 11px 15px;
+    border-top: 1px solid rgba(0, 0, 0, .125);
 }
 
 .item_profile_user:hover{
-    background-color: rgb(92, 92, 92);
+    background-color: #808080;
     color: var(--color4);
     cursor: pointer
 }
@@ -47,7 +47,7 @@
 .heart_icon{
     width: 15px;
     height: 15px;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 1100px) {

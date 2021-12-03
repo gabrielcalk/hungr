@@ -7,6 +7,7 @@ export default function RenderNavSignIn() {
             <a href='/'><img className="logo_hungr" src={logo} alt="hungr logo"/></a>
             <ul>
                 {/* <Link to="/SignIn"> */}
+                    <li>Profile</li>
                     <li>Sign Out</li>
                 {/* </Link> */}
             </ul>
