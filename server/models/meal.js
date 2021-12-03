@@ -13,10 +13,15 @@ class Meal extends Model {}
 
 Meal.init(
     {
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true
+        },
         // this is the id that will be assigned to the individual meal
         mealID: {
             type: DataTypes.INTEGER,
-            autoIncrement: true,
             allowNull: false,
             primaryKey: true
         },

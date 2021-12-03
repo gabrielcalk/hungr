@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt")
 const sequelize = require("../config/connections");
+
 
 // sequelize user model
 class User extends Model {}
@@ -54,6 +55,6 @@ User.init(
 );
 
 /**
- * @exports user
+ * @exports User
  */
 module.exports = User;
