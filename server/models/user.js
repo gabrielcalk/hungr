@@ -57,5 +57,4 @@ User.init(
 /**
  * @exports User
  */
-
 module.exports = User;
