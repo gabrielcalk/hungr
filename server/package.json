@@ -11,7 +11,7 @@
     "watch": "nodemon server.js"
   },
   "keywords": [],
-  "author": "Brent Graves Gabriel Cavalcante Causin Fenix Huston Sampson, Faith Green and Meredith Coyne",
+  "author": "Brent Graves Gabriel Cavalcante Causin Fenix Sampson, Faith Green and Meredith Coyne",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^2.19.0",
