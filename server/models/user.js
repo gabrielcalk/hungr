@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require("sequelize");
-
 const sequelize = require("../config/connections");
 
 // sequelize user model
@@ -56,4 +55,5 @@ User.init(
 /**
  * @exports User
  */
+
 module.exports = User;
