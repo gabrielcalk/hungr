@@ -49,7 +49,7 @@ export default function RenderProfileInfo() {
                                 <div >
                                     <img className="friendListImg" src={steve_jobs} alt='Steve Jobs'/>
                                 </div>
-                                {/* <span class="close">x</span> */}
+                                {/* <span className="close">x</span> */}
                             </div>
                         {/* Individual Friend */}
                             <div className="friendlistCard">
@@ -60,18 +60,8 @@ export default function RenderProfileInfo() {
                                 <div >
                                     <img className="friendListImg" src={steve_jobs} alt='Steve Jobs'/>
                                 </div>
-                                {/* <span class="close">x</span> */}
+                                {/* <span className="close">x</span> */}
                             </div>
-
-
-
-
-
-
-
-
-
-
                         </div>
                     </div>
 
@@ -96,7 +86,7 @@ export default function RenderProfileInfo() {
                                 <div >
                                     <img className="friendListImg" src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
                                 </div>
-                                {/* <span class="close">x</span> */}
+                                {/* <span className="close">x</span> */}
                             </div>
                             {/* Individual Restaurant */}
                             <div className="favoriteslistCard">
@@ -108,12 +98,11 @@ export default function RenderProfileInfo() {
                                 <div>
                                     <img className="friendListImg" src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
                                 </div>
-                                {/* <span class="close">x</span> */}
+                                {/* <span className="close">x</span> */}
                             </div>
                         </div>
                     </div>
                 </section>
-
             </div>
         </>
     );

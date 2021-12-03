@@ -5,7 +5,7 @@ import logo from '../../images/Logo.png'
 import './style.css'
 
 // Creating the nav bar with the logo, about us and sign in
-export default function RenderNavBar() {
+export default function RenderNavBar({setcomponentHome}) {
     return (
         <nav>
             <a href='/'><img className="logo_hungr" src={logo} alt="hungr logo"/></a>
@@ -14,7 +14,7 @@ export default function RenderNavBar() {
                     <li><a href="#about_hungr">About Hungr</a></li>
                 {/* </Link> */}
                 {/* <Link to="/SignIn"> */}
-                    <li>Sign In</li>
+                    <li onClick={() => setcomponentHome('signin_component')}>Sign In</li>
                 {/* </Link> */}
             </ul>
         </nav>

@@ -8,16 +8,15 @@ import RenderFriendRequest from '../Friend_request/index';
 import RenderAddFriend from '../Add_friend/index';
 import RenderRestaurantRequest from '../Restaurants_request/index';
 
-export default function RenderProfileComponent({setProfileComponent, profileBarComponent, setProfileBarComponent}) {
-    
+export default function RenderProfileComponent({setProfileComponent, username, email}) {
     return (
         <>
             <section className="user_profile">
                 <div className="photo_and_info">
                     <img className="photo_user" src={bill_gates} alt='Bill Gates'/>
                     <div className="info_user">
-                        <h3>*username*</h3>
-                        <h3>*email*</h3>
+                        <h3>{username}</h3>
+                        <h3>{email}</h3>
                     </div>
                 </div>
                 <section className="itens_profile">
