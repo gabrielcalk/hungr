@@ -39,23 +39,23 @@ const resolvers = {
         const token = signToken(user);
         return { token, user };
       },
-      newFriend: async (_, args, context) => {
-        console.log(args)
-        // if (context.user) {
+      newFriend: async (_, {email_friend}, context) => {
+        console.log(email_friend)
+        if (context.user) {
           const newFriend = await User.findOne({
-            email: args.email_friend,
+            email: email_friend,
           });
   
           await Friendlist.create(
             {
-              userID: "61aa3fb8557cf38178718469",//context.user._id,
+              userID: context.user._id,
               friendID: newFriend.id,
               status: 'pending'
             }
           );
   
           return newFriend;
-        // }
+        }
         throw new AuthenticationError('You need to be logged in!');
       },
     },
