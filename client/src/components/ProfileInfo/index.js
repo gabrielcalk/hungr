@@ -45,20 +45,20 @@ export default function RenderProfileInfo() {
 
                                 {/* Friend Info     */}
                                 <p>Friend Name</p>
-                                <button class="remove">Remove</button>
-                                <div class="friendImg">
-                                    <img src={steve_jobs} alt='Steve Jobs'/>
+                                <button className="remove">Remove</button>
+                                <div >
+                                    <img className="friendListImg" src={steve_jobs} alt='Steve Jobs'/>
                                 </div>
                                 {/* <span class="close">x</span> */}
                             </div>
                         {/* Individual Friend */}
-                            <div class="friendlistCard">
+                            <div className="friendlistCard">
 
                                 {/* Friend Info     */}
                                 <p>Friend Name</p>
-                                <button class="remove">Remove</button>
-                                <div class="friendImg">
-                                    <img src={steve_jobs} alt='Steve Jobs'/>
+                                <button className="remove">Remove</button>
+                                <div >
+                                    <img className="friendListImg" src={steve_jobs} alt='Steve Jobs'/>
                                 </div>
                                 {/* <span class="close">x</span> */}
                             </div>
@@ -91,22 +91,22 @@ export default function RenderProfileInfo() {
 
                                 {/* Restaurant Info*/}
                                 <p>Restaurant Name</p>
-                                <button class="notes">Add Notes</button>
-                                <button class="remove">Remove</button>
-                                <div class="friendImg">
-                                    <img src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
+                                <button className="notes">Add Notes</button>
+                                <button className="remove">Remove</button>
+                                <div >
+                                    <img className="friendListImg" src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
                                 </div>
                                 {/* <span class="close">x</span> */}
                             </div>
                             {/* Individual Restaurant */}
-                            <div class="favoriteslistCard">
+                            <div className="favoriteslistCard">
 
                                 {/* Restaurant Info*/}
                                 <p>Restaurant Name</p>
-                                <button class="remove">Remove</button>
-                                <button class="notes">Add Notes</button>
-                                <div class="friendImg">
-                                    <img src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
+                                <button className="remove">Remove</button>
+                                <button className="notes">Add Notes</button>
+                                <div>
+                                    <img className="friendListImg" src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
                                 </div>
                                 {/* <span class="close">x</span> */}
                             </div>

@@ -46,7 +46,7 @@
     width: 28vw;
 }
 
-img{
+.friendListImg{
     margin: 5px;
     border: 1px solid rgb(180, 180, 180);
     border-radius: 50%;
@@ -82,10 +82,9 @@ img{
     vertical-align: middle;
 }
 
-button.edit{
+.edit{
     border: 1px solid rgb(180, 180, 180);
-    font-size: 20px;
-    color: var(--color3);
+    font-size: 16px;
     margin-top: 10px;
     padding: auto;
     width: 100px;
@@ -95,10 +94,9 @@ button.edit{
     
 }
 
-button.notes{
+.notes{
     border: 1px solid rgb(180, 180, 180);
-    font-size: 20px;
-    color: var(--color3);
+    font-size: 16px;
     margin-top: 10px;
     margin-right: 5px;
     padding: auto;
@@ -110,10 +108,9 @@ button.notes{
     
 }
 
-button.remove{
+.remove{
     border: 1px solid rgb(180, 180, 180);
-    font-size: 20px;
-    color: var(--color3);
+    font-size: 16px;
     margin-top: 10px;
     margin-right: 5px;
     padding: auto;
@@ -125,9 +122,9 @@ button.remove{
     
 }
 
-span.close{
+/* span.close{
     position: static;
     top: 50px;
     float: right;
     color: var(--color3);
-}
+} */
