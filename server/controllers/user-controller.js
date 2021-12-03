@@ -52,19 +52,19 @@ module.exports = {
   },
 
   // add a friend from 'friendslist'
-  async addFriend({ user, body }, res) {
-    console.log(user);
-    try {
-      const updatedUser = await User.findOneAndUpdate(
-        { _id: user._id },
-        { $addToSet: { userFriend: body } },
-        { new: true, runValidators: true }
-      );
-      return res.json(updatedUser);
-    } catch (err) {
-      console.log(err);
-      return res.status(400).json(err);
-    }
+  async addFriend({ body }, res) {
+    console.log(body);
+    // try {
+    //   const updatedUser = await User.findOneAndUpdate(
+    //     { _id: user._id },
+    //     { $addToSet: { userFriend: body } },
+    //     { new: true, runValidators: true }
+    //   );
+    //   return res.json(updatedUser);
+    // } catch (err) {
+    //   console.log(err);
+    //   return res.status(400).json(err);
+    // }
   },
   // remove a friend from `friendlist`
   async deleteFriend({ user, params }, res) {
