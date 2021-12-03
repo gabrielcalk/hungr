@@ -49,7 +49,7 @@ export default function RenderAbout() {
             <section className="section_images_and_steps">
                 <section className="section_steps">
                     {tutorial_info.map((info) => 
-                        <div className="each_tutorial">
+                        <div key={info.step} className="each_tutorial">
                             <img className="each_arrow_circle" src={info.image} alt="arrow circle"/>
                             <div className="each_info_div">
                                 <p className="each_step">{info.step}</p>
