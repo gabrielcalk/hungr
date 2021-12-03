@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-
+const bcrypt = require("bcrypt");
 const sequelize = require("../config/connections");
 
 // sequelize user model
@@ -56,4 +56,4 @@ User.init(
 /**
  * @exports user
  */
-module.exports = user;
+module.exports = User;
