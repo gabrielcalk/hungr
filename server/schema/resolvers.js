@@ -23,14 +23,14 @@ const resolvers = {
   
         return { token, user };
       },
-      login: async (_, args) => {
-        const user = await User.findOne({ email });
+      login: async (_, {username, password}) => {
+        const user = await User.findOne({username});
   
         if (!user) {
           throw new AuthenticationError('Incorrect credentials');
         }
   
-        const correctPw = await user.isCorrectPassword(args.password);
+        const correctPw = await user.isCorrectPassword(password);
   
         if (!correctPw) {
           throw new AuthenticationError('Incorrect credentials');
@@ -39,22 +39,21 @@ const resolvers = {
         const token = signToken(user);
         return { token, user };
       },
-      newFriend: async (_, {email_friend}, context) => {
-        console.log(email_friend)
+      newFriend: async (_, {emailFriend}, context) => {
         if (context.user) {
-          const newFriend = await User.findOne({
-            email: email_friend,
+          const friend = await User.findOne({
+            email: emailFriend,
           });
   
           await Friendlist.create(
             {
               userID: context.user._id,
-              friendID: newFriend.id,
+              friendID: friend.id,
               status: 'pending'
             }
           );
   
-          return newFriend;
+          return friend;
         }
         throw new AuthenticationError('You need to be logged in!');
       },

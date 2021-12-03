@@ -1,4 +1,4 @@
-.sign_up_card_body{
+.add_friend_invite{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -6,8 +6,14 @@
     border-top: 1px solid rgba(0, 0, 0, .125);
 }
 
-.sign_up_button{
+.button_invite_friend{
     margin-top: 15px;
     display: flex;
     justify-content: center;
+}
+
+.text_invite{
+    color: var(--color2);
+    text-align: center;
+    margin: 10px;
 }

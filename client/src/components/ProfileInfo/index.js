@@ -10,17 +10,17 @@ export default function RenderProfileInfo() {
             <div className="profile_info">
 
                 {/* User Personal Account Info Box*/}
-                <div class="accountInfo">
+                <div className="accountInfo">
 
                     {/* Account Title */}
-                    <div class="sectionTitle">
+                    <div className="sectionTitle">
                     <h2>Account</h2>
                     </div>
                     <br></br>
                     {/* Account Info */}
                     <div>
-                        <button class="edit">Edit</button>
-                            <div class="nameEmail">
+                        <button className="edit">Edit</button>
+                            <div className="nameEmail">
                                 <p>Username:</p>
                                 <p>Email:</p>
                             </div>
@@ -30,18 +30,18 @@ export default function RenderProfileInfo() {
 
                 {/* User's Friendlist Section */}
                 <section className="section_friends">
-                    <div class="friendlist">
+                    <div className="friendlist">
 
                     {/* Friendlist Title */}
-                        <div class="sectionTitle">
+                        <div className="sectionTitle">
                             <h2>Friends</h2>
                         </div>
 
                     {/* Scrolling list */}
-                        <div class="scrollingList">
+                        <div className="scrollingList">
 
                         {/* Individual Friend */}
-                            <div class="friendlistCard">
+                            <div className="friendlistCard">
 
                                 {/* Friend Info     */}
                                 <p>Friend Name</p>
@@ -62,7 +62,6 @@ export default function RenderProfileInfo() {
                                 </div>
                                 {/* <span class="close">x</span> */}
                             </div>
-
 
 
 
@@ -77,18 +76,18 @@ export default function RenderProfileInfo() {
                     </div>
 
                 {/* User's Favorite Restaurant Section */}
-                    <div class="favoritesList">
+                    <div className="favoritesList">
 
                     {/* Favorites Title */}
-                        <div class="sectionTitle">
+                        <div className="sectionTitle">
                             <h2>Favorites</h2>
                         </div>
 
                     {/* Scrolling list */}
-                        <div class="scrollingList">
+                        <div className="scrollingList">
 
                             {/* Individual Restaurant */}
-                            <div class="favoriteslistCard">
+                            <div className="favoriteslistCard">
 
                                 {/* Restaurant Info*/}
                                 <p>Restaurant Name</p>
@@ -111,14 +110,6 @@ export default function RenderProfileInfo() {
                                 </div>
                                 {/* <span class="close">x</span> */}
                             </div>
-
-
-
-
-
-
-
-
                         </div>
                     </div>
                 </section>
