@@ -1,6 +1,6 @@
 import './style.css'
 
-import RenderFindRestaurant from '../FindRestaurant'
+
 
 
 

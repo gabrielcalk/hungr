@@ -1,7 +1,5 @@
 import './style.css'
 
-import RenderFindRestaurant from '../FindRestaurant'
-
 
 
 export default function RenderfriendRestaurant(){

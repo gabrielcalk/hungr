@@ -46,8 +46,8 @@ export default function RenderProfileInfo() {
                                 {/* Friend Info     */}
                                 <p>Friend Name</p>
                                 <button className="remove">Remove</button>
-                                <div className="friendImg">
-                                    <img className="image_profile" src={steve_jobs} alt='Steve Jobs'/>
+                                <div >
+                                    <img className="friendListImg" src={steve_jobs} alt='Steve Jobs'/>
                                 </div>
                                 {/* <span className="close">x</span> */}
                             </div>
@@ -57,8 +57,8 @@ export default function RenderProfileInfo() {
                                 {/* Friend Info     */}
                                 <p>Friend Name</p>
                                 <button className="remove">Remove</button>
-                                <div className="friendImg">
-                                    <img className="image_profile" src={steve_jobs} alt='Steve Jobs'/>
+                                <div >
+                                    <img className="friendListImg" src={steve_jobs} alt='Steve Jobs'/>
                                 </div>
                                 {/* <span className="close">x</span> */}
                             </div>
@@ -83,8 +83,8 @@ export default function RenderProfileInfo() {
                                 <p>Restaurant Name</p>
                                 <button className="notes">Add Notes</button>
                                 <button className="remove">Remove</button>
-                                <div className="friendImg">
-                                    <img className="image_profile" src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
+                                <div >
+                                    <img className="friendListImg" src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
                                 </div>
                                 {/* <span className="close">x</span> */}
                             </div>
@@ -95,8 +95,8 @@ export default function RenderProfileInfo() {
                                 <p>Restaurant Name</p>
                                 <button className="remove">Remove</button>
                                 <button className="notes">Add Notes</button>
-                                <div className="friendImg">
-                                    <img className="image_profile" src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
+                                <div>
+                                    <img className="friendListImg" src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
                                 </div>
                                 {/* <span className="close">x</span> */}
                             </div>
