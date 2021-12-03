@@ -1,2 +1,0 @@
-DROP DATABASE IF EXISTS hungr_db;
-CREATE DATABASE hungr_db;
