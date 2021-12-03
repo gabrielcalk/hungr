@@ -8,6 +8,12 @@ class Friendlist extends Model {}
 
 Friendlist.init(
     {
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true
+        },
         // this is the id of the currently logged in user
         currentUserID: {
             type: DataTypes.INTEGER,
@@ -25,7 +31,6 @@ Friendlist.init(
         // this is the id of the friend sending the friend request
         friendUserID: {
             type: DataTypes.INTEGER,
-            autoIncrement: true,
             allowNull: false,
         },
         // this is the username of the friend sending the friend request
