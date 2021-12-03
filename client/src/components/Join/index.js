@@ -42,7 +42,7 @@ const Signup = () => {
         <div>
           <div>
             <h4>Sign Up</h4>
-            <div className="card-body">
+            <div className="sign_up_card_body">
               {data ? (
                 <p>
                   Success! Thank You For Signing Up With Hungr!{' '}
@@ -57,6 +57,7 @@ const Signup = () => {
                     value={formState.name}
                     onChange={handleChange}
                   />
+                  <br></br>
                   <input
                     className="form-input"
                     placeholder="Your email"
@@ -65,6 +66,7 @@ const Signup = () => {
                     value={formState.email}
                     onChange={handleChange}
                   />
+                  <br></br>
                   <input
                     className="form-input"
                     placeholder="******"
@@ -74,6 +76,7 @@ const Signup = () => {
                     onChange={handleChange}
                   />
                   <button
+                  className="sign_up_button"
                     style={{ cursor: 'pointer' }}
                     type="submit"
                   >

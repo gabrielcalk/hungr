@@ -1,0 +1,23 @@
+.sign_in_card_body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.sign_in_button{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.signinText{
+    font-Weight:600px;
+    text-Align:center;
+    font-Size:20px
+}
+ 
+.CardActions{
+    justify-content: center;
+}

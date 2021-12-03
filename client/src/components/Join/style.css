@@ -1,14 +1,15 @@
-.card{
-    padding: 50px;
+.sign_up_card_body{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, .125);
 }
- 
-.cardStyle{
-    width: 500px;
-    border-style:groove;
-    border-color: rgba(0, 0, 0, 0.74);
+
+.sign_up_button{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
  
 .signupText{
