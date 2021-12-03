@@ -23,3 +23,13 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_NEW_FRIEND = gql`
+  mutation newFriend($email_friend: String!) {
+    newFriend(email_friend: $email_friend) {
+        _id
+        username
+        email
+    }
+  }
+`

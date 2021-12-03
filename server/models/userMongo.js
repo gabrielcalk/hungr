@@ -19,6 +19,12 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    friends: [
+      {
+          type:Schema.Types.ObjectId,
+          ref: 'FriendList',
+      },
+    ],
   },
 );
 
