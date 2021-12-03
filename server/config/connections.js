@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-require('dotenv').config();
+// require('dotenv').config();
 
 //Connecting to the data base
 // JAW or MYSQL
