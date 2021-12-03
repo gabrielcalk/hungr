@@ -1,7 +1,7 @@
 // Importing the CSS for the Home
 import './style.css'
 import {useState} from 'react'
-import { useMutation } from '@apollo/client';
+import Auth from '../../utils/auth';
 
 // importing the foods images
 import cake from './images/cake.jpg'
@@ -43,8 +43,10 @@ export default function RenderHome() {
 
     return (
         <>
-{/* We need to display different navigation bars based on whether the user is logged in or not.*/}           
-            <RenderNavBar/>
+{/* We need to display different navigation bars based on whether the user is logged in or not.*/}     
+            {Auth.loggedIn() ?   
+            <RenderNavSignIn/>
+            : <RenderNavBar setcomponentHome={setcomponentHome}/>}
             <main className="main_home">
                 {renderComponentHome()}
                 <section className="section_home">
