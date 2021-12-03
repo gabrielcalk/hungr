@@ -39,7 +39,7 @@ export default function RenderProfileInfo() {
                     <div class="scrollingList">
 
                         {/* Individual Friend */}
-                        <div>
+                        <div class="friendlistCard">
 
                             {/* Friend Info     */}
                             <img src={steve_jobs} alt='Steve Jobs'/>
@@ -56,7 +56,7 @@ export default function RenderProfileInfo() {
                         <div>
 
                             {/* Friend Info     */}
-                            <img src={steve_jobs} alt='Steve Jobs'/>
+                            <img class="friendImg" src={steve_jobs} alt='Steve Jobs'/>
                             <h3>FriendName</h3>
                             <span class="close">x</span>
                         </div>
@@ -106,7 +106,7 @@ export default function RenderProfileInfo() {
                     <div class="scrollingList">
 
                         {/* Individual Restaurant */}
-                        <div>
+                        <div class="favoriteslistCard">
 
                             {/* Restaurant Info*/}
                             <h3>RestaurantName</h3>

@@ -33,6 +33,16 @@
     width: 33vw;
 }
 
+.friendlistCard{
+    border: 1px solid black;
+    height: 10vh;
+    width: 28vw;
+}
+
+.friendImg{
+    max-width: 50px;
+}
+
 .favoritesList{
     position: absolute;
     top: 360px;
@@ -41,6 +51,12 @@
     background-color: rgb(214, 214, 214);
     height: 50vh;
     width: 33vw;
+}
+
+.favoriteslistCard{
+    border: 1px solid black;
+    height: 10vh;
+    width: 28vw;
 }
 
 .scrollingList{
@@ -75,9 +91,17 @@ button.notes{
     padding: auto;
     width: 100px;
     height: 40px;
-    position: absolute;
-    right: 8%;
+    position: inherit;
+    float: right;
+    right: -200px;
     
+}
+
+span.close{
+    position: static;
+    top: 50px;
+    float: right;
+    color: var(--color3);
 }
 
 
