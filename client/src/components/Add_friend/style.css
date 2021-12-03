@@ -17,3 +17,16 @@
     text-align: center;
     margin: 10px;
 }
+button {
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    box-shadow: 0 0 2px black;
+}
+button:hover {
+    background-color: var(--color2);
+    color: var(--color4)
+}
