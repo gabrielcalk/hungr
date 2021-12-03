@@ -10,14 +10,6 @@
     margin-top: 15px;
     display: flex;
     justify-content: center;
-}
-
-.text_invite{
-    color: var(--color2);
-    text-align: center;
-    margin: 10px;
-}
-button {
     color: var(--color4);
     background-color: var(--color3);
     font-weight: bold;
@@ -26,7 +18,14 @@ button {
     border: none;
     box-shadow: 0 0 2px black;
 }
-button:hover {
+
+.button_invite_friend:hover {
     background-color: var(--color2);
     color: var(--color4)
+}
+
+.text_invite{ 
+    color: var(--color2);
+    text-align: center;
+    margin: 10px;  
 }
