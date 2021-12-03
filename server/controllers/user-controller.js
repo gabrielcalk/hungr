@@ -66,7 +66,7 @@ module.exports = {
       { $pull: { savedFriends: { friendId: params.friendId } } },
       { new: true }
     );
-    if (!updatedUser) {
+    if (!updateUser) {
       return res.status(404).json({ message: "Couldn't find user with this id!" });
     }
     return res.json(updateUser);

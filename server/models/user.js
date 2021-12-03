@@ -1,19 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-
-
-
-
-
-
-
 const sequelize = require("../config/connections");
-
-
-
-
-
-
-
 
 // sequelize user model
 class User extends Model {}
