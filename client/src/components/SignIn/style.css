@@ -7,9 +7,24 @@
 }
 
 .sign_in_button{
+    background-color: var(--color2);
+    color: var(--color4);
+    width: 140px;
+    padding: 8px;
     margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
     display: flex;
     justify-content: center;
+}
+
+.sign_in_button:hover{
+    background-color: var(--color3);
+    color: var(--color4)
 }
  
 .signinText{
