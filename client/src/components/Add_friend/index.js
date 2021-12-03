@@ -1,112 +1,41 @@
 import * as React from 'react';
 import { useState } from "react";
-// import { styled } from '@mui/material/styles';
-// import LocalDiningIcon from '@mui/icons-material/LocalDining';
-// import MuiAccordion from '@mui/material/Accordion';
-// import MuiAccordionSummary from '@mui/material/AccordionSummary';
-// import MuiAccordionDetails from '@mui/material/AccordionDetails';
-// import Typography from '@mui/material/Typography';
-// import { makeStyles } from '@mui/styles';
 import './style.css';
+import { useMutation } from '@apollo/client';
+import { ADD_NEW_FRIEND } from '../../utils/mutations';
+import Auth from '../../utils/auth';
 
 
 export default function RenderAddFriend() {
-    const [friendUsername, setFriendUsername] = useState('')
+    const [friendEmail, setfriendEmail] = useState('')
+    const [addFriend, { error }] = useMutation(ADD_NEW_FRIEND);
 
-    // const Accordion = styled((props) => (
-    //     <MuiAccordion disableGutters elevation={0} square {...props} />
-    //   ))(({ theme }) => ({
-    //     border: `1px solid ${theme.palette.divider}`,
-    //     '&:not(:last-child)': {
-    //       borderBottom: 0,
-    //     },
-    //     '&:before': {
-    //       display: 'none',
-    //     },
-    //   }));
-      
-    // const AccordionSummary = styled((props) => (
-    // <MuiAccordionSummary
-    //     expandIcon={<LocalDiningIcon/>}
-    //     {...props}
-    // />
-    // ))(({ theme }) => ({
-    // backgroundColor:
-    //     theme.palette.mode === 'dark'
-    //     ? 'rgba(255, 255, 255, .05)'
-    //     : 'rgba(0, 0, 0, .03)',
-    // flexDirection: 'row-reverse',
-    // '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    //     transform: 'rotate(90deg)',
-    // },
-    // '& .MuiAccordionSummary-content': {
-    //     marginLeft: theme.spacing(0.8),
-    // },
-    // }));
-    
-    // const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-    //     padding: theme.spacing(2),
-    //     borderTop: '1px solid rgba(0, 0, 0, .125)',
-    // }));
-      
-    // const [expanded, setExpanded] = React.useState('panel3');
-    
-    // const handleChange = (panel) => (event, newExpanded) => {
-    //     setExpanded(newExpanded ? panel : false);
-    // };
-
-    // const useStyles = makeStyles({
-    //     div_title: {
-    //         '&:hover':{
-    //             backgroundColor: '#808080',
-    //             color: 'white'
-    //         }
-    //     },
-    //     title:{
-    //         fontWeight:'bold',
-    //         fontFamily:'Arima Madurai, sans-serif',
-    //     },
-    //     text:{
-    //         fontFamily:'Arima Madurai, sans-serif',
-    //     }
-    // });
-
-    // const classes = useStyles();
 
     async function handleFormSubmit (event){
         event.preventDefault();
-
-        const response = await fetch('http://localhost:3001/api/user/add', {
-            method: 'POST', 
-            body: JSON.stringify(friendUsername),
-            headers: { 'Content-Type': 'application/json'}
-        });
-
-        if (response.ok) {
-            document.location.replace('/user');
-        } else {
-            alert('Try Again');
-        };
+        console.log(friendEmail)
+        try {
+            const { data } = await addFriend({
+              variables: { email_friend: friendEmail },
+            });
+      
+            Auth.login(data.addUser.token);
+          } catch (e) {
+            console.error(e);
+          }
     }
 
     return (
         <>
-            {/* <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}> */}
-                {/* <AccordionSummary className={classes.div_title} aria-controls="panel3d-content" id="panel3d-header"> */}
-                    {/* <Typography className={classes.title}>Add Friend</Typography> */}
-                {/* </AccordionSummary> */}
-                {/* <AccordionDetails> */}
-                    <form onSubmit={handleFormSubmit}>
-                        <div className="add_friend_invite">
-                            <h4>Add your friend username</h4>
-                            <input placeholder=" username..." type="text" value={friendUsername} onChange={(e) => setFriendUsername(e.target.value)}/>
-                            <div className="button_invite_friend">
-                                <button type="submit">Send Invite</button>
-                            </div>
-                        </div>
-                    </form>
-                {/* </AccordionDetails> */}
-            {/* </Accordion> */}
+            <form onSubmit={handleFormSubmit}>
+                <div className="add_friend_invite">
+                    <h4>Add your friend email</h4>
+                    <input placeholder=" email..." type="email" value={friendEmail} onChange={(e) => setfriendEmail(e.target.value)}/>
+                    <div className="button_invite_friend">
+                        <button type="submit">Send Invite</button>
+                    </div>
+                </div>
+            </form>
         </>
     );
 }

@@ -2,12 +2,14 @@
     {
       "username": "faithelizagreen",
       "email": "faithelizagreen@hungr.com",
-      "password": "testpassword1" 
+      "password": "testpassword1",
+      "friends": []
     },
     {
         "username": "gabrielcausin",
         "email": "gabrielcausin@hungr.com",
-        "password": "testpassword2" 
+        "password": "testpassword2" ,
+        "friends": []
       },
       {
         "username": "brentgraves",

@@ -1,23 +1,16 @@
 const { Schema, model } = require('mongoose');
 
 const friendSchema = new Schema({
-        currentUserID: {
-            type: Number,
-            required: true,
+        userID:{
+            type: String,
+            required: true
         },
-        // this is the username of the currently logged in user
-        currentUsername:{
+        friendID: {
             type: String,
             required: true,
-            maxlength: 70
         },
-        // this is the id of the friend sending the friend request
-        friendUserID: {
-            type: Number,
-        },
-        // this is the status of the friendrequest
-        friendRequestStatus:{
-            type: Boolean,
+        status:{
+            type: String,
             required: true,
         },
 });

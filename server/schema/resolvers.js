@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Friendlist } = require('../models');
 const { signToken } = require('../utils/auth');
 
 
@@ -17,20 +17,20 @@ const resolvers = {
     },
   
     Mutation: {
-      addUser: async (parent, args) => {
+      addUser: async (_, args) => {
         const user = await User.create(args);
         const token = signToken(user);
   
         return { token, user };
       },
-      login: async (parent, { email, password }) => {
+      login: async (_, args) => {
         const user = await User.findOne({ email });
   
         if (!user) {
           throw new AuthenticationError('Incorrect credentials');
         }
   
-        const correctPw = await user.isCorrectPassword(password);
+        const correctPw = await user.isCorrectPassword(args.password);
   
         if (!correctPw) {
           throw new AuthenticationError('Incorrect credentials');
@@ -38,6 +38,25 @@ const resolvers = {
   
         const token = signToken(user);
         return { token, user };
+      },
+      newFriend: async (_, args, context) => {
+        console.log(args)
+        // if (context.user) {
+          const newFriend = await User.findOne({
+            email: args.email_friend,
+          });
+  
+          await Friendlist.create(
+            {
+              userID: "61aa3fb8557cf38178718469",//context.user._id,
+              friendID: newFriend.id,
+              status: 'pending'
+            }
+          );
+  
+          return newFriend;
+        // }
+        throw new AuthenticationError('You need to be logged in!');
       },
     },
   };
