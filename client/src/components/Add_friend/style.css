@@ -1,0 +1,11 @@
+.add_friend_invite{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button_invite_friend{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}

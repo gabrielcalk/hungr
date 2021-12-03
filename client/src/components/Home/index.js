@@ -42,7 +42,8 @@ export default function RenderHome() {
 
     return (
         <>
-{/* We need to display different navigation bars based on whether the user is logged in or not.            <RenderNavBar/> */}
+{/* We need to display different navigation bars based on whether the user is logged in or not.*/}           
+            <RenderNavBar/>
             <main className="main_home">
                 {renderComponentHome()}
                 <section className="section_home">
