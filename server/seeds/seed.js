@@ -1,17 +1,14 @@
-const sequelize = require("../config/connections");
+const db = require('../config/connectionsMongo.js');
 const { User } = require("../models");
-
 const userSeedData = require('./userSeedData.json');
 
-const seedDataBase = async () => {
-  await sequelize.sync({ force: true });
-
-  await User.bulkCreate(userSeedData, {
-    individualHooks: true,
-    returning: true,
-  });
-
+db.once('open', async () => {
+  try {
+    await User.create(userSeedData)
+  
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
   process.exit(0);
-};
-
-seedDataBase();
+});

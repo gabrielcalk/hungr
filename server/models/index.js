@@ -1,6 +1,6 @@
-const User = require("./user");
-const Friendlist = require("./friendlist");
-const Meal = require("./meal");
+const User = require("./userMongo");
+const Friendlist = require("./friendlistMongo");
+const Meal = require("./mealMongo");
 
 
-module.exports = { User, Friendlist, Meal };
+module.exports = { User, Friendlist, Meal};
