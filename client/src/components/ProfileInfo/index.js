@@ -1,6 +1,3 @@
-// importing the nav bar to appear when the user is logged in
-import RenderNavSignIn from "../NavLogin/index";
-// import heart from './images/heart.svg'
 import './style.css'
 import steve_jobs from './images/steve_jobs.jpg'
 
@@ -21,9 +18,11 @@ export default function RenderProfileInfo() {
         
                     {/* Account Info */}
                     <div>
-                        <h3>Username:</h3>
-                        <h3>Email:</h3>
                         <button class="edit">Edit</button>
+                            <div class="nameEmail">
+                                <p>Username:</p>
+                                <p>Email:</p>
+                            </div>
                     </div>
 
                 </div>
@@ -37,7 +36,7 @@ export default function RenderProfileInfo() {
                     </div>
 
                     {/* Scrolling list */}
-                    <div>
+                    <div class="scrollingList">
 
                         {/* Individual Friend */}
                         <div>
@@ -47,6 +46,51 @@ export default function RenderProfileInfo() {
                             <h3>FriendName</h3>
                             <span class="close">x</span>
                         </div>
+                        <div>
+
+                            {/* Friend Info     */}
+                            <img src={steve_jobs} alt='Steve Jobs'/>
+                            <h3>FriendName</h3>
+                            <span class="close">x</span>
+                        </div>
+                        <div>
+
+                            {/* Friend Info     */}
+                            <img src={steve_jobs} alt='Steve Jobs'/>
+                            <h3>FriendName</h3>
+                            <span class="close">x</span>
+                        </div>
+                        <div>
+
+                            {/* Friend Info     */}
+                            <img src={steve_jobs} alt='Steve Jobs'/>
+                            <h3>FriendName</h3>
+                            <span class="close">x</span>
+                        </div>
+                        <div>
+
+                            {/* Friend Info     */}
+                            <img src={steve_jobs} alt='Steve Jobs'/>
+                            <h3>FriendName</h3>
+                            <span class="close">x</span>
+                        </div>
+                        <div>
+
+                            {/* Friend Info     */}
+                            <img src={steve_jobs} alt='Steve Jobs'/>
+                            <h3>FriendName</h3>
+                            <span class="close">x</span>
+                        </div>
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
 
@@ -59,9 +103,9 @@ export default function RenderProfileInfo() {
                     </div>
 
                     {/* Scrolling list */}
-                    <div>
+                    <div class="scrollingList">
 
-                        {/* Individual Friend */}
+                        {/* Individual Restaurant */}
                         <div>
 
                             {/* Restaurant Info*/}
@@ -69,6 +113,69 @@ export default function RenderProfileInfo() {
                             <span class="close">x</span>
                             <button class="notes">Add Notes</button>
                         </div>
+                        {/* Individual Restaurant */}
+                        <div>
+
+                            {/* Restaurant Info*/}
+                            <h3>RestaurantName</h3>
+                            <span class="close">x</span>
+                            <button class="notes">Add Notes</button>
+                        </div>
+                        {/* Individual Restaurant */}
+                        <div>
+
+                            {/* Restaurant Info*/}
+                            <h3>RestaurantName</h3>
+                            <span class="close">x</span>
+                            <button class="notes">Add Notes</button>
+                        </div>
+                        {/* Individual Restaurant */}
+                        <div>
+
+                            {/* Restaurant Info*/}
+                            <h3>RestaurantName</h3>
+                            <span class="close">x</span>
+                            <button class="notes">Add Notes</button>
+                        </div>
+                        {/* Individual Restaurant */}
+                        <div>
+
+                            {/* Restaurant Info*/}
+                            <h3>RestaurantName</h3>
+                            <span class="close">x</span>
+                            <button class="notes">Add Notes</button>
+                        </div>
+                        {/* Individual Restaurant */}
+                        <div>
+
+                            {/* Restaurant Info*/}
+                            <h3>RestaurantName</h3>
+                            <span class="close">x</span>
+                            <button class="notes">Add Notes</button>
+                        </div>
+                        {/* Individual Restaurant */}
+                        <div>
+
+                            {/* Restaurant Info*/}
+                            <h3>RestaurantName</h3>
+                            <span class="close">x</span>
+                            <button class="notes">Add Notes</button>
+                        </div>
+                        {/* Individual Restaurant */}
+                        <div>
+
+                            {/* Restaurant Info*/}
+                            <h3>RestaurantName</h3>
+                            <span class="close">x</span>
+                            <button class="notes">Add Notes</button>
+                        </div>
+
+
+
+
+
+
+
                     </div>
                 </div>
 
