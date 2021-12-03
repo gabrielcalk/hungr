@@ -1,5 +1,6 @@
 import './style.css'
-import steve_jobs from './images/steve_jobs.jpg'
+import steve_jobs from './images/steve_jobs.jpeg'
+import placeholder_brazilian_steakhouse from './images/placeholder_brazilian_steakhoues.jpeg'
 
 
 export default function RenderProfileInfo() {
@@ -15,7 +16,7 @@ export default function RenderProfileInfo() {
                     <div className="sectionTitle">
                     <h2>Account</h2>
                     </div>
-        
+                    <br></br>
                     {/* Account Info */}
                     <div>
                         <button className="edit">Edit</button>
@@ -43,44 +44,23 @@ export default function RenderProfileInfo() {
                             <div className="friendlistCard">
 
                                 {/* Friend Info     */}
-                                <img src={steve_jobs} alt='Steve Jobs'/>
-                                <h3>FriendName</h3>
-                                <span className="close">x</span>
+                                <p>Friend Name</p>
+                                <button class="remove">Remove</button>
+                                <div class="friendImg">
+                                    <img src={steve_jobs} alt='Steve Jobs'/>
+                                </div>
+                                {/* <span class="close">x</span> */}
                             </div>
-                            <div>
+                        {/* Individual Friend */}
+                            <div class="friendlistCard">
 
                                 {/* Friend Info     */}
-                                <img src={steve_jobs} alt='Steve Jobs'/>
-                                <h3>FriendName</h3>
-                                <span className="close">x</span>
-                            </div>
-                            <div>
-
-                                {/* Friend Info     */}
-                                <img className="friendImg" src={steve_jobs} alt='Steve Jobs'/>
-                                <h3>FriendName</h3>
-                                <span className="close">x</span>
-                            </div>
-                            <div>
-
-                                {/* Friend Info     */}
-                                <img src={steve_jobs} alt='Steve Jobs'/>
-                                <h3>FriendName</h3>
-                                <span className="close">x</span>
-                            </div>
-                            <div>
-
-                                {/* Friend Info     */}
-                                <img src={steve_jobs} alt='Steve Jobs'/>
-                                <h3>FriendName</h3>
-                                <span className="close">x</span>
-                            </div>
-                            <div>
-
-                                {/* Friend Info     */}
-                                <img src={steve_jobs} alt='Steve Jobs'/>
-                                <h3>FriendName</h3>
-                                <span className="close">x</span>
+                                <p>Friend Name</p>
+                                <button class="remove">Remove</button>
+                                <div class="friendImg">
+                                    <img src={steve_jobs} alt='Steve Jobs'/>
+                                </div>
+                                {/* <span class="close">x</span> */}
                             </div>
 
 
@@ -110,73 +90,26 @@ export default function RenderProfileInfo() {
                             <div className="favoriteslistCard">
 
                                 {/* Restaurant Info*/}
-                                <h3>RestaurantName</h3>
-                                <span className="close">x</span>
-                                <button className="notes">Add Notes</button>
+                                <p>Restaurant Name</p>
+                                <button class="notes">Add Notes</button>
+                                <button class="remove">Remove</button>
+                                <div class="friendImg">
+                                    <img src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
+                                </div>
+                                {/* <span class="close">x</span> */}
                             </div>
                             {/* Individual Restaurant */}
-                            <div>
+                            <div class="favoriteslistCard">
 
                                 {/* Restaurant Info*/}
-                                <h3>RestaurantName</h3>
-                                <span className="close">x</span>
-                                <button className="notes">Add Notes</button>
+                                <p>Restaurant Name</p>
+                                <button class="remove">Remove</button>
+                                <button class="notes">Add Notes</button>
+                                <div class="friendImg">
+                                    <img src={placeholder_brazilian_steakhouse} alt='placeholder_brazilian_steakhouse'/>
+                                </div>
+                                {/* <span class="close">x</span> */}
                             </div>
-                            {/* Individual Restaurant */}
-                            <div>
-
-                                {/* Restaurant Info*/}
-                                <h3>RestaurantName</h3>
-                                <span className="close">x</span>
-                                <button className="notes">Add Notes</button>
-                            </div>
-                            {/* Individual Restaurant */}
-                            <div>
-
-                                {/* Restaurant Info*/}
-                                <h3>RestaurantName</h3>
-                                <span className="close">x</span>
-                                <button className="notes">Add Notes</button>
-                            </div>
-                            {/* Individual Restaurant */}
-                            <div>
-
-                                {/* Restaurant Info*/}
-                                <h3>RestaurantName</h3>
-                                <span className="close">x</span>
-                                <button className="notes">Add Notes</button>
-                            </div>
-                            {/* Individual Restaurant */}
-                            <div>
-
-                                {/* Restaurant Info*/}
-                                <h3>RestaurantName</h3>
-                                <span className="close">x</span>
-                                <button className="notes">Add Notes</button>
-                            </div>
-                            {/* Individual Restaurant */}
-                            <div>
-
-                                {/* Restaurant Info*/}
-                                <h3>RestaurantName</h3>
-                                <span className="close">x</span>
-                                <button className="notes">Add Notes</button>
-                            </div>
-                            {/* Individual Restaurant */}
-                            <div>
-
-                                {/* Restaurant Info*/}
-                                <h3>RestaurantName</h3>
-                                <span className="close">x</span>
-                                <button className="notes">Add Notes</button>
-                            </div>
-
-
-
-
-
-
-
                         </div>
                     </div>
                 </section>
