@@ -1,4 +1,4 @@
-button {
+.find_restaurant_button {
     color: var(--color4);
     background-color: var(--color3);
     font-weight: bold;
@@ -7,7 +7,7 @@ button {
     border: none;
     box-shadow: 0 0 2px black;
 }
-button:hover {
+.find_restaurant_button:hover {
     background-color: var(--color2);
     color: var(--color4)
 }

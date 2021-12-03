@@ -19,12 +19,13 @@
     box-shadow: 0 0 2px black;
 }
 
+.button_invite_friend:hover {
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
 .text_invite{ 
     color: var(--color2);
     text-align: center;
     margin: 10px;  
-}
-.button_invite_friend:hover {
-    background-color: var(--color2);
-    color: var(--color4)
 }
