@@ -5,6 +5,10 @@ const friendSchema = new Schema({
             type: String,
             required: true
         },
+        friendUsername:{
+            type: String,
+            required: true
+        },
         friendID: {
             type: String,
             required: true,

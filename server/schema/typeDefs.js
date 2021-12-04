@@ -13,6 +13,7 @@ const typeDefs = gql`
   type Friends{
     _id: ID!
     userID: String
+    friendUsername: String
     friendID: String
     status: String
   }
@@ -31,6 +32,7 @@ const typeDefs = gql`
     login(username: String!, password: String!): Auth!
     addUser(username: String!, email: String!, password: String!): Auth!
     newFriend(emailFriend: String!): User
+    deleteFriendRequest(friendID: String!): User
   }
 
 `
