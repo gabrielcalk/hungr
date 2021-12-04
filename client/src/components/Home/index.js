@@ -35,6 +35,9 @@ export default function RenderHome() {
         // if componentHome is "signup_component", then render the component with the signIn questions
         } else if (componentHome === 'signin_component'){
             return <RenderSignIn/>
+        // if componentHome is "about_component", then render the component with the About Hungr component
+        } else if (componentHome === 'about_component'){
+            return <RenderAbout/>
         // if it is false for the variables above, then show the page that let the user signin
         } else{
             return <RenderButtonToSignIn/>
@@ -57,7 +60,6 @@ export default function RenderHome() {
                     </div>
                 </section>
             </main>
-            <RenderAbout/>
         </>
     )
 }

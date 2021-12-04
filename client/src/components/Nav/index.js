@@ -11,7 +11,7 @@ export default function RenderNavBar({setcomponentHome}) {
             <a href='/'><img className="logo_hungr" src={logo} alt="hungr logo"/></a>
             <ul>
                 {/* <Link to="/about"> */}
-                    <li><a href="#about_hungr">About Hungr</a></li>
+                    <li  onClick={() => setcomponentHome('about_component')}>About Hungr</li>
                 {/* </Link> */}
                 {/* <Link to="/SignIn"> */}
                     <li onClick={() => setcomponentHome('signin_component')}>Sign In</li>
