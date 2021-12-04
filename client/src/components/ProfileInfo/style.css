@@ -162,3 +162,12 @@
     float: right;
     color: var(--color3);
 } */
+
+@media only screen and (max-width: 750px) {
+   
+    
+}
+
+@media only screen and (max-width: 500px) {
+    
+}
