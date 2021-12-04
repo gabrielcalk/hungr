@@ -45,7 +45,7 @@ const Signup = () => {
             <div className="sign_up_card_body">
               {data ? (
                 <p>
-                  Success! Thank You For Signing Up With Hungr!{' '}
+                  You Made a Delicious Choice! Thank You For Signing Up With Hungr!{' '}
                 </p>
               ) : (
                 <form onSubmit={handleFormSubmit}>
