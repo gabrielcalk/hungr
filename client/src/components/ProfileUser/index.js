@@ -28,9 +28,11 @@ export default function RenderProfileComponent({setProfileComponent, username, e
                         <LocalDiningIcon className='heart_icon' color="action"/> 
                         <h4>Profile</h4>
                     </div>
-                    <RenderRestaurantRequest/>
-                    <RenderFriendRequest/>
-                    <RenderAddFriend/>
+                    <div>
+                        <RenderRestaurantRequest/>
+                        <RenderFriendRequest/>
+                        <RenderAddFriend/>
+                    </div>
                 </section>
             </section>
         </>

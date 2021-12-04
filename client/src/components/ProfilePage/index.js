@@ -36,6 +36,7 @@ export default function RenderProfile() {
             <RenderNavSignIn/>
             <main className="main_profile">
                 <RenderProfileComponent username={userData.username} email={userData.email} setProfileComponent={setProfileComponent}/>
+                <br></br>
                 {renderComponentOnRight()}   
             </main>
         </>
