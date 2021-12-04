@@ -1,6 +1,7 @@
 .user_profile{
+    margin-left: 0%;
     height: 35%;
-    width: 50%;
+    width: 35%;
     display: flexbox;
 }
 
