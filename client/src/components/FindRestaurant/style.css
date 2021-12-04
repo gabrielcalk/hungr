@@ -54,3 +54,18 @@
     background-color: var(--color2);
     color: var(--color4)
 }
+
+
+@media only screen and (max-width: 750px) {
+    .options_restaurant{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(226, 226, 226);
+        width: 100%;
+        padding: 60px 0px;
+        margin: 50px;
+    }
+    
+}
