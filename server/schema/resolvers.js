@@ -5,7 +5,7 @@ const { signToken } = require('../utils/auth');
 
 const resolvers = {
     Query: {
-      me: async (parent, args, context) => {
+      me: async (_, args, context) => {
         if (context.user) {
           const userData = await User.findOne({ _id: context.user._id });
   
@@ -14,6 +14,17 @@ const resolvers = {
   
         throw new AuthenticationError('Not logged in');
       },
+
+      meFriendRequest: async (_, args, context)=>{
+        if (context.user){
+            return await Friendlist.find(
+              {
+                friendID: context.user._id
+              }
+            )
+        }
+        throw new AuthenticationError('Not logged in');
+      }
     },
   
     Mutation: {
