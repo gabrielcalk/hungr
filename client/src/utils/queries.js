@@ -9,3 +9,13 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+export const QUERY_FRIENDS_REQUESTS = gql`
+  {
+    meFriendRequest {
+      status
+      userID
+      friendID
+    }
+  }
+`;

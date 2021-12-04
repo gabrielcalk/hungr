@@ -6,8 +6,14 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@mui/styles';
+import { useQuery } from '@apollo/client';
+import { QUERY_FRIENDS_REQUESTS } from '../../utils/queries';
+
 
 export default function RenderFriendRequest() {
+
+    const {loading, data} = useQuery(QUERY_FRIENDS_REQUESTS)
+    const friendsData = data?.meFriendRequest || {}
 
     const Accordion = styled((props) => (
         <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -68,6 +74,7 @@ export default function RenderFriendRequest() {
     });
 
     const classes = useStyles();
+    console.log(friendsData)
 
     return (
         <>
@@ -76,12 +83,20 @@ export default function RenderFriendRequest() {
                     <Typography className={classes.title}>Friend Requests</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className={classes.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
-                    </Typography>
+                {/* <div>
+                    {friendsData.map((friend) =>{
+                        return(
+                            <>
+                                <h4>{friend.userID}</h4>
+                                <h4>{friend.status}</h4>
+                                <div>
+                                    <button>Accept</button>
+                                    <button>Decline</button>
+                                </div>
+                            </>
+                        );
+                    })}
+                </div> */}
                 </AccordionDetails>
             </Accordion>
         </>

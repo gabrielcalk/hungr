@@ -10,6 +10,13 @@ const typeDefs = gql`
     friends: [String]!
   }
 
+  type Friends{
+    _id: ID!
+    userID: String
+    friendID: String
+    status: String
+  }
+
   type Auth {
     token: ID!
     user: User
@@ -17,6 +24,7 @@ const typeDefs = gql`
 
   type Query {
     me: User!
+    meFriendRequest: [Friends]!
   }
 
   type Mutation {
