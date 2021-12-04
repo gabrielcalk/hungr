@@ -1,11 +1,20 @@
 import './style.css';
 import RenderFindRestaurantSolo from '../FindRestaurant_solo'
 import RenderFindRestaurantFriend from '../FindRestaurant_friend'
+import {useState} from 'react'
 
 
-export default function RenderFindRestaurant({setRestaurantComponent}) {
+export default function RenderFindRestaurant() {
+
+    const [restaurantComponent, setRestaurantComponent] = useState('find_restaurant_friend')
  
-
+    function renderRestaurantForm() {
+        if (restaurantComponent === 'find_restaurant_friend') {
+            return <RenderFindRestaurantFriend/>
+        } else if (restaurantComponent === 'find_restaurant_solo') {
+            return <RenderFindRestaurantSolo/>
+        }
+    }
 
     return (
         <section className="component_right_restaurant">
@@ -21,8 +30,7 @@ export default function RenderFindRestaurant({setRestaurantComponent}) {
                 <h1>Indulge Alone</h1>
                 <button onClick={() => setRestaurantComponent('find_restraurant_solo')} className="button_invite">Find a Restaurant</button>
             </section>
-            <RenderFindRestaurantSolo/>
-            <RenderFindRestaurantFriend/>
+           {renderRestaurantForm()}
         </section>
     );
 }
