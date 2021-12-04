@@ -38,7 +38,7 @@ const Signin = () => {
     };
   
     return (
-      <main>
+      <main  className="sign_in_card_main">
         <div>
           <div>
             <h4>Sign In</h4>
