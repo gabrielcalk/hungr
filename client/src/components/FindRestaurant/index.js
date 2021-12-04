@@ -25,7 +25,7 @@ export default function RenderFindRestaurant() {
                 <h1>Invite A Friend</h1>
                 <button onClick={() => setRestaurantComponent('find_restaurant_friend')} className="button_invite">Restaurant Request</button>
 
-                <h1 className="or_invite">----- Or -----</h1>
+                <h1 className="or_invite"><span>Or</span></h1>
 
                 <h1>Indulge Alone</h1>
                 <button onClick={() => setRestaurantComponent('find_restraurant_solo')} className="button_invite">Find a Restaurant</button>
