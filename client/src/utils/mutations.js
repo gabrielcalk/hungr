@@ -41,3 +41,39 @@ mutation deleteFriendRequest($friendID: String!){
   }
 }
 `;
+
+export const SAVE_RESTAURANT = gql`
+mutation saveRestaurant ($restaurantData: RestaurantInput!) {
+  saveRestaurant (restaurantData: $restaurantData) {
+    _id
+    username
+    email
+    savedRestaurants {
+      restaurantId
+      address
+      hours
+      image
+      name
+      description
+      link
+    }
+  }
+}`
+
+export const DELETE_RESTAURANT = gql`
+mutation deleteRestaurant ($restaurantId: ID!) {
+  saveRestaurant (restaurantId: $restaurantId) {
+    _id
+    username
+    email
+    savedRestaurants {
+      restaurantId
+      address
+      hours
+      image
+      name
+      description
+      link
+    }
+  }
+}`
