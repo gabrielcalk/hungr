@@ -33,3 +33,11 @@ export const ADD_NEW_FRIEND = gql`
     }
   }
 `;
+
+export const DELETE_FRIEND_REQUEST = gql`
+mutation deleteFriendRequest($friendID: String!){
+	deleteFriendRequest(friendID: $friendID){
+    _id
+  }
+}
+`;

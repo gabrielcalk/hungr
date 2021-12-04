@@ -6,12 +6,15 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@mui/styles';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_FRIENDS_REQUESTS } from '../../utils/queries';
+import { DELETE_FRIEND_REQUEST } from '../../utils/mutations';
 
 
 export default function RenderFriendRequest() {
-
+    // Letting the user decline(delete) the request
+    const [deleteFriendRequest] = useMutation(DELETE_FRIEND_REQUEST)
+    // Getting the friends requests
     const {loading, data} = useQuery(QUERY_FRIENDS_REQUESTS)
     const friendsData = data?.meFriendRequest || {}
 
@@ -74,7 +77,16 @@ export default function RenderFriendRequest() {
     });
 
     const classes = useStyles();
-    console.log(friendsData)
+
+    async function handleDeleteFriendRequest(friendID){
+        try{
+            await deleteFriendRequest({
+                variables: {friendID: friendID}
+            })
+        }catch(e){
+            console.error(e)
+        }
+    }
 
     return (
         <>
@@ -83,20 +95,19 @@ export default function RenderFriendRequest() {
                     <Typography className={classes.title}>Friend Requests</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                {/* <div>
-                    {friendsData.map((friend) =>{
+                    {friendsData.length > 0 ?  friendsData.map((friend) =>{
                         return(
-                            <>
-                                <h4>{friend.userID}</h4>
-                                <h4>{friend.status}</h4>
+                            <div key={friend.friendID}>
+                                <h4>{friend.friendUsername}</h4>
                                 <div>
                                     <button>Accept</button>
-                                    <button>Decline</button>
+                                    <button onClick={() => handleDeleteFriendRequest(friend.friendID)}>Decline</button>
                                 </div>
-                            </>
+                            </div>
                         );
-                    })}
-                </div> */}
+                    }) :
+                        <h4>No friends requests were found</h4>
+                    }
                 </AccordionDetails>
             </Accordion>
         </>

@@ -16,6 +16,7 @@ export const QUERY_FRIENDS_REQUESTS = gql`
       status
       userID
       friendID
+      friendUsername
     }
   }
 `;

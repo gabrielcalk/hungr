@@ -8,7 +8,6 @@ const resolvers = {
       me: async (_, args, context) => {
         if (context.user) {
           const userData = await User.findOne({ _id: context.user._id });
-  
           return userData;
         }
   
@@ -55,10 +54,15 @@ const resolvers = {
           const friend = await User.findOne({
             email: emailFriend,
           });
+          
+          if(context.user._id === friend.id){
+            throw new Error('You cannot invite yourself');
+          }
   
           await Friendlist.create(
             {
               userID: context.user._id,
+              friendUsername: context.user.username,
               friendID: friend.id,
               status: 'pending'
             }
@@ -68,6 +72,16 @@ const resolvers = {
         }
         throw new AuthenticationError('You need to be logged in!');
       },
+
+      deleteFriendRequest: async (_, {friendID}, context)=>{
+        if(context.user){
+            return await Friendlist.findOneAndRemove(
+              {friendID: friendID},
+              {new: true}
+            )
+        }
+        throw new AuthenticationError('You need to be logged in!');
+      }
     },
   };
   
