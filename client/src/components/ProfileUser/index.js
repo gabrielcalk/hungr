@@ -19,7 +19,7 @@ export default function RenderProfileComponent({setProfileComponent, username, e
                         <h3>{email}</h3>
                     </div>
                 </div>
-                <section className="item">
+                <section className="itens_profile">
                     <div onClick={() => setProfileComponent('find_restaurant')} className="item_profile_user">
                         <LocalDiningIcon className='heart_icon' color="action"/>
                         <h4>Find Restaurant</h4>
