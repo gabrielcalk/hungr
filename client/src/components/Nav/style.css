@@ -41,7 +41,7 @@ li:last-child:hover {
 }
 
 /* Changing the size of the logo and the li on differents devides */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     li{
         margin: 15px;
     }
