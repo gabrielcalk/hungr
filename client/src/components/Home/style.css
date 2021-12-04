@@ -259,7 +259,8 @@ img:nth-child(3) {
 
 @media only screen and (max-width: 625px) {
     .section_home{
-        margin-left: 25%
+        margin-left: 25%;
+        margin-top: -10%
     }
     .title{
         text-align: center;
@@ -282,13 +283,15 @@ img:nth-child(3) {
 
 @media only screen and (max-width: 590px) {
     .section_home{
-        margin-left: 23%
+        margin-left: 23%;
+        margin-top: -9%
     }
 }
 
 @media only screen and (max-width: 550px) {
     .section_home{
-        margin-left: 21%
+        margin-left: 21%;
+        margin-top: -10%
     }
 
     .pic{
@@ -299,13 +302,15 @@ img:nth-child(3) {
 
 @media only screen and (max-width: 520px) {
     .section_home{
-        margin-left: 19%
+        margin-left: 19%;
+        margin-top: -10%
     }
 }
 
 @media only screen and (max-width: 485px) {
     .section_home{
-        margin-left: 17%
+        margin-left: 17%;
+        margin-top: -10%
     }
     .pic{
         margin-left: -25px;
@@ -314,13 +319,15 @@ img:nth-child(3) {
 
 @media only screen and (max-width: 460px) {
     .section_home{
-        margin-left: 15%
+        margin-left: 15%;
+        margin-top: -10%
     }
 }
 
 @media only screen and (max-width: 435px) {
     .section_home{
-        margin-left: 13%
+        margin-left: 13%;
+        margin-top: -11%
     }
     .pic{
         width: 240px;
@@ -330,43 +337,62 @@ img:nth-child(3) {
 
 @media only screen and (max-width: 407px) {
     .section_home{
-        margin-left: 11%
+        margin-left: 11%;
+        margin-top: -12%
     }
 }
 
 @media only screen and (max-width: 395px) {
     .section_home{
-        margin-left: 10%
+        margin-left: 10%;
+        margin-top: -12%
     }
 }
 
 @media only screen and (max-width: 380px) {
     .section_home{
-        margin-left: 8%
+        margin-left: 8%;
+        margin-top: -22%
     }
 }
 
 @media only screen and (max-width: 368px) {
     .section_home{
-        margin-left: 12%
+        margin-left: 12%;
+        margin-top: -14%
     }
 }
 
 @media only screen and (max-width: 355px) {
     .section_home{
-        margin-left: 10%
+        margin-left: 10%;
+        margin-top: -14%
     }
 }
 
 @media only screen and (max-width: 335px) {
     .section_home{
-        margin-left: 8%
+        margin-left: 8%;
+        margin-top: -14%
     }
 }
 
 @media only screen and (max-width: 315px) {
     .section_home{
-        margin-left: 6%
+        margin-left: 6%;
+        margin-top: -16%
+    }
+}
+@media only screen and (max-width: 301px) {
+    .section_home{
+        margin-left: 6%;
+        margin-top: -27%
+    }
+}
+@media only screen and (max-width: 283px) {
+    .section_home{
+        margin-left: 6%;
+        margin-top: -28%
     }
 }
 
@@ -379,11 +405,27 @@ img:nth-child(3) {
     }
 }
 
-@media only screen and (max-width: 220px) {
+@media only screen and (max-width: 224px) {
+    .section_home{
+        margin-left: 6%;
+        margin-top: -45%
+    }
     .pic{
         margin-top: 580px;
         width: 220px;
         height: 250px;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 220px) {
+    .section_home{
+        margin-left: 6%;
+        margin-top: -45%
+    }
+    .pic{
+        margin-top: 618px;
+        width: 190px;
+        height: 220px;
         margin-left: 15px;
     }
 }
