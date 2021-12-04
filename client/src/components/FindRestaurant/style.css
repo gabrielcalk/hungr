@@ -55,7 +55,7 @@
     color: var(--color4)
 }
 
-
+/* 
 @media only screen and (max-width: 750px) {
     .options_restaurant{
         display: flex;
@@ -68,5 +68,110 @@
         margin: 50px;
         word-wrap: inherit;
     }
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 750px) {
+    
+}
+
+@media only screen and (max-width: 690px) {
+    
+}
+
+@media only screen and (max-width: 655px) {
+    
+}
+
+@media only screen and (max-width: 625px) {
+    .component_right_restaurant{
+        margin-top: 99%;
+        margin-left: -61%;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    
+}
+
+@media only screen and (max-width: 550px) {
+   
+}
+
+@media only screen and (max-width: 520px) {
+   
+}
+
+@media only screen and (max-width: 485px) {
+    
+}
+
+@media only screen and (max-width: 460px) {
+   
+}
+
+@media only screen and (max-width: 435px) {
+    
+}
+
+@media only screen and (max-width: 407px) {
+    
+}
+
+@media only screen and (max-width: 395px) {
+    
+}
+
+@media only screen and (max-width: 380px) {
+    
+}
+
+@media only screen and (max-width: 368px) {
+    
+}
+
+@media only screen and (max-width: 355px) {
+    
+}
+
+@media only screen and (max-width: 335px) {
+    
+}
+
+@media only screen and (max-width: 315px) {
+    
+}
+@media only screen and (max-width: 301px) {
+    
+}
+@media only screen and (max-width: 283px) {
+    
+}
+
+@media only screen and (max-width: 250px) {
+    
+}
+
+@media only screen and (max-width: 224px) {
+    
+}
+
+@media only screen and (max-width: 220px) {
     
 }
