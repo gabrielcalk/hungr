@@ -44,9 +44,11 @@
 
 
 
+
+
 @media only screen and (max-width: 800px) {
     .sign_in_card_main {
-        margin-left: 32%;
+        margin-left: 43.5%;
     }
     .sign_in_card_body{
         margin-left: -15%;
@@ -55,7 +57,7 @@
 
 @media only screen and (max-width: 750px) {
     .sign_in_card_main {
-        margin-left: 31.5%;
+        margin-left: 43.5%;
     }
     .sign_in_card_body{
         margin-left: -16%;
@@ -64,7 +66,7 @@
 
 @media only screen and (max-width: 690px) {
     .sign_in_card_main {
-        margin-left: 30.5%;
+        margin-left: 42.5%;
     }
     .sign_in_card_body{
         margin-left: -15%;
@@ -73,181 +75,181 @@
 
 @media only screen and (max-width: 655px) {
     .sign_in_card_main {
-        margin-left: 30%;
-    }
-    .sign_in_card_body{
-        margin-left: -16%;
-    }
-}
-
-@media only screen and (max-width: 625px) {
-    .sign_in_card_main {
-        margin-left: 29.5%;
-    }
-    .sign_in_card_body{
-        margin-left: -16%;
-    }
-}
-
-@media only screen and (max-width: 590px) {
-    .sign_in_card_main {
-        margin-left: 28.5%;
+        margin-left: 42%;
+        width: 35%;
     }
     .sign_in_card_body{
         margin-left: -17%;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 625px) {
     .sign_in_card_main {
-        margin-left: 27.5%;
+        margin-left: 43%;
     }
     .sign_in_card_body{
-        margin-left: -18%;
+        margin-left: -17.5%;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .sign_in_card_main {
+        margin-left: 41.5%;
+    }
+    .sign_in_card_body{
+        margin-left: -20%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sign_in_card_main {
+        margin-left: 40.5%;
+    }
+    .sign_in_card_body{
+        margin-left: -21.5%;
     }
 }
 
 @media only screen and (max-width: 520px) {
     .sign_in_card_main {
-        margin-left: 26.5%;
+        margin-left: 41%;
+        width: 33%;
     }
     .sign_in_card_body{
-        margin-left: -19%;
+        margin-left: -36%;
     }
     
 }
 
 @media only screen and (max-width: 485px) {
     .sign_in_card_main {
-        margin-left: 25.5%;
+        margin-left: 41%;
     }
     .sign_in_card_body{
-        margin-left: -21%;
+        margin-left: -44%;
     }
 }
 
 @media only screen and (max-width: 460px) {
     .sign_in_card_main {
-        margin-left: 24.5%;
+        margin-left: 41%;
     }
     .sign_in_card_body{
-        margin-left: -22%;
+        margin-left: -48%;
     }
 }
 
 @media only screen and (max-width: 435px) {
     .sign_in_card_main {
-        margin-left: 23.5%;
+        margin-left: 41%;
     }
     .sign_in_card_body{
-        margin-left: -23%;
+        margin-left: -53%;
     }
 }
 
 @media only screen and (max-width: 407px) {
     .sign_in_card_main {
-        margin-left: 22%;
+        margin-left: 41%;
     }
     .sign_in_card_body{
-        margin-left: -25%;
+        margin-left: -55%;
     }
 }
 
 @media only screen and (max-width: 395px) {
     .sign_in_card_main {
-        margin-left: 21%;
+        margin-left: 41%;
     }
     .sign_in_card_body{
-        margin-left: -25%;
+        margin-left: -57%;
     }
 }
 
 @media only screen and (max-width: 380px) {
     .sign_in_card_main {
-        margin-left: 20.5%;
+        margin-left: 41%;
     }
     .sign_in_card_body{
-        margin-left: -27%;
+        margin-left: -64%;
     }
 }
 
 @media only screen and (max-width: 368px) {
     .sign_in_card_main {
-        margin-left: 23%;
+        margin-left: 43%;
     }
     .sign_in_card_body{
-        margin-left: -27%;
+        margin-left: -64%;
     }
 }
 
 @media only screen and (max-width: 355px) {
     .sign_in_card_main {
-        margin-left: 22%;
+        margin-left: 43%;
     }
     .sign_in_card_body{
-        margin-left: -28%;
+        margin-left: -68%;
     }
 }
 
 @media only screen and (max-width: 335px) {
     .sign_in_card_main {
-        margin-left: 21%;
+        margin-left: 43%;
     }
     .sign_in_card_body{
-        margin-left: -30%;
+        margin-left: -68%;
     }
 }
 
 @media only screen and (max-width: 315px) {
     .sign_in_card_main {
-        margin-left: 19.5%;
+        margin-left: 41%;
     }
     .sign_in_card_body{
-        margin-left: -32%;
+        margin-left: -73%;
     }
 }
 @media only screen and (max-width: 301px) {
     .sign_in_card_main {
-        margin-left: 18%;
+        margin-left: 40%;
     }
     .sign_in_card_body{
-        margin-left: -33%;
+        margin-left: -79%;
     }
 }
 @media only screen and (max-width: 283px) {
     .sign_in_card_main {
-        margin-left: 16.5%;
+        margin-left: 40%;
     }
     .sign_in_card_body{
-        margin-left: -35%;
+        margin-left: -86%;
     }
 }
 
 @media only screen and (max-width: 250px) {
     .sign_in_card_main {
-        margin-left: 13%;
+        margin-left: 40%;
     }
     .sign_in_card_body{
-        margin-left: -40%;
+        margin-left: -100%;
     }
 }
 
 @media only screen and (max-width: 224px) {
     .sign_in_card_main {
-        margin-left: 9%;
+        margin-left: 40%;
     }
     .sign_in_card_body{
-        margin-left: -44%;
+        margin-left: -130%;
     }
 }
 
 @media only screen and (max-width: 220px) {
     .sign_in_card_main {
-        margin-left: 9%;
+        margin-left: 40%;
     }
     .sign_in_card_body{
-        margin-left: -44%;
+        margin-left: -120%;
     }
 }
-
-
