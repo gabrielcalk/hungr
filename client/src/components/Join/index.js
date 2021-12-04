@@ -38,7 +38,7 @@ const Signup = () => {
     };
   
     return (
-      <main>
+      <main className="sign_up_card_main">
         <div>
           <div>
             <h4>Sign Up</h4>
