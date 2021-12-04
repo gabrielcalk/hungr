@@ -65,6 +65,7 @@
 }
 
 .favoriteslistCard{
+    display: flex;
     border: 1px solid rgb(180, 180, 180);
     height: 15vh;
     width: 28vw;
