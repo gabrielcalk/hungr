@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const friendSchema = new Schema({
+const friendInvitationsSchema = new Schema({
         userID:{
             type: String,
             required: true
@@ -20,6 +20,6 @@ const friendSchema = new Schema({
 });
  
 
-const FriendList = model('FriendList', friendSchema);
+const FriendInvitation = model('FriendList', friendInvitationsSchema);
 
-module.exports = FriendList;
+module.exports = FriendInvitation;

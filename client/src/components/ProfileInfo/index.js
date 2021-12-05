@@ -1,67 +1,77 @@
 import './style.css'
 import steve_jobs from './images/steve_jobs.jpeg'
 import placeholder_brazilian_steakhouse from './images/placeholder_brazilian_steakhoues.jpeg'
-
+import { useQuery, useMutation } from '@apollo/client';
+import {QUERY_FRIENDS} from '../../utils/queries';
+import {DELETE_FRIEND} from '../../utils/mutations'
 
 export default function RenderProfileInfo() {
+        // Getting the friends
+        const {data: dataFriends} = useQuery(QUERY_FRIENDS)
+        const friendsData = dataFriends?.meFriends || {}
+        console.log(friendsData.friends)
+
+        const [deleteFriend] = useMutation(DELETE_FRIEND)
+
+        async function handleDeleteFriend(friendUsername){
+            try{
+                await deleteFriend({
+                    variables: {friendUsername}
+                })
+                window.location.replace('/user')
+            }catch(e){
+                console.erro(e)
+            }
+        }
+
     return (
         <>
             {/* Account Info page Component */}
             <div className="profile_info">
-
                 {/* User Personal Account Info Box*/}
                 <div className="accountInfo">
-
                     {/* Account Title */}
                     <div className="sectionTitle">
-                    <h2>Account</h2>
+                        <h2>Account</h2>
                     </div>
                     <br></br>
                     {/* Account Info */}
                     <div>
                         <button className="edit">Edit</button>
-                            <div className="nameEmail">
-                                <p>Username:</p>
-                                <p>Email:</p>
-                            </div>
+                        <div className="nameEmail">
+                            <p>Username:</p>
+                            <p>Email:</p>
+                        </div>
                     </div>
-
                 </div>
 
                 {/* User's Friendlist Section */}
                 <section className="section_friends">
                     <div className="friendlist">
-
                     {/* Friendlist Title */}
                         <div className="sectionTitle">
                             <h2>Friends</h2>
                         </div>
-
                     {/* Scrolling list */}
                         <div className="scrollingList">
-
                         {/* Individual Friend */}
-                            <div className="friendlistCard">
-
-                                {/* Friend Info     */}
-                                <p>Friend Name</p>
-                                <button className="remove">Remove</button>
-                                <div >
-                                    <img className="friendListImg" src={steve_jobs} alt='Steve Jobs'/>
+                            {friendsData.friends ? friendsData.friends.map((friend) => {
+                                return(
+                                <div key={friend} className="friendlistCard">
+                                    {/* Friend Info     */}
+                                    <p>{friend}</p>
+                                    <button className="remove" onClick={() => handleDeleteFriend(friend)}>Remove</button>
+                                    <div >
+                                        <img className="friendListImg" src={steve_jobs} alt={friend}/>
+                                    </div>
                                 </div>
-                                {/* <span className="close">x</span> */}
-                            </div>
-                        {/* Individual Friend */}
+                                )
+                            }): 
                             <div className="friendlistCard">
-
-                                {/* Friend Info     */}
-                                <p>Friend Name</p>
-                                <button className="remove">Remove</button>
-                                <div >
-                                    <img className="friendListImg" src={steve_jobs} alt='Steve Jobs'/>
-                                </div>
-                                {/* <span className="close">x</span> */}
+                            {/* Friend Info*/}
+                                <p>Friends were not found</p>
                             </div>
+                            }
                         </div>
                     </div>
 

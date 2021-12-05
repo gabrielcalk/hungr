@@ -20,3 +20,11 @@ export const QUERY_FRIENDS_REQUESTS = gql`
     }
   }
 `;
+
+export const QUERY_FRIENDS = gql`
+  {
+    meFriends{
+      friends
+    }
+  }
+`
