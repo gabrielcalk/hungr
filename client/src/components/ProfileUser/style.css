@@ -1,6 +1,8 @@
 .user_profile{
+    margin-left: 0%;
     height: 35%;
-    width: 17%;
+    width: 35%;
+    display: flexbox;
 }
 
 .photo_and_info{
@@ -13,6 +15,7 @@
 }
 
 .photo_user{
+    display: block;
     border-radius: 50%;
     width: 65%;
 }
@@ -53,8 +56,119 @@
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 1100px) {
+/* @media only screen and (max-width: 1100px) {
     .user_profile{
         width: 25vw;
     }
+}
+
+
+@media only screen and (max-width: 750px) {
+    
+    .user_profile{
+        height: 100%;
+        width: 90%;
+        display: flexbox;
+    }
+} */
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .user_profile{
+        width: 35%;
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    
+}
+
+@media only screen and (max-width: 690px) {
+    
+}
+
+@media only screen and (max-width: 655px) {
+    
+}
+
+@media only screen and (max-width: 625px) {
+    /* .user_profile{
+        margin-left: 30%;
+        width: 400px;
+        margin: 5%;
+    } */
+    
+}
+
+@media only screen and (max-width: 590px) {
+    
+}
+
+@media only screen and (max-width: 550px) {
+   
+}
+
+@media only screen and (max-width: 520px) {
+   
+}
+
+@media only screen and (max-width: 485px) {
+    
+}
+
+@media only screen and (max-width: 460px) {
+   
+}
+
+@media only screen and (max-width: 435px) {
+    
+}
+
+@media only screen and (max-width: 407px) {
+    
+}
+
+@media only screen and (max-width: 395px) {
+    
+}
+
+@media only screen and (max-width: 380px) {
+    
+}
+
+@media only screen and (max-width: 368px) {
+    
+}
+
+@media only screen and (max-width: 355px) {
+    
+}
+
+@media only screen and (max-width: 335px) {
+    
+}
+
+@media only screen and (max-width: 315px) {
+    
+}
+@media only screen and (max-width: 301px) {
+    
+}
+@media only screen and (max-width: 283px) {
+    
+}
+
+@media only screen and (max-width: 250px) {
+    
+}
+
+@media only screen and (max-width: 224px) {
+    
+}
+
+@media only screen and (max-width: 220px) {
+    
 }

@@ -46,9 +46,9 @@ export const ACCEPT_FRIEND_REQUEST = gql`
   mutation acceptFriendRequest($friendUsername: String!) {
     acceptFriendRequest(friendUsername: $friendUsername) {
       username
+    }
   }
-}
-`
+`;
 
 export const DELETE_FRIEND = gql`
   mutation deleteFriend($friendUsername: String!){
@@ -56,4 +56,40 @@ export const DELETE_FRIEND = gql`
       friends
     }
   }
-`
+`;
+
+export const SAVE_RESTAURANT = gql`
+mutation saveRestaurant ($restaurantData: RestaurantInput!) {
+  saveRestaurant (restaurantData: $restaurantData) {
+    _id
+    username
+    email
+    savedRestaurants {
+      restaurantId
+      address
+      hours
+      image
+      name
+      description
+      link
+    }
+  }
+}`
+
+export const DELETE_RESTAURANT = gql`
+mutation deleteRestaurant ($restaurantId: ID!) {
+  saveRestaurant (restaurantId: $restaurantId) {
+    _id
+    username
+    email
+    savedRestaurants {
+      restaurantId
+      address
+      hours
+      image
+      name
+      description
+      link
+    }
+  }
+}`
