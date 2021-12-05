@@ -4,6 +4,7 @@ import RenderProfileComponent from '../ProfileUser/index'
 import RenderProfileInfo from '../ProfileInfo';
 import RenderFindRestaurant from '../FindRestaurant/index'
 import { QUERY_ME } from '../../utils/queries';
+import { isTokenExpired } from '../../utils/auth'
 import {useState} from 'react'
 import './style.css'
 import { useQuery } from '@apollo/client';
