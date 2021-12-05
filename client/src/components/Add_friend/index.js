@@ -8,6 +8,7 @@ export default function RenderAddFriend() {
 
     const [friendEmail, setFriendEmail] = useState('')
     const [messageNewFriend, setMessageNewFriend] = useState('')
+    const [errorInvite, setErrorInvite] = useState('')
     const [newFriend, { error, data }] = useMutation(ADD_NEW_FRIEND);
 
     const friend = {emailFriend: friendEmail}
@@ -28,6 +29,7 @@ export default function RenderAddFriend() {
             setMessageNewFriend('Invitation Sent!')
           } catch (e) {
             console.error(e);
+            setErrorInvite('You already sent one invitation to this user or this is one invalid email')
           }
     }
 
@@ -42,6 +44,7 @@ export default function RenderAddFriend() {
                     
                     <div className="text_invite">
                         {messageNewFriend}
+                        {errorInvite}
                     </div>
                 </div>
             </form>

@@ -2,6 +2,7 @@
   "name": "hungr",
   "version": "1.0.0",
   "description": "",
+  "proxy": "http://localhost:3001",
   "engines": {
     "node": "14.16.1"
   },

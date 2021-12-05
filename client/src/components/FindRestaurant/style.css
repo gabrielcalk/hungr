@@ -3,9 +3,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 48%;
     height: 100%;
-    margin-left: 60px;
+    margin-left: 10%;
+}
+
+.invite_friend_title, .indulge_alone_title {
+    font-size: 50px;
+    text-align: center;
 }
 
 .div_title_component_right{
@@ -58,6 +63,8 @@
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 2px black;
+    text-align: center;
+    font-size: 22px;
 }
 
 .button_invite:hover{
@@ -65,7 +72,7 @@
     color: var(--color4)
 }
 
-
+/* 
 @media only screen and (max-width: 750px) {
     .options_restaurant{
         display: flex;
@@ -78,5 +85,404 @@
         margin: 50px;
         word-wrap: inherit;
     }
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1358px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 44px;
+        margin-left: 8%;
+    }
+    .button_invite{
+        font-size: 22px;
+    }
+    .options_restaurant{
+        min-width: 200px;
+    }
+}
+@media only screen and (max-width: 1299px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 43px;
+        margin-left: 8%;
+    }
+    .button_invite{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 1269px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 42px;
+        margin-left: 8%;
+    }
+    .button_invite{
+        font-size: 22px;
+    }
+    .options_restaurant{
+        width: 50%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1239px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 41px;
+        margin-left: 8%;
+    }
+    .button_invite{
+        font-size: 22px;
+    }
+    .options_restaurant{
+        width: 51%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1210px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 40px;
+        margin-left: 7%;
+    }
+    .button_invite{
+        font-size: 20px;
+    }
+    .options_restaurant{
+        width: 52%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1168px) {
+    .component_right_restaurant{
+        margin-left: 8%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 38px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 20px;
+    }
+    .options_restaurant{
+        width: 53%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1135px) {
+    .component_right_restaurant{
+        margin-left: 8%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 38px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 55%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1097px) {
+    .component_right_restaurant{
+        margin-left: 8%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 37px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 58%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1069px) {
+    .component_right_restaurant{
+        margin-left: 8%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 62%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1040px) {
+    .component_right_restaurant{
+        margin-left: 6%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 65%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1000px) {
+    .component_right_restaurant{
+        margin-left: 5%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 960px) {
+    .component_right_restaurant{
+        margin-left: 3%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+    .component_right_restaurant{
+        margin-top: 70%;
+        margin-left: -42%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 750px) {
+    .component_right_restaurant{
+        margin-top: 72%;
+        margin-left: -42%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 720px) {
+    .component_right_restaurant{
+        margin-top: 74%;
+        margin-left: -42%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 690px) {
+    .component_right_restaurant{
+        margin-top: 76%;
+        margin-left: -42%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 660px) {
+    .component_right_restaurant{
+        margin-top: 78%;
+        margin-left: -42%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 630px) {
+    .component_right_restaurant{
+        margin-top: 80%;
+        margin-left: -42%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 590px) {
+    
+}
+
+@media only screen and (max-width: 550px) {
+   
+}
+
+@media only screen and (max-width: 520px) {
+   
+}
+
+@media only screen and (max-width: 485px) {
+    
+}
+
+@media only screen and (max-width: 460px) {
+   
+}
+
+@media only screen and (max-width: 435px) {
+    
+}
+
+@media only screen and (max-width: 407px) {
+    
+}
+
+@media only screen and (max-width: 395px) {
+    
+}
+
+@media only screen and (max-width: 380px) {
+    
+}
+
+@media only screen and (max-width: 368px) {
+    
+}
+
+@media only screen and (max-width: 355px) {
+    
+}
+
+@media only screen and (max-width: 335px) {
+    
+}
+
+@media only screen and (max-width: 315px) {
+    
+}
+@media only screen and (max-width: 301px) {
+    
+}
+@media only screen and (max-width: 283px) {
+    
+}
+
+@media only screen and (max-width: 250px) {
+    
+}
+
+@media only screen and (max-width: 224px) {
+    
+}
+
+@media only screen and (max-width: 220px) {
     
 }

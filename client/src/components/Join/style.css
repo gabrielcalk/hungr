@@ -48,7 +48,7 @@
 
 @media only screen and (max-width: 800px) {
     .sign_up_card_main {
-        margin-left: 43.5%;
+        margin-left: 34%;
     }
     .sign_up_card_body{
         margin-left: -15%;
@@ -57,7 +57,7 @@
 
 @media only screen and (max-width: 750px) {
     .sign_up_card_main {
-        margin-left: 43.5%;
+        margin-left: 39%;
     }
     .sign_up_card_body{
         margin-left: -16%;
@@ -66,7 +66,7 @@
 
 @media only screen and (max-width: 690px) {
     .sign_up_card_main {
-        margin-left: 42.5%;
+        margin-left: 39%;
     }
     .sign_up_card_body{
         margin-left: -15%;
@@ -75,7 +75,7 @@
 
 @media only screen and (max-width: 655px) {
     .sign_up_card_main {
-        margin-left: 42%;
+        margin-left: 37%;
         width: 35%;
     }
     .sign_up_card_body{
@@ -85,7 +85,7 @@
 
 @media only screen and (max-width: 625px) {
     .sign_up_card_main {
-        margin-left: 43%;
+        margin-left: 37%;
     }
     .sign_up_card_body{
         margin-left: -17.5%;
@@ -94,7 +94,7 @@
 
 @media only screen and (max-width: 590px) {
     .sign_up_card_main {
-        margin-left: 41.5%;
+        margin-left: 29.5%;
     }
     .sign_up_card_body{
         margin-left: -20%;
@@ -103,7 +103,7 @@
 
 @media only screen and (max-width: 550px) {
     .sign_up_card_main {
-        margin-left: 40.5%;
+        margin-left: 37%;
     }
     .sign_up_card_body{
         margin-left: -21.5%;
