@@ -2,6 +2,10 @@
 import './style.css'
 import {useState} from 'react'
 import Auth from '../../utils/auth';
+// importing the foods images
+import cake from '../Home/images/cake.jpg'
+import chicken from '../Home/images/chicken.jpg'
+import salad from '../Home/images/salad.jpg'
 
 
 
@@ -49,6 +53,11 @@ export default function RenderHome() {
             : <RenderNavBar setcomponentHome={setcomponentHome}/>}
             <main className="main_home">
                 {renderComponentHome()}
+                <div className="pic-ctn">
+                        <img src={cake} alt="" className="pic"/>
+                        <img src={chicken} alt="" className="pic"/>
+                        <img src={salad} alt="" className="pic"/>
+                    </div>
             </main>
         </>
     )

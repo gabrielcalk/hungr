@@ -1,15 +1,13 @@
-// importing the foods images
-import cake from '../Home/images/cake.jpg'
-import chicken from '../Home/images/chicken.jpg'
-import salad from '../Home/images/salad.jpg'
+
+import './style.css'
 
 
 
 
 export default function renderInfo({setcomponentHome}) {
     return (
-        <section className="section_home">
-            <div>
+        <section className="grid-box section_home">
+            <div className="">
             <h1 className="title">Treat Yourself And Your Friends.</h1>
             <p className="p_home">Can't decide where to eat? With Hungr, you can find 
                 restaurants in your area that you and your 
@@ -21,13 +19,6 @@ export default function renderInfo({setcomponentHome}) {
                 <button onClick={() => setcomponentHome('signin_component')} className="button_signIn">Sign In</button>
             </section>
             </div>
-            <div className="section_home">
-                    <div className="pic-ctn">
-                        <img src={cake} alt="" className="pic"/>
-                        <img src={chicken} alt="" className="pic"/>
-                        <img src={salad} alt="" className="pic"/>
-                    </div>
-                </div>
         </section>
         
     )

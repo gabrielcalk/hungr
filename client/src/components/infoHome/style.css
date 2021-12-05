@@ -1,0 +1,29 @@
+.grid-box {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat (150px, 2fr);
+    grid-auto-rows: minmax(150px, 1fr);
+
+}
+
+.grid-item {
+    border: 5px solid var(--light-blue);
+    grid-column: 1 / -1;
+    background-color: var(--dark-blue);
+    color: var(--dark-gray);
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.8rem;
+}
+
+.grid-item:first-child {
+    grid-column: 1 / -1;
+}
