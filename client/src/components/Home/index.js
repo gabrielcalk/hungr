@@ -3,10 +3,7 @@ import './style.css'
 import {useState} from 'react'
 import Auth from '../../utils/auth';
 
-// importing the foods images
-import cake from './images/cake.jpg'
-import chicken from './images/chicken.jpg'
-import salad from './images/salad.jpg'
+
 
 // importing the components that could be display on the page
 import RenderInfo from '../infoHome/index'
@@ -52,13 +49,6 @@ export default function RenderHome() {
             : <RenderNavBar setcomponentHome={setcomponentHome}/>}
             <main className="main_home">
                 {renderComponentHome()}
-                <section className="section_home">
-                    <div className="pic-ctn">
-                        <img src={cake} alt="" className="pic"/>
-                        <img src={chicken} alt="" className="pic"/>
-                        <img src={salad} alt="" className="pic"/>
-                    </div>
-                </section>
             </main>
         </>
     )
