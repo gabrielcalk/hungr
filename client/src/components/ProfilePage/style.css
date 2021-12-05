@@ -5,6 +5,12 @@
     margin: 0 100px 0 100px;
 }
 
+.logged_out_error {
+    display: flex;
+    justify-content: center;
+    margin: 0 100px 0 100px;
+}
+
 
 
 

@@ -1,10 +1,11 @@
 // importing the nav bar to appear when the user is logged in
 import RenderNavSignIn from "../NavLogin/index";
+import RenderNavBar from "../Nav";
 import RenderProfileComponent from '../ProfileUser/index'
 import RenderProfileInfo from '../ProfileInfo';
 import RenderFindRestaurant from '../FindRestaurant/index'
 import { QUERY_ME } from '../../utils/queries';
-import { isTokenExpired } from '../../utils/auth'
+import { AuthService } from '../../utils/auth'
 import {useState} from 'react'
 import './style.css'
 import { useQuery } from '@apollo/client';
@@ -25,11 +26,14 @@ export default function RenderProfile() {
 
     if (!userData?.username) {
         return (
-          <h4>
+            <>
+            <RenderNavBar/>
+            <main className="logged_out_error">
             You need to be logged in to see this. Use the navigation links above to
             sign up or log in!
-          </h4>
-        );
+          </main>
+        </>
+            );
     }
     
     return (
