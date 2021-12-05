@@ -6,7 +6,7 @@ export default function RenderfriendRestaurant(){
     return (
             <section>
                 <section>   
-                <h4>Find Restaurant - Indulge With A find_restaurant_friend_card_body!</h4>
+                {/* <h4>Find Restaurant - Indulge With A find_restaurant_friend_card_body!</h4> */}
                 </section> 
                     <section className="find_restaurant_solo_card_body">
                    <form>

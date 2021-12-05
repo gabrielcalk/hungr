@@ -19,7 +19,7 @@ export default function RenderProfile() {
             return <RenderFindRestaurant/>
         } else if(profileComponent === 'profile_info'){
             return <RenderProfileInfo/>
-        }
+        } 
     }
 
     if (!userData?.username) {

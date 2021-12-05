@@ -8,7 +8,7 @@ export default function RendersoloRestaurant(){
     return (
             <section>   
                 <section>
-                    <h4>Find Restaurant - Indulge Alone!</h4>
+                    {/* <h4>Find Restaurant - Indulge Alone!</h4> */}
                 </section>
                     <section className="find_restaurant_solo_card_body">
                         <form>

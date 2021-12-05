@@ -38,11 +38,21 @@
 }
 
 .or_invite{
-    margin: 20px 0;
+    width: 70%; 
+    text-align: center; 
+    border-bottom: 3px solid #000; 
+    line-height: 0.0em;
+    margin: 40px;
+}
+
+.or_invite span {
+    background-color: rgb(226, 226, 226); 
+    padding:0 10px; 
+    font-size: 2rem;
 }
 
 .button_invite{
-    width: 40%;
+    width: 43%;
     background-color: var(--color3);
     padding: 8px;
     margin-left: 10px;
