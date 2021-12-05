@@ -6,8 +6,8 @@ import {useState} from 'react'
 
 export default function RenderFindRestaurant() {
 
-    const [restaurantComponent, setRestaurantComponent] = useState('find_restaurant_friend')
- 
+    const [restaurantComponent, setRestaurantComponent] = useState('find_restaurant')
+    
     function renderRestaurantForm() {
         if (restaurantComponent === 'find_restaurant_friend') {
             return <RenderFindRestaurantFriend/>
@@ -28,7 +28,7 @@ export default function RenderFindRestaurant() {
                 <h1 className="or_invite"><span>Or</span></h1>
 
                 <h1>Indulge Alone</h1>
-                <button onClick={() => setRestaurantComponent('find_restraurant_solo')} className="button_invite">Find a Restaurant</button>
+                <button onClick={() => setRestaurantComponent('find_restaurant_solo')} className="button_invite">Find a Restaurant</button>
             </section>
            {renderRestaurantForm()}
         </section>
