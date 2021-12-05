@@ -5,7 +5,7 @@
     align-items: center;
     width: 48%;
     height: 100%;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 
 .invite_friend_title, .indulge_alone_title {
@@ -304,8 +304,8 @@
 }
 @media only screen and (max-width: 750px) {
     .component_right_restaurant{
-        margin-top: 72%;
-        margin-left: -42%;
+        margin-top: 75%;
+        margin-left: -45%;
     }
     .div_title_component_right{
         width: 90%;
@@ -325,8 +325,8 @@
 }
 @media only screen and (max-width: 720px) {
     .component_right_restaurant{
-        margin-top: 74%;
-        margin-left: -42%;
+        margin-top: 79%;
+        margin-left: -45%;
     }
     .div_title_component_right{
         width: 90%;
@@ -346,11 +346,11 @@
 }
 @media only screen and (max-width: 690px) {
     .component_right_restaurant{
-        margin-top: 76%;
-        margin-left: -42%;
+        margin-top: 87%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -360,18 +360,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 660px) {
     .component_right_restaurant{
-        margin-top: 78%;
-        margin-left: -42%;
+        margin-top: 92%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -381,18 +381,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 630px) {
     .component_right_restaurant{
-        margin-top: 82%;
-        margin-left: -42%;
+        margin-top: 92%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -402,18 +402,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 590px) {
     .component_right_restaurant{
-        margin-top: 86%;
-        margin-left: -42%;
+        margin-top: 98%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -423,18 +423,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 550px) {
     .component_right_restaurant{
-        margin-top: 90%;
-        margin-left: -42%;
+        margin-top: 101%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -444,18 +444,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 520px) {
     .component_right_restaurant{
-        margin-top: 92%;
-        margin-left: -42%;
+        margin-top: 103%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -465,18 +465,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 500px) {
     .component_right_restaurant{
-        margin-top: 94%;
-        margin-left: -42%;
+        margin-top: 106%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -486,18 +486,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 488px) {
     .component_right_restaurant{
-        margin-top: 101%;
-        margin-left: -42%;
+        margin-top: 109%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -507,18 +507,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 475px) {
     .component_right_restaurant{
-        margin-top: 104%;
-        margin-left: -42%;
+        margin-top: 109%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -528,18 +528,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 459px) {
     .component_right_restaurant{
-        margin-top: 106%;
-        margin-left: -42%;
+        margin-top: 112%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -549,7 +549,7 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
@@ -557,10 +557,10 @@
 @media only screen and (max-width: 442px) {
     .component_right_restaurant{
         margin-top: 115%;
-        margin-left: -42%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -570,18 +570,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 420px) {
     .component_right_restaurant{
-        margin-top: 119%;
-        margin-left: -42%;
+        margin-top: 118%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -591,18 +591,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 408px) {
     .component_right_restaurant{
-        margin-top: 125%;
-        margin-left: -42%;
+        margin-top: 122%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -612,18 +612,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 399px) {
     .component_right_restaurant{
-        margin-top: 130%;
-        margin-left: -42%;
+        margin-top: 125%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -633,18 +633,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 380px) {
     .component_right_restaurant{
-        margin-top: 135%;
-        margin-left: -42%;
+        margin-top: 128%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -654,18 +654,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 372px) {
     .component_right_restaurant{
-        margin-top: 142%;
-        margin-left: -42%;
+        margin-top: 132%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -675,18 +675,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 357px) {
     .component_right_restaurant{
-        margin-top: 146%;
-        margin-left: -42%;
+        margin-top: 137%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -696,18 +696,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 345px) {
     .component_right_restaurant{
-        margin-top: 153%;
-        margin-left: -42%;
+        margin-top: 141%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -717,18 +717,18 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
         min-width: 200px;
     }
     
 }
 @media only screen and (max-width: 328px) {
     .component_right_restaurant{
-        margin-top: 158%;
-        margin-left: -42%;
+        margin-top: 149%;
+        margin-left: -50%;
     }
     .div_title_component_right{
-        width: 90%;
+        width: 110%;
     }
     .invite_friend_title, .indulge_alone_title {
         font-size: 36px;
@@ -738,7 +738,238 @@
         font-size: 18px;
     }
     .options_restaurant{
-        width: 70%;
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 315px) {
+    .component_right_restaurant{
+        margin-top: 154%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 303px) {
+    .component_right_restaurant{
+        margin-top: 154%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 292px) {
+    .component_right_restaurant{
+        margin-top: 164%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 290px) {
+    .component_right_restaurant{
+        margin-top: 164%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 284px) {
+    .component_right_restaurant{
+        margin-top: 174%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 270px) {
+    .component_right_restaurant{
+        margin-top: 179%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 258px) {
+    .component_right_restaurant{
+        margin-top: 194%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 249px) {
+    .component_right_restaurant{
+        margin-top: 199%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 238px) {
+    .component_right_restaurant{
+        margin-top: 215%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 228px) {
+    .component_right_restaurant{
+        margin-top: 222%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 220px) {
+    .component_right_restaurant{
+        margin-top: 227%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
         min-width: 200px;
     }
     
