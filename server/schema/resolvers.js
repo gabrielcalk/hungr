@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Friendlist } = require('../models');
+const { User, FriendInvitation } = require('../models');
+const { findOneAndRemove } = require('../models/userMongo');
 const { signToken } = require('../utils/auth');
 
 
@@ -16,11 +17,22 @@ const resolvers = {
 
       meFriendRequest: async (_, args, context)=>{
         if (context.user){
-            return await Friendlist.find(
+            return await FriendInvitation.find(
               {
                 friendID: context.user._id
               }
             )
+        }
+        throw new AuthenticationError('Not logged in');
+      },
+
+      meFriends: async (_, args, context) =>{
+        if (context.user){
+          const userFriends = await User.findOne(
+            {_id: context.user._id},
+            { friends: true}
+          )
+          return userFriends
         }
         throw new AuthenticationError('Not logged in');
       }
@@ -33,6 +45,7 @@ const resolvers = {
   
         return { token, user };
       },
+      
       login: async (_, {username, password}) => {
         const user = await User.findOne({username});
   
@@ -49,6 +62,7 @@ const resolvers = {
         const token = signToken(user);
         return { token, user };
       },
+
       newFriend: async (_, {emailFriend}, context) => {
         if (context.user) {
           const friend = await User.findOne({
@@ -56,10 +70,20 @@ const resolvers = {
           });
           
           if(context.user._id === friend.id){
-            throw new Error('You cannot invite yourself');
+            throw new Error('You cannot invite to yourself');
+          }
+          // if the user already sent this invite, then show one error
+          const findFriend = await FriendInvitation.findOne(
+            {
+              $and: [{userID: context.user._id}, {friendID: friend.id}]
+            }
+          )
+
+          if(findFriend !== null){
+            throw new Error('You have already sent the request for this person')
           }
   
-          await Friendlist.create(
+          await FriendInvitation.create(
             {
               userID: context.user._id,
               friendUsername: context.user.username,
@@ -75,10 +99,49 @@ const resolvers = {
 
       deleteFriendRequest: async (_, {friendID}, context)=>{
         if(context.user){
-            return await Friendlist.findOneAndRemove(
-              {friendID: friendID},
+            return await FriendInvitation.findOneAndRemove(
+              {userID: friendID},
               {new: true}
             )
+        }
+        throw new AuthenticationError('You need to be logged in!');
+      },
+
+      acceptFriendRequest: async (_, {friendUsername}, context)=>{
+        
+        if(context.user){
+          // push user id to friends array
+          const userUpdate = await User.findOneAndUpdate(
+            { username: friendUsername },
+            { $push: { friends: context.user.username } },
+            { new: true }
+          );
+            
+          // push friend id to the user friends array
+          await User.findByIdAndUpdate(
+            { _id: context.user._id },
+            { $push: { friends: friendUsername} },
+            { new: true }
+          );
+
+          await FriendInvitation.findOneAndRemove(
+            {friendID: context.user._id},
+            {new: true}
+          )
+          return userUpdate
+        }
+
+        throw new AuthenticationError('You need to be logged in!');
+      },
+
+      deleteFriend: async (_, {friendUsername}, context) =>{
+        if(context.user){
+            const deleteFriend = await User.findOneAndUpdate(
+              {_id: context.user._id},
+              {$pull: {friends: friendUsername}}
+            )
+
+            return deleteFriend
         }
         throw new AuthenticationError('You need to be logged in!');
       }

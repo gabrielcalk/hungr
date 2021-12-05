@@ -35,9 +35,25 @@ export const ADD_NEW_FRIEND = gql`
 `;
 
 export const DELETE_FRIEND_REQUEST = gql`
-mutation deleteFriendRequest($friendID: String!){
-	deleteFriendRequest(friendID: $friendID){
-    _id
+  mutation deleteFriendRequest($friendID: String!){
+    deleteFriendRequest(friendID: $friendID){
+      _id
+    }
+  }
+`;
+
+export const ACCEPT_FRIEND_REQUEST = gql`
+  mutation acceptFriendRequest($friendUsername: String!) {
+    acceptFriendRequest(friendUsername: $friendUsername) {
+      username
   }
 }
-`;
+`
+
+export const DELETE_FRIEND = gql`
+  mutation deleteFriend($friendUsername: String!){
+    deleteFriend(friendUsername: $friendUsername){
+      friends
+    }
+  }
+`
