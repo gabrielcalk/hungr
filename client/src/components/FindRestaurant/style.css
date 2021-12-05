@@ -32,13 +32,14 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(226, 226, 226);
-    width: 50%;
+    height: 800px;
+    width: 60%;
     padding: 60px 0px;
-    margin: 50px;
+    margin: 100px 0px 100px 0px;
 }
 
 .or_invite{
-    width: 70%; 
+    width: 62%; 
     text-align: center; 
     border-bottom: 3px solid #000; 
     line-height: 0.0em;
@@ -145,6 +146,7 @@
     .options_restaurant{
         width: 51%;
         min-width: 200px;
+        max-height: 500px;
     }
     
 }

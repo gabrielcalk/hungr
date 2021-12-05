@@ -3,6 +3,7 @@ import { useState } from "react";
 import './style.css';
 import { useMutation } from '@apollo/client';
 import { ADD_NEW_FRIEND } from '../../utils/mutations';
+import { experimentalStyled } from '@mui/material';
 
 export default function RenderAddFriend() {
 
@@ -17,20 +18,23 @@ export default function RenderAddFriend() {
         event.preventDefault();
         if(friendEmail.length === 0){
             setMessageNewFriend('Please, Provide One Email!')
+            setErrorInvite('')
+        } else {
+            try {
+                console.log(friend)
+
+                const { data } = await newFriend({
+                variables: friend,
+                });
+
+                setFriendEmail('')
+                setMessageNewFriend('Invitation Sent!')
+            } catch (e) {
+                console.error(e);
+                setMessageNewFriend('')
+                setErrorInvite('The email may be invalid, or the user does not exist')
+            }
         }
-        try {
-            console.log(friend)
-
-            const { data } = await newFriend({
-              variables: friend,
-            });
-
-            setFriendEmail('')
-            setMessageNewFriend('Invitation Sent!')
-          } catch (e) {
-            console.error(e);
-            setErrorInvite('You already sent one invitation to this user or this is one invalid email')
-          }
     }
 
     return (

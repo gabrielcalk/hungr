@@ -1,6 +1,13 @@
+
+import './style.css'
+
+
+
+
 export default function renderInfo({setcomponentHome}) {
     return (
-        <section className="section_home">
+        <section className="grid-box section_home">
+            <div className="">
             <h1 className="title">Treat Yourself And Your Friends.</h1>
             <p className="p_home">Can't decide where to eat? With Hungr, you can find 
                 restaurants in your area that you and your 
@@ -11,6 +18,8 @@ export default function renderInfo({setcomponentHome}) {
                 <button onClick={() => setcomponentHome('join_component')} className="button_join">Join</button>
                 <button onClick={() => setcomponentHome('signin_component')} className="button_signIn">Sign In</button>
             </section>
+            </div>
         </section>
+        
     )
 }

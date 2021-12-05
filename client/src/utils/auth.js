@@ -20,7 +20,7 @@ class AuthService {
     try {
       const decoded = decode(token);
       if (decoded.exp < Date.now() / 1000) {
-        return true;
+        return this.logout();
       } else return false;
     } catch (err) {
       return false;
@@ -38,9 +38,9 @@ class AuthService {
     window.location.assign('/user');
   }
 
-  logout() {
+  logout(idToken) {
     // Clear user token and profile data from localStorage
-    localStorage.removeItem('id_token');
+    localStorage.removeItem('id_token', idToken);
     // this will reload the page and reset the state of the application
     window.location.assign('/');
   }

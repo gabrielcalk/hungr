@@ -24,5 +24,9 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^6.4.0"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0",
+    "react-materialize": "^3.10.0"
   }
 }
