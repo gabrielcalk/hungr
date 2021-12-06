@@ -9,7 +9,6 @@ export default function RenderProfileInfo() {
         // Getting the friends
         const {data: dataFriends} = useQuery(QUERY_FRIENDS)
         const friendsData = dataFriends?.meFriends || {}
-        console.log(friendsData.friends)
 
         const [deleteFriend] = useMutation(DELETE_FRIEND)
 

@@ -4,17 +4,7 @@ import RenderFindRestaurantFriend from '../FindRestaurant_friend'
 import {useState} from 'react'
 
 
-export default function RenderFindRestaurant() {
-
-    const [restaurantComponent, setRestaurantComponent] = useState('find_restaurant')
-    
-    function renderRestaurantForm() {
-        if (restaurantComponent === 'find_restaurant_friend') {
-            return <RenderFindRestaurantFriend/>
-        } else if (restaurantComponent === 'find_restaurant_solo') {
-            return <RenderFindRestaurantSolo/>
-        }
-    }
+export default function RenderFindRestaurant({setProfileComponent}) {
 
     return (
         <section className="component_right_restaurant">
@@ -23,14 +13,13 @@ export default function RenderFindRestaurant() {
             </div>
             <section className="options_restaurant">
                 <h1>Invite A Friend</h1>
-                <button onClick={() => setRestaurantComponent('find_restaurant_friend')} className="button_invite">Restaurant Request</button>
+                <button onClick={() => setProfileComponent('find_restaurant_friend')} className="button_invite">Restaurant Request</button>
 
                 <h1 className="or_invite"><span>Or</span></h1>
 
                 <h1>Indulge Alone</h1>
-                <button onClick={() => setRestaurantComponent('find_restaurant_solo')} className="button_invite">Find a Restaurant</button>
+                <button onClick={() => setProfileComponent('find_restaurant_solo')} className="button_invite">Find a Restaurant</button>
             </section>
-           {renderRestaurantForm()}
         </section>
     );
 }

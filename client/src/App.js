@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import RenderHome from './components/Home/index'
 import RenderProfile from './components/ProfilePage'
+import RenderListRestaurants from './components/ListRestaurants'
 import { setContext } from '@apollo/client/link/context';
 import {
   ApolloClient,
@@ -43,7 +44,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<RenderHome/>}/>
-          <Route exact path="/user" element={<RenderProfile />} />
+          <Route exact path="/user" element={<RenderProfile/>}/>
+          <Route exact path="/restaurants" element={<RenderListRestaurants/>}/>
         </Routes>
       </BrowserRouter>
     </ApolloProvider>
