@@ -53,14 +53,21 @@ Create a user friendly application to bring friends together and help significan
 
   ## Visualization
 
-  Mockups
+  ### Mockups
   ![Profile Page](assets/images/Profile%20page.png)
   ![After Login](assets/images/AfterLogin.png)
   ![Choosing to Dine Alone](assets/images/soloquestions.png)
   ![Choosing To Dine With Someone](assets/images/friendquestions.png)
   ![Choose your restaurant](assets/images/restaurant%20swipe.png)
-Images of Deployed Application
 
+  ### Using Graphql
+  ![hungr using Graphql in development](assets/images/hungrGraphql.png)
+
+  ### Using MongoDB
+  ![hungr using MongoDB in development](assets/images/hungrMongo.png)
+
+  ### Images of Deployed Application
+  ![Deployed GIF of Website](assets/images/hungr.gif)
   ## Acknowledgements
 
   Gabriel Cavalcante Causin, Faith Green, Fenix Sampson, Meredith Coyne, Brent Graves
