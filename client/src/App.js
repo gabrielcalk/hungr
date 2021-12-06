@@ -1,10 +1,8 @@
 import './app.css'
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
+import RenderFooter from './components/Footer/index'
 import RenderHome from './components/Home/index'
+import RenderJoin from './components/Join/index'
 import RenderProfile from './components/ProfilePage'
 import RenderListRestaurants from './components/ListRestaurants'
 import { setContext } from '@apollo/client/link/context';
@@ -41,15 +39,27 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<RenderHome/>}/>
-          <Route exact path="/user" element={<RenderProfile/>}/>
-          <Route exact path="/restaurants" element={<RenderListRestaurants/>}/>
-        </Routes>
-      </BrowserRouter>
-    </ApolloProvider>
-  );
-}
+          <Routes>
+            <div className="flex-column justify-flex-start min-100-vh">
+                <div className="container-custom">
+                  <Route exact path="/">
+                    <RenderHome />
+                  </Route>
+                  <Route exact path="/join">
+                    <RenderJoin />
+                  </Route>
+                  <Route exact path="/user">
+                    <RenderProfile />
+                  </Route>
+                  <Route exact path="/restaurants">
+                    <RenderListRestaurants />
+                  </Route>
+                </div>
+              <RenderFooter />
+            </div>
+          </Routes>
+        </ApolloProvider>
+      );
+    }
 
 export default App;
