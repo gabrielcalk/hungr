@@ -8,11 +8,26 @@
     --color3: #26a691;
     --color4: white
 }
-
+/* 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
     font-family: 'Arima Madurai', 'sans-serif', cursive;
+} */
+
+.footer {
+    background-color: var(--color2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.newsletter {
+    line-height: 2.15;   
+}
+
+.newsletterBtn {
+    padding: 0 rem 1 rem;
 }
