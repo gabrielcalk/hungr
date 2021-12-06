@@ -1,7 +1,6 @@
 // Importing the CSS for the Home
 import './style.css'
 import {useState} from 'react'
-import Auth from '../../utils/auth';
 // importing the foods images
 import cake from '../Home/images/cake.jpg'
 import chicken from '../Home/images/chicken.jpg'
@@ -16,9 +15,6 @@ import RenderSignIn from '../SignIn/index'
 import RenderButtonToSignIn from '../ButtonToSignIn/index'
 import RenderAbout from '../AboutHungr/index'
 
-// importing the navbar
-import RenderNavBar from '../Nav/index'
-import RenderNavSignIn from '../NavLogin/index'
 
 // function that render the Home Page except the nav
 export default function RenderHome() {
@@ -48,9 +44,7 @@ export default function RenderHome() {
     return (
         <>
 {/* We need to display different navigation bars based on whether the user is logged in or not.*/}     
-            {Auth.loggedIn() ?   
-            <RenderNavSignIn/>
-            : <RenderNavBar setcomponentHome={setcomponentHome}/>}
+           
             <main className="main_home">
                 {renderComponentHome()}
                 <div className="pic-ctn">
