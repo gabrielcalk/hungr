@@ -7,9 +7,15 @@
 ------
   Have you ever had the problem of trying to pick the right restaurant with your significant other or friends? Look no further, Hungr allows you to choose your favorite restaurants and send them to friends. With hungr you will never have trouble deciding where to eat again.
   
+  <br>
+
+
   Click the link below to visit my deployed page.
 
   [Hungr Deployed Page Change Link to ](https://github.com/gabrielcalk/hungr)
+
+<br>
+
 
   ## Table of Contents
   -------------
@@ -19,15 +25,22 @@
   * [Test](#test)
   * [Problems](#problems)
   * [Visualization](#visualization)
+  * [Technologies](#technologies)
   * [Acknowledgements](#acknowledgements)
   * [Contributions](#contributions)
   * [Resources](#resources)
   * [License](#license) 
   * [Contact](#contact) 
   
+  <br>
+
+
   ## Goals
 ------
 Create a user friendly application to bring friends together and help significant others make plans that everyone attending can enjoy!
+
+<br>
+
   ## Usage
 -----
   Restaurant selector and food planning application.
@@ -39,17 +52,30 @@ Create a user friendly application to bring friends together and help significan
   * Users will have the ability to add friends, allow them to invite friends out to eat!
   * User will have the ability to favorite restaurants they enjoyed.
 
+<br>
+
+
   ## Installation
   
-  `npm start`
+ *  `npm i`
+ *  `npm start`
+
+<br>
+
 
   ## Test
 
   no test are needed to 
 
+<br>
+
+
   ## Problems
 
   CSS styling interacting with MUI caused great difficulties when interacting with components.
+
+<br>
+
 
   ## Visualization
 
@@ -68,20 +94,46 @@ Create a user friendly application to bring friends together and help significan
 
   ### Images of Deployed Application
   ![Deployed GIF of Website](assets/images/hungr.gif)
-  ## Acknowledgements
 
+   ### Images of JWT
+  ![Deployed GIF of Website](assets/images/hungr.gif)
+
+<br>
+
+  ## Technologies
+  ----------
+  * MongoDB & Mongoose for the database
+  * React to design the front end
+  * GraphQL with node.js and Express.js for the server.
+  * Google Places API
+  * Bootstrap-React for CSS
+
+<br>
+
+
+  ## Acknowledgements
+--------------
   Gabriel Cavalcante Causin, Faith Green, Fenix Sampson, Meredith Coyne, Brent Graves
 
-  ## Contributions
+<br>
 
+
+  ## Contributions
+-------------
   Fork Request
 
+<br>
+
+
   ## Resources
- 
+ ------------------
   Eloquent Javascript, React and React Native 3rd Edition, Stack Overflow, React Documentation
 
-  ## License
+<br>
 
+
+  ## License
+-----------------
   Copyright 2021 Gabriel Cavalcante Causin, Faith Green, Fenix Sampson, Meredith Coyne, Brent Graves
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -90,13 +142,18 @@ Create a user friendly application to bring friends together and help significan
   
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+<br>
+
+
   ## Contact
-  
+  ----------------
   Brent Ryan Graves GitHub Username: grave019  
  
   Link to Github Account [Brent Ryan Graves Github](https://github.com/grave019)
 
   Email: brent.r.graves82@gmail.com
+
+  <br>
 
   Gabriel Cavalcante Causin Github Username: gabrielcalk
 
@@ -104,20 +161,26 @@ Create a user friendly application to bring friends together and help significan
 
   email: gabrielcalk@outlook.com
 
+  <br>
+
   Fenix Sampson Github Username: FenixS83
 
   Link to Github Account [Fenix Sampson Github](https://github.com/FenixS83)
 
-Email: fenix.sampson@gmail.com
+  Email: fenix.sampson@gmail.com
 
-Meredith Coyne Github Username: meredithcoyne
+  <br>
 
-Link to Github Account [Meredith Coyne Github](https://github.com/meredithcoyne)
+  Meredith Coyne Github Username: meredithcoyne
 
-Email: meredithleigh.coyne@gmail.com
+  Link to Github Account [Meredith Coyne Github](https://github.com/meredithcoyne)
 
-Faith Green Github Username: faithelizagreen
+  Email: meredithleigh.coyne@gmail.com
 
-Link to Github Account [Faith Green](https://github.com/faithelizagreen)
+  <br>
 
-Email: faithgreen@knights.ucf.edu
+  Faith Green Github Username: faithelizagreen
+
+  Link to Github Account [Faith Green](https://github.com/faithelizagreen)
+
+  Email: faithgreen@knights.ucf.edu
