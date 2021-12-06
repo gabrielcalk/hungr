@@ -1,19 +1,25 @@
 import './style.css'
 import {useState} from 'react'
-import {QUERY_FRIENDS} from '../../utils/queries';
-import { useQuery} from '@apollo/client';
+import {QUERY_FRIENDS, ADD_USER_PREFERENCS} from '../../utils/queries';
+import {CREATE_NEW_MEAL} from '../../utils/mutations'
+import { useQuery, useMutation} from '@apollo/client';
+
+
+
 
 export default function RendersoloRestaurant(){
     // Getting the users friends
     const {data: dataFriends} = useQuery(QUERY_FRIENDS)
     const friendsData = dataFriends?.meFriends || {}
 
+    const [createOneMea] = useMutation(CREATE_NEW_MEAL)
+
     // Setting the default value (values that appear on the page when you loaded)
     const [formState, setFormState] = useState({
         location: [28.5383, -81.3792],
         cuisine: 'American',
         price: '1',
-        rating: '2',
+        rating: [2,3,4,5],
         friend: ''
     })
 
@@ -48,8 +54,18 @@ export default function RendersoloRestaurant(){
         },
     ]
 
-    function handleSubmitForm (e){
+    async function handleSubmitForm (e){
         e.preventDefault()
+        const url = `/api/place/?location=${formState.location}&cuisine=${formState.cuisine}&price=${formState.price}`
+        
+        try{
+            await createOneMea({
+                variables: {guestUsername: formState.friend, inputs: url}
+            });
+            
+        }catch(e){
+            console.log(e)
+        }
 
         if(formState.friend === ''){
             setFormState({...formState, friend: friendsData.friends[0]})
@@ -72,7 +88,6 @@ export default function RendersoloRestaurant(){
         } else{
             setFormState({...formState, rating: e.target.value})
         }
-        console.log(formState)
     }
 
     return (
@@ -100,14 +115,6 @@ export default function RendersoloRestaurant(){
                         <select className="price_select" name='price' onChange={handleChange}>
                             {priceArray.map((price) =>(
                                 <option value={price} key={price}>{price}</option>
-                            ))}
-                        </select>
-                        <br></br>
-
-                        <p>Minimum Restaurant Rating?</p>
-                        <select className='rating_select' name='rating' onChange={handleChange}>
-                            {minRatingArray.map((rating) =>(
-                                <option value={rating.values} key={rating.values}>{rating.min}</option>
                             ))}
                         </select>
                         <br></br>
