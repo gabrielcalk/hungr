@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-6 col-1-xs">
                 <h5 className="text-white mb-3">Newsletter</h5>
-                <p className="small text-muted">Want to stay updated on everything Dangerous To Go Alone is doing? Insert your email below to join our newsletter mailing list!</p>
+                <p className="small text-muted">Want to stay up to date on this project? Insert your email below to join our newsletter mailing list!</p>
                 <form action="#">
                     <div className="newsletter input-group mb-3 p-10">
                       <input className="form-control" type="text" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
