@@ -92,11 +92,13 @@ Create a user friendly application to bring friends together and help significan
   ### Using MongoDB
   ![hungr using MongoDB in development](assets/images/hungrMongo.png)
 
+   ### Images of JWT
+  <kbd>![Deployed GIF of Website](assets/images/hungrJWT.png)</kbd>
+
+  
   ### Images of Deployed Application
   ![Deployed GIF of Website](assets/images/hungr.gif)
 
-   ### Images of JWT
-  ![Deployed GIF of Website](assets/images/hungr.gif)
 
 <br>
 
