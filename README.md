@@ -30,9 +30,16 @@
 
   Restaurant selector and food planning application.
 
+  Application allows users to:
+  * User will have the ability to create an account to start all functionality.
+  * Search for restaurants based on their personal preferences.
+  * Allow user to search just for self or to provide search results with a friend.
+  * Users will have the ability to add friends, allow them to invite friends out to eat!
+  * User will have the ability to favorite restaurants they enjoyed.
+
   ## Installation
   
-  npm start
+  `npm start`
 
   ## Test
 
