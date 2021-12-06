@@ -17,6 +17,15 @@ const typeDefs = gql`
     status: String
   }
 
+  type Meal {
+    _id: ID!
+    principalUser: String!
+    guestUsername: String!
+    principalMealPreferences: [String]
+    guestMealPreferences: [String]
+    restaurantMatches: [String]
+  }
+
   type Auth {
     token: ID!
     user: User
@@ -35,6 +44,8 @@ const typeDefs = gql`
     deleteFriendRequest(friendID: String!): User
     acceptFriendRequest(friendUsername: String!): User
     deleteFriend(friendUsername: String!): User 
+    createOneMeal(guestUsername: String!, inputs: String!): Meal!
+    addRestaurant(principalMealPreferences: String): Meal!
   }
 
 `

@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, FriendInvitation } = require('../models');
+const { User, FriendInvitation, Meal } = require('../models');
 const { findOneAndRemove } = require('../models/userMongo');
 const { signToken } = require('../utils/auth');
 
@@ -144,7 +144,35 @@ const resolvers = {
             return deleteFriend
         }
         throw new AuthenticationError('You need to be logged in!');
-      }
+      },
+
+      createOneMeal: async (_, {guestUsername, inputs}, context) =>{
+        console.log(inputs)
+        if(context.user){
+          const newMeal = await Meal.create({
+            principalUser: context.user._id,
+            guestUsername: guestUsername,
+            inputs: inputs
+          })
+
+          return newMeal
+        }
+        throw new AuthenticationError('You need to be logged in!');
+      },
+
+      
+      addRestaurant: async (_, {principalMealPreferences}, context) =>{
+        if(context.user){
+          const addRestaurant = await Meal.findOneAndUpdate(
+            { principalUser: context.user._id },
+            { $push: { principalMealPreferences: principalMealPreferences } },
+            { new: true },
+          ).sort({createdAt: -1});
+
+          return addRestaurant
+        }
+        throw new AuthenticationError('You need to be logged in!');
+      },
     },
   };
   

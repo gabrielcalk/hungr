@@ -58,6 +58,28 @@ export const DELETE_FRIEND = gql`
   }
 `;
 
+export const CREATE_NEW_MEAL = gql`
+  mutation createOneMeal($guestUsername: String!, $inputs: String!) {
+    createOneMeal(guestUsername: $guestUsername, inputs: $inputs) {
+        _id
+        principalUser
+        guestUsername
+    }
+  }
+`
+
+export const ADD_USER_PREFERENCS = gql`
+  mutation addRestaurant($principalMealPreferences: String!) {
+    addRestaurant(principalMealPreferences: $principalMealPreferences) {
+        _id
+        principalUser
+        guestUsername
+        principalMealPreferences
+    }
+  }
+`
+
+
 export const SAVE_RESTAURANT = gql`
 mutation saveRestaurant ($restaurantData: RestaurantInput!) {
   saveRestaurant (restaurantData: $restaurantData) {

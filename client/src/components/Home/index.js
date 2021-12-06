@@ -7,8 +7,6 @@ import cake from '../Home/images/cake.jpg'
 import chicken from '../Home/images/chicken.jpg'
 import salad from '../Home/images/salad.jpg'
 
-
-
 // importing the components that could be display on the page
 import RenderInfo from '../infoHome/index'
 import RenderJoin from '../Join/index'
