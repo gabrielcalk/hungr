@@ -4,7 +4,7 @@
 
 ![Hungr Logo](assets/images/hungr.jpg)
   ## Description
-
+------
   Have you ever had the problem of trying to pick the right restaurant with your significant other or friends? Look no further, Hungr allows you to choose your favorite restaurants and send them to friends. With hungr you will never have trouble deciding where to eat again.
   
   Click the link below to visit my deployed page.
@@ -12,7 +12,7 @@
   [Hungr Deployed Page Change Link to ](https://github.com/gabrielcalk/hungr)
 
   ## Table of Contents
-  
+  -------------
   * [Goals](#goals)
   * [Usage](#usage) 
   * [Installation](#installation)  
@@ -26,9 +26,10 @@
   * [Contact](#contact) 
   
   ## Goals
-
+------
+Create a user friendly application to bring friends together and help significant others make plans that everyone attending can enjoy!
   ## Usage
-
+-----
   Restaurant selector and food planning application.
 
   Application allows users to:
