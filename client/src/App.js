@@ -1,10 +1,13 @@
 import './app.css'
 import { BrowserRouter as Routes, Route } from "react-router-dom";
-import RenderFooter from './components/Footer/index'
+import RenderHeader from './components/Header/index'
 import RenderHome from './components/Home/index'
 import RenderJoin from './components/Join/index'
+import RenderSignIn from './components/SignIn/index'
 import RenderProfile from './components/ProfilePage'
 import RenderListRestaurants from './components/ListRestaurants'
+import RenderFooter from './components/Footer/index'
+import Auth from './utils/auth';
 import { setContext } from '@apollo/client/link/context';
 import {
   ApolloClient,
@@ -40,6 +43,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
           <Routes>
+            <RenderHeader/>
             <div className="flex-column justify-flex-start min-100-vh">
                 <div className="container-custom">
                   <Route exact path="/">
@@ -48,9 +52,24 @@ function App() {
                   <Route exact path="/join">
                     <RenderJoin />
                   </Route>
-                  <Route exact path="/user">
+                  <Route exact path="/signin">
+                    <RenderSignIn />
+                  </Route>
+                <div>
+                  {Auth.loggedIn() ? (
+                    <>
+                    <Route exact path="/user">
                     <RenderProfile />
                   </Route>
+                  </>
+                  ) : (
+                  <>
+                  <Route exact path="/user">
+                    <RenderJoin />
+                  </Route>
+                  </>
+                  )}
+                </div>
                   <Route exact path="/restaurants">
                     <RenderListRestaurants />
                   </Route>

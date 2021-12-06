@@ -1,6 +1,3 @@
-// importing the nav bar to appear when the user is logged in
-import RenderNavSignIn from "../NavLogin/index";
-import RenderNavBar from "../Nav";
 import RenderProfileComponent from '../ProfileUser/index'
 import RenderProfileInfo from '../ProfileInfo';
 import RenderFindRestaurant from '../FindRestaurant/index'
@@ -28,22 +25,9 @@ export default function RenderProfile() {
            return <RenderFindRestaurantSolo/>
         }
     }
-
-    if (!userData?.username) {
-        return (
-            <>
-            <RenderNavBar/>
-            <main className="logged_out_error">
-            You need to be logged in to see this. Use the navigation links above to
-            sign up or log in!
-          </main>
-        </>
-            );
-    }
     
     return (
         <>
-            <RenderNavSignIn/>
             <main className="main_profile">
                 <RenderProfileComponent username={userData.username} email={userData.email} setProfileComponent={setProfileComponent}/>
                 <br></br>
