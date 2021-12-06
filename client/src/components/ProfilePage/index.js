@@ -4,8 +4,9 @@ import RenderNavBar from "../Nav";
 import RenderProfileComponent from '../ProfileUser/index'
 import RenderProfileInfo from '../ProfileInfo';
 import RenderFindRestaurant from '../FindRestaurant/index'
+import RenderFindRestaurantSolo from '../FindRestaurant_solo'
+import RenderFindRestaurantFriend from '../FindRestaurant_friend'
 import { QUERY_ME } from '../../utils/queries';
-import { AuthService } from '../../utils/auth'
 import {useState} from 'react'
 import './style.css'
 import { useQuery } from '@apollo/client';
@@ -18,10 +19,14 @@ export default function RenderProfile() {
     // component that could show the friend, invite and add new friend component
     function renderComponentOnRight(){
         if(profileComponent === 'find_restaurant'){
-            return <RenderFindRestaurant/>
+            return <RenderFindRestaurant setProfileComponent={setProfileComponent}/>
         } else if(profileComponent === 'profile_info'){
             return <RenderProfileInfo/>
-        } 
+        } else if(profileComponent === 'find_restaurant_friend'){
+            return <RenderFindRestaurantFriend/>
+        }else{
+           return <RenderFindRestaurantSolo/>
+        }
     }
 
     if (!userData?.username) {
