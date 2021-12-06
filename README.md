@@ -2,6 +2,7 @@
 
   ![MIT License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+![Hungr Logo](assets/images/hungr.jpg)
   ## Description
 
   Have you ever had the problem of trying to pick the right restaurant with your significant other or friends? Look no further, Hungr allows you to choose your favorite restaurants and send them to friends. With hungr you will never have trouble deciding where to eat again.
