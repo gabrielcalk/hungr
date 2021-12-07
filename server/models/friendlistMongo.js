@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-
+//schema to create friend after invitation
 const friendInvitationsSchema = new Schema({
         userID:{
             type: String,
