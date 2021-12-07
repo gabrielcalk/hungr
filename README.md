@@ -16,7 +16,7 @@
 
 ### Deployed Page
 
-  [Hungr Deployed Application](https://github.com/gabrielcalk/hungr)
+  [Hungr Deployed Application](https://hungr-back-end-to-the-future.herokuapp.com/)
 
 <br>
 
