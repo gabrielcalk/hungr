@@ -56,13 +56,13 @@ export default function RenderListRestaurants() {
 
     function editionFriends(){
         if(friend === 'brent'){
-            return <h3>Are you sure???</h3>
+            return <h3 className="text_going_date">Are you sure???</h3>
         } else if(friend === 'jon'){
-            return <h3>Sounds Amazing!!!!</h3>
+            return <h3 className="text_going_date">Sounds Amazing!!!!</h3>
         } else if (friend === 'dan'){
-            return <h3>Can he bring the babe?</h3>
+            return <h3 className="text_going_date">Can he bring the babe?</h3>
         } else if (friend === 'fenix'){
-            return <h3>I'm sure he will be hungry!!!</h3>
+            return <h3 className="text_going_date">I'm sure he will be hungry!!!</h3>
         } else{
             return
         }

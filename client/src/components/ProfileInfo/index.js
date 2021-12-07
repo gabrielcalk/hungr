@@ -65,7 +65,6 @@ export default function RenderProfileInfo() {
                         <div className="sectionTitle">
                             <h2>Dates</h2>
                         </div>
-
                     {/* Scrolling list */}
                         <div className="scrollingList">
 
@@ -73,15 +72,14 @@ export default function RenderProfileInfo() {
                             {datesData.length > 0 ? datesData.map((match) =>{
                                 return (
                                     <div className="favoriteslistCard">
-                                        <p>Restaurant Name</p>
+                                        <h4 className="favorite_couple_friend">Friends/Couple: <br/><strong>{match.guestUsername} and {match.principalUser}</strong></h4>
                                         <div>
-                                            <h4>{match.guestUsername}</h4>
-                                            <h4>{match.principalUser}</h4>
-                                            <ul>
+                                            <h4 className="favorite_couple_friend">Restaurants(match): </h4>
+                                            <select className="option_restaurant_match">
                                             {match.restaurantMatches.map((restaurant) =>{
-                                                return <li>{restaurant}</li>
+                                                return <option>{restaurant}</option>
                                             })}
-                                            </ul>
+                                            </select>
                                         </div>
                                     </div>
                                 )
