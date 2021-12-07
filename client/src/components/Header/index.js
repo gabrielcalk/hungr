@@ -21,27 +21,24 @@ const Header = () => {
                     <>
                     <ul>
                       <Link className="navItem" to="/user">
-                      <li>Profile</li>
-                      </Link>
-                      <Link className="navItem" to="/">
-                      <li>Find Restaurant</li>
+                        <li>Profile</li>
                       </Link>
                       <Link className="navItem" onClick={Auth.logout}>
-                      <li>Sign Out</li>
+                        <li>Sign Out</li>
                       </Link>
                     </ul>
                     </>
                   ) : (
                     <>
                     <ul>
-                     <Link className="navItem" href="#About">
-                      <li>About</li>
+                    <Link className="navItem" to="/about">
+                        <li>About</li>
                       </Link>
                       <Link className="navItem" to="/Join">
-                      <li>Join</li>
+                        <li>Join</li>
                       </Link>
                       <Link className="navItem" to="/signin">
-                      <li>Sign In</li>
+                        <li>Sign In</li>
                       </Link>
                     </ul>
                     </>
