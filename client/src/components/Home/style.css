@@ -1,29 +1,30 @@
+.firstSection {
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.sectionSection {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 /* normal font-size = 16px, then 2.8rem = 2.8 x 16*/
 h1{
     font-size: 2.8rem;
     font-weight: bold;
 }
 
-/* Adding display flex on section_home */
-.main_home{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Editing the section with the title, p tag and buttons and the section with the images */
 .section_home{
-    width: 40%;
-    padding: 35px;
+    margin-top: 30%;
+    padding: 50px
 }
 
 /* h1 tag */
 .title{
     line-height: 50px;
     margin-bottom: 20px;
-    width: 70%
 }
 
 /* p tag (description) */
@@ -81,32 +82,7 @@ h1{
     width: 550px;
     height: 580px;
     border-radius: 5px;
-    margin-left: 220px;
     box-shadow: 0 0 5px black;
-}
-
-/* setting the movements */
-@keyframes display {
-    0% {
-      transform: translateX(60px);
-      opacity: 0;
-    }
-    10% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    20% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    30% {
-      transform: translateX(-60px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(-60px);
-      opacity: 0;
-    }
 }
 
 /* making the image appear and disappear and setting the animation time */
