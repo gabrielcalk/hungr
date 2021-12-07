@@ -2,7 +2,6 @@ import {Link} from 'react-router-dom'
 // Importing the logo
 import logo from '../../images/Logo.png'
 // Importing the CSS for the navBar
-import '../../style.css'
 import '../../app.css'
 
 import Auth from '../../utils/auth'
@@ -10,8 +9,8 @@ import Auth from '../../utils/auth'
 // Creating the nav bar with the logo, about us and sign in
 const Header = () => {
     return (
-        <header className="text-light py-3 flex-row align-center">
-          <div className="container flex-row justify-space-between-sm align-center">
+        <header>
+          <div>
             <nav className="col-md-12 nav navbar-expand-lg p-3 nav-wrapper">
                 <Link className="navItem" to="/">
                 <img className="logoHungr" src={logo} alt="hungr Logo"></img>

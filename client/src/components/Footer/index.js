@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../app.css'
-import '../../style.css'
 
 
 import Auth from '../../utils/auth';
@@ -10,9 +9,7 @@ import Auth from '../../utils/auth';
 const Footer = () => {
   return (
 
-<footer className="footer text-center text-lg-start text-muted" id="footer"> 
-
-  <section className="">
+<footer className="footer text-lg-start text-muted" > 
     <div className="container text-center text-md-start mt-5">
      
       <div className="row mt-3">
@@ -106,10 +103,7 @@ const Footer = () => {
         </div>
         
       </div>
-    
     </div>
-  </section>
- 
 </footer>
     // <footer className="footer pt-5 p-5">
     //   <div className="container text-left">

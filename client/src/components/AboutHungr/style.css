@@ -1,7 +1,8 @@
 .section_main_about{
     width: 60%;
     margin: 0 auto;
-    margin-top: 450px
+    margin-top: 300px;
+
 }
 
 .subtitle_about{
@@ -23,10 +24,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px
+    margin-top: 60px;
 }
 
 .section_steps{
+    margin-bottom: 50px;
     width: 30%;
     margin-right: 65px;
 }

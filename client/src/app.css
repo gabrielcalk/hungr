@@ -1,5 +1,6 @@
 /* importing fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 /* setting the default colors */
 :root {
@@ -60,15 +61,169 @@ li:last-child:hover {
 }
 
 
+/* Profile Styling */
+.profile_info{
+    margin-left: 4vw;
+    width: 70%;
+}
+
+.sectionTitle{
+    background-color: var(--color2);
+    color: var(--color4);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.section_friends{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.accountInfo{
+    margin-bottom: 40px;
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(214, 214, 214);
+    height: 20vh;
+}
+
+.friendlist{
+    /* margin-top: 40px; */
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(214, 214, 214);
+    /* height: 50vh;
+    width: 33vw; */
+}
+
+.friendlistCard{
+    border: 1px solid rgb(180, 180, 180);
+    height: 15vh;
+    width: 28vw;
+}
+
+
+.friendListImg{
+    margin: 5px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 50%;
+    width: 23%;
+}
+
+.favoritesList{
+    /* position: absolute;
+    top: 360px;
+    right: 60px; */
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(214, 214, 214);
+    /* height: 50vh;
+    width: 33vw; */
+}
+
+.favoriteslistCard{
+    display: flex;
+    border: 1px solid rgb(180, 180, 180);
+    height: 15vh;
+    width: 28vw;
+}
+
+.scrollingList{
+    background-color: var(--color4);
+    margin: 20px;
+    border: 1px solid rgb(180, 180, 180);
+    overflow-y:scroll;
+    max-height: 40vh;
+}
+
+.nameEmail{
+    width: 80%;
+    vertical-align: middle;
+}
+
+.edit{
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 16px;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 2px black;
+    position: absolute;
+    right: 6%;
+    
+}
+
+.edit:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
+.notes{
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 16px;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 2px black;
+    position: inherit;
+    float: right;   
+}
+
+.notes:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
+.remove{
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 16px;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 2px black;
+    position: inherit;
+    float: right;
+}
+
+.remove:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
+
 /* Footer Styling */
 
 .footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     max-height: 300px;
     overflow: scroll;
     background-color: whitesmoke;
+    margin-bottom: 5px;
 }
 
 .footerItem{

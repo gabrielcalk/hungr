@@ -1,4 +1,5 @@
 import './app.css'
+import './style.css'
 import { BrowserRouter as Routes, Route } from "react-router-dom";
 import RenderHeader from './components/Header/index'
 import RenderHome from './components/Home/index'
@@ -44,8 +45,8 @@ function App() {
     <ApolloProvider client={client}>
           <Routes>
             <RenderHeader/>
-            <div className="flex-column justify-flex-start min-100-vh">
-                <div className="container-custom">
+            <div>
+                <div>
                   <Route exact path="/">
                     <RenderHome />
                   </Route>

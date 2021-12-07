@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -10,10 +10,58 @@
  */
  html {
     line-height: 1.15;
-    /* 1 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
   }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans';
+  font-size: 16px;
+  color: #242424;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arima Madurai', 'sans-serif', cursive;
+  margin: 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 8px !important;
+  line-height: 1.5;
+}
   
   /* Sections
      ========================================================================== */
