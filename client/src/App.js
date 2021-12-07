@@ -75,6 +75,7 @@ function App() {
                   </Route>
                 </div>
               <RenderFooter />
+              
             </div>
           </Routes>
         </ApolloProvider>
