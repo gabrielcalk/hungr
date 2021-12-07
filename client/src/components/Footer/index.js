@@ -4,12 +4,10 @@ import { Link } from 'react-router-dom';
 import '../../app.css'
 import '../../style.css'
 
-
 import Auth from '../../utils/auth';
 
 const Footer = () => {
   return (
-
 <footer className="footer text-center text-lg-start text-muted" id="footer"> 
     <div>
      
@@ -58,9 +56,9 @@ const Footer = () => {
                  Profile
                  </p>
                   </Link>
-                  <Link className="footerItem" to="/restaurants">
+                  <Link className="footerItem" to="/user">
                   <p>
-                  Find Restaurant
+                 Find Restaurant
                  </p>
                   </Link>
                   <Link className="footerItem" to="/">

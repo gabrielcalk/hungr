@@ -39,9 +39,8 @@ export default function RenderHome() {
     }
 
     return (
-        <>
-{/* We need to display different navigation bars based on whether the user is logged in or not.*/}     
-           
+        <>   
+    
             <Container>
                 <Row className="firstSection">
                     <Col>
