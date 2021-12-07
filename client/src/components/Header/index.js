@@ -11,7 +11,6 @@ import Auth from '../../utils/auth'
 const Header = () => {
     return (
         <header className="text-light py-3 flex-row align-center">
-          <div className="container flex-row justify-space-between-sm align-center">
             <nav className="col-md-12 nav navbar-expand-lg p-3 nav-wrapper">
                 <Link className="navItem" to="/">
                 <img className="logoHungr" src={logo} alt="hungr Logo"></img>
@@ -48,7 +47,6 @@ const Header = () => {
                   )}
                 </div>
             </nav>
-          </div>
         </header>
       );
     };

@@ -74,9 +74,8 @@ function App() {
                     <RenderListRestaurants />
                   </Route>
                 </div>
-              <RenderFooter />
-              
             </div>
+            <RenderFooter />
           </Routes>
         </ApolloProvider>
       );

@@ -1,7 +1,7 @@
 .section_main_about{
     width: 60%;
     margin: 0 auto;
-    margin-top: 450px
+    margin-top: 300px
 }
 
 .subtitle_about{
@@ -29,6 +29,7 @@
 .section_steps{
     width: 30%;
     margin-right: 65px;
+    margin-bottom: 50px;
 }
 
 .each_arrow_circle{
