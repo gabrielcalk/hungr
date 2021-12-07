@@ -60,6 +60,8 @@ app.get('/api/image/', async (req, res)=>{
     console.log(e)
   }
 })
+
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 //when we have application ready for production onto the page
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
