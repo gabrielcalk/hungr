@@ -49,7 +49,7 @@ export default function RenderHome() {
                         <img src={cake} alt="" className="pic"/>
                         <img src={chicken} alt="" className="pic"/>
                         <img src={salad} alt="" className="pic"/>
-                    </div>
+                </div>
             </main>
         </>
     )

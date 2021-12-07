@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import RenderEachRestaurant from '../EachRestaurantImage/index'
+import './style.css'
 
 export default function RenderListRestaurants() {
     
@@ -51,18 +52,6 @@ export default function RenderListRestaurants() {
         while(i < showRestaurants.length){
             return <RenderEachRestaurant grabImage={grabImage} showRestaurants={showRestaurants} i={i} setI={setI}/>
         }
-
-        // if(i === showRestaurants.length){
-        //     setTimeout(() => {
-        //         window.location.replace('/user')
-        //     }, 3000);
-        //     return (
-        //         <>
-        //             <h3>Your friend/date recieved your invite!</h3>
-        //             <h4>You will be redirected to the user page in 3 seconds</h4>
-        //         </>
-        //     )
-        // }
     }
 
     function editionFriends(){
@@ -81,7 +70,7 @@ export default function RenderListRestaurants() {
     
     return (
         <section>
-            <h3>you are going on a date with: {friend}</h3>
+            <h3 className="text_going_date"><strong>You want to go on a date with:</strong> {friend}</h3>
             {editionFriends()}
             {renderRestaurant()}
         </section>

@@ -116,7 +116,7 @@ export default function RendersoloRestaurant(){
                         </select>
                         <br></br>
 
-                        <p>Choose one friend to go with?</p>
+                        <p>Choose one friend to go with</p>
                         <p>You chosen: {formState.friend}</p>
                         {friendsData.friends && friendsData.friends.map((friend) =>(
                                 <div onClick={() => setFormState({...formState, friend: friend})} key={friend}>

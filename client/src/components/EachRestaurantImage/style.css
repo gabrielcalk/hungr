@@ -1,0 +1,73 @@
+.card {
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    border: 6px solid white;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+  
+.card .fa-spinner {
+    font-size: 180px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.card-btn {
+    border-radius: 50%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+}
+
+.pass {
+    left: 1%;
+    background: #E53935;
+    opacity: 0.8;
+}
+
+.pass:hover {
+    opacity: 1;
+}
+
+.pick {
+    right: 1%;
+    background: #43A047;
+    opacity: 0.8;
+}
+
+.pick:hover {
+    opacity: 1;
+}
+
+.info_restaurant_each{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.each_restaurant_name{
+    text-align: center;
+}
+
+@keyframes iconBounce {
+    0% {
+        font-size: 24px;
+    }
+
+    50% {
+        font-size: 28px;
+    }
+
+    100% {
+        font-size: 24px;
+    }
+
+}

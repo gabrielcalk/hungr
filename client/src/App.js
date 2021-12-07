@@ -78,7 +78,7 @@ function App() {
                     <RenderSpecificRestaurantRequest />
                   </Route>
                 </div>
-              <RenderFooter />
+              {/* <RenderFooter /> */}
             </div>
           </Routes>
         </ApolloProvider>

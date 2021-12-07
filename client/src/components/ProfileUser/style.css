@@ -1,8 +1,6 @@
 .user_profile{
-    margin-left: -14%;
     height: 35%;
-    width: 25%;
-    display: flexbox;
+    width: 20%;
 }
 
 .photo_and_info{
@@ -26,6 +24,12 @@
     align-items: center;
     color: var(--color4);
     margin: 13px 0;
+    font-size: 0.8rem;
+}
+
+.h3_user, .h4_user{
+    font-size: 1rem;
+    padding: 8px 0px
 }
 
 .itens_profile{
@@ -54,129 +58,4 @@
     width: 15px;
     height: 15px;
     margin-right: 10px;
-}
-
-/* @media only screen and (max-width: 1100px) {
-    .user_profile{
-        width: 25vw;
-    }
-}
-
-
-@media only screen and (max-width: 750px) {
-    
-    .user_profile{
-        height: 100%;
-        width: 90%;
-        display: flexbox;
-    }
-} */
-
-
-
-
-@media only screen and (max-width: 800px) {
-    .user_profile{
-        width: 35%;
-        margin-left: 7%;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    .user_profile{
-        width: 40%;
-        margin-left: 7%;
-    }
-}
-
-@media only screen and (max-width: 690px) {
-    .user_profile{
-        width: 50%;
-        margin-left: -1%;
-    }
-}
-
-@media only screen and (max-width: 655px) {
-    
-}
-
-@media only screen and (max-width: 625px) {
-
-    
-}
-
-@media only screen and (max-width: 590px) {
-
-}
-
-@media only screen and (max-width: 550px) {
-   
-}
-
-@media only screen and (max-width: 520px) {
-   
-}
-
-@media only screen and (max-width: 485px) {
-    
-}
-
-@media only screen and (max-width: 460px) {
-   
-}
-
-@media only screen and (max-width: 435px) {
-    
-}
-
-@media only screen and (max-width: 407px) {
-    
-}
-
-@media only screen and (max-width: 395px) {
-    
-}
-
-@media only screen and (max-width: 380px) {
-    
-}
-
-@media only screen and (max-width: 368px) {
-    
-}
-
-@media only screen and (max-width: 355px) {
-    
-}
-
-@media only screen and (max-width: 335px) {
-    
-}
-
-@media only screen and (max-width: 315px) {
-    .user_profile{
-        width: 60%;
-        margin-left: -4%;
-    }
-}
-@media only screen and (max-width: 301px) {
-    .user_profile{
-        width: 60%;
-        margin-left: -7%;
-    }
-}
-@media only screen and (max-width: 283px) {
-    
-}
-
-@media only screen and (max-width: 250px) {
-    
-}
-
-@media only screen and (max-width: 224px) {
-    
-}
-
-@media only screen and (max-width: 220px) {
-    
 }

@@ -68,6 +68,7 @@ export default function RenderRestaurantRequest() {
         title:{
             fontWeight:'bold',
             fontFamily:'Arima Madurai, sans-serif',
+            marginTop: '10px',
         },
         text:{
             fontFamily:'Arima Madurai, sans-serif',

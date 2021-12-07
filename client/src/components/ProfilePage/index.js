@@ -10,7 +10,7 @@ import { useQuery } from '@apollo/client';
 
 export default function RenderProfile() {
 
-    const { loading, data } = useQuery(QUERY_ME);
+    const {data } = useQuery(QUERY_ME);
     const userData = data?.me || {};
     const [profileComponent, setProfileComponent] = useState('find_restaurant')
     // component that could show the friend, invite and add new friend component
