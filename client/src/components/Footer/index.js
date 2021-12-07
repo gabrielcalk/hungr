@@ -9,15 +9,14 @@ import Auth from '../../utils/auth';
 
 const Footer = () => {
   return (
-    <footer className="footer pt-1 p-1">
+    <footer className="footer">
       <div className="container text-center">
 
             <p className="small text-muted d-block">&copy; 2021 hungr </p>
-            <p className="small text-muted">
+            <p className="small text-muted d-block">
               Made with ❤️ by Backend to the Future
             </p>
-            <h6> Designed by Gabriel Cavalcante, Meredith Coyne, Brent Graves, Faith Green, and Fenix Sampson</h6>
-            <a href="https://github.com/gabrielcalk/hungr"></a>
+           
 
    
 
