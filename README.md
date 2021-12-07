@@ -86,12 +86,6 @@ Create a user friendly application to bring friends together and help significan
   ![Choosing To Dine With Someone](assets/images/friendquestions.png)
   ![Choose your restaurant](assets/images/restaurant%20swipe.png)
 
-  ### Using Graphql
-  ![hungr using Graphql in development](assets/images/hungrGraphql.png)
-
-  ### Using MongoDB
-  ![hungr using MongoDB in development](assets/images/hungrMongo.png)
-
    ### Images of JWT
   <kbd>![Deployed GIF of Website](assets/images/hungrJWT.png)</kbd>
 
