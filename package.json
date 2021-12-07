@@ -1,32 +1,32 @@
 {
-  "name": "hungr",
-  "version": "1.0.0",
-  "description": "",
-  "proxy": "http://localhost:3001",
-  "engines": {
-    "node": "14.16.1"
-  },
-  "main": "server/server.js",
-  "scripts": {
-    "seed": "cd server && node seeds/seed.js",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "cd server && npm start",
-    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "heroku-postbuild": "cd client && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabrielcalk//hungr.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "concurrently": "^6.4.0"
-  },
-  "dependencies": {
-    "materialize-css": "^1.0.0",
-    "react-materialize": "^3.10.0"
-  }
+    "name": "hungr",
+    "version": "1.0.0",
+    "description": "",
+    "proxy": "http://localhost:3001",
+    "engines": {
+      "node": "14.16.1"
+    },
+    "main": "server/server.js",
+    "scripts": {
+      "seed": "cd server && node seeds/seed.js",
+      "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+      "start:prod": "cd server && npm start",
+      "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+      "install": "cd server && npm i && cd ../client && npm i",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gabrielcalk//hungr.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+      "concurrently": "^6.4.0"
+    },
+    "dependencies": {
+      "materialize-css": "^1.0.0",
+      "react-materialize": "^3.10.0"
+    }
 }
