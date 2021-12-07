@@ -1,11 +1,9 @@
 .component_right_restaurant{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 48%;
-    height: 100%;
-    margin-left: 0%;
+    width: 50%;
+    margin-left: -10%;
 }
 
 .invite_friend_title, .indulge_alone_title {
@@ -32,7 +30,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(226, 226, 226);
-    height: 800px;
+    height: 600px;
     width: 60%;
     padding: 60px 0px;
     margin: 100px 0px 100px 0px;
