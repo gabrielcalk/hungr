@@ -15,6 +15,8 @@ h1{
 
 /* Editing the section with the title, p tag and buttons and the section with the images */
 .section_home{
+    margin-top: -5%;
+    margin-left: -25%;
     width: 40%;
     padding: 35px;
 }
@@ -111,9 +113,11 @@ h1{
 
 /* making the image appear and disappear and setting the animation time */
 .pic-ctn > img {
+    max-width: 400px;
+    max-height: 400px;
     position: absolute;
     top: 0;
-    left: calc(50% - 100px);
+    left: calc(50% + 50px);
     opacity: 0;
     animation: display 15s infinite;
 }

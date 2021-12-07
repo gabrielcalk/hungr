@@ -41,9 +41,7 @@ export default function RenderAbout() {
                 <h2 className="title_about" id="about_hungr">About Hungr</h2>
                 <h3 className="subtitle_about">"I don't know. What do you want?"</h3>
                 <p className="info_about">We've all been there. You're hungry, but you're not 
-                    quite sure where you'd like to eat. You ask those 
-                    around you for their opinion, but even they are unsure 
-                    what they'd like to eat. This is where Hungr comes in. 
+                    quite sure where you'd like to eat. This is where Hungr comes in. 
                     Hungr is designed to help you and your dining companion 
                     find the perfect place to eat in a few simple steps.
                 </p>

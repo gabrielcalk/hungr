@@ -55,7 +55,6 @@ const Signin = () => {
                     value={formState.username}
                     onChange={handleChange}
                   />
-                  <br></br>
                   <input
                     className="form-input"
                     placeholder="******"
@@ -64,7 +63,6 @@ const Signin = () => {
                     value={formState.password}
                     onChange={handleChange}
                   />
-                  <br></br>
                   <br></br>
                   <button
                   className="sign_in_button"
