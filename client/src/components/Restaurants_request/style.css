@@ -1,0 +1,21 @@
+.button_request_restaurant{
+    width: 140px;
+    padding: 8px;
+    margin-right: 10px;
+    margin: 8px 0px;
+    background-color: var(--color2);
+    color: var(--color4);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+}
+
+.button_request_restaurant:hover{
+    background-color: var(--color3)
+}
+
+.each_request_restaurant{
+    margin: 20px 0;
+}

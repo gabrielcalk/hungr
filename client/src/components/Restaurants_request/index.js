@@ -9,6 +9,7 @@ import { makeStyles } from '@mui/styles';
 import { useQuery} from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { QUERY_RESTAURANTS_REQUEST} from '../../utils/queries';
+import './style.css'
 
 export default function RenderRestaurantRequest() {
 
@@ -93,10 +94,10 @@ export default function RenderRestaurantRequest() {
                 <AccordionDetails>
                     {restaurantsRequestData.length ? restaurantsRequestData.map((request) =>{
                         return(
-                            <div key={request._id}>
-                                <h4>{request.principalUser} invited you to one meal</h4>
+                            <div className="each_request_restaurant" key={request._id}>
+                                <h4><strong>{request.principalUser}: invited you for a meal</strong></h4>
                                 <Link className="footerItem" to="/preferences">
-                                <button onClick={() => handleMeal(request.inputs, request._id, request.principalMealPreferences)}>Click here to see more about it</button>
+                                    <button className="button_request_restaurant" onClick={() => handleMeal(request.inputs, request._id, request.principalMealPreferences)}>more details</button>
                                 </Link>
                             </div>
                         )

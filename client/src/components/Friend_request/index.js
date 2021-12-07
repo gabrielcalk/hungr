@@ -9,6 +9,7 @@ import { makeStyles } from '@mui/styles';
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_FRIENDS_REQUESTS} from '../../utils/queries';
 import { DELETE_FRIEND_REQUEST, ACCEPT_FRIEND_REQUEST } from '../../utils/mutations';
+import './style.css'
 
 
 export default function RenderFriendRequest() {
@@ -116,12 +117,12 @@ export default function RenderFriendRequest() {
                 <AccordionDetails>
                     {friendsRequestData.length > 0 ?  friendsRequestData.map((friend) =>{
                         return(
-                            <div key={friend.friendID}>
+                            <div className="each_request_friend" key={friend.friendID}>
                                 <h4>{friend.friendUsername}</h4>
                                 <div>
                                     {/* Remeber: user ID is who send the invite */}
-                                    <button onClick={() => handleAcceptFriendRequest(friend.friendUsername)}>Accept</button>
-                                    <button onClick={() => handleDeleteFriendRequest(friend.userID)}>Decline</button>
+                                    <button className="button_request_friend" onClick={() => handleAcceptFriendRequest(friend.friendUsername)}>Accept</button>
+                                    <button className="button_request_friend" onClick={() => handleDeleteFriendRequest(friend.userID)}>Decline</button>
                                 </div>
                             </div>
                         );
