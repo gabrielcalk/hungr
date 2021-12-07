@@ -1,5 +1,5 @@
-// Importing the CSS for the Home
 import './style.css'
+
 import {useState} from 'react'
 // importing the foods images
 import cake from '../Home/images/cake.jpg'
@@ -10,8 +10,9 @@ import salad from '../Home/images/salad.jpg'
 import RenderInfo from '../infoHome/index'
 import RenderJoin from '../Join/index'
 import RenderSignIn from '../SignIn/index'
-import RenderButtonToSignIn from '../ButtonToSignIn/index'
 import RenderAbout from '../AboutHungr/index'
+import {Row, Col, Container, Carousel} from 'react-bootstrap'
+
 
 
 // function that render the Home Page except the nav
@@ -34,23 +35,64 @@ export default function RenderHome() {
         } else if (componentHome === 'about_component'){
             return <RenderAbout/>
         // if it is false for the variables above, then show the page that let the user signin
-        } else{
-            return <RenderButtonToSignIn/>
-        }
+        } 
     }
 
     return (
         <>
 {/* We need to display different navigation bars based on whether the user is logged in or not.*/}     
            
-            <main className="main_home">
-                {renderComponentHome()}
-                <div className="pic-ctn">
-                        <img src={cake} alt="" className="pic"/>
-                        <img src={chicken} alt="" className="pic"/>
-                        <img src={salad} alt="" className="pic"/>
-                    </div>
-            </main>
+            <Container>
+                <Row className="firstSection">
+                    <Col>
+                        {renderComponentHome()}
+                    </Col>
+                    <Col>
+                        <Carousel className="Carousel">
+                            <Carousel.Item>
+                                <img
+                                className="d-block pic"
+                                src={cake}
+                                alt="First slide"
+                                />
+                                <Carousel.Caption>
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                className="d-block pic"
+                                src={chicken}
+                                alt="Second slide"
+                                />
+
+                                <Carousel.Caption>
+                                <h3>Second slide label</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                className="d-block pic"
+                                src={salad}
+                                alt="Third slide"
+                                />
+
+                                <Carousel.Caption>
+                                <h3>Third slide label</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="secondSection">
+                    <RenderAbout/>
+                    </Col>
+                </Row>
+            </Container>           
         </>
     )
 }
