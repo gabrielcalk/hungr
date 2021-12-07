@@ -68,7 +68,7 @@ export default function RenderProfileInfo() {
                             }): 
                             <div className="friendlistCard">
                             {/* Friend Info*/}
-                                <p>Friends were not found</p>
+                                <p>No Friends Were Found</p>
                             </div>
                             }
                         </div>

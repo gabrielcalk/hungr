@@ -58,7 +58,7 @@ export default function RenderListRestaurants() {
             }, 3000);
             return (
                 <>
-                    <h3>Your friend/date recieved your invite!</h3>
+                    <h3>Your guest recieved your invitation!</h3>
                     <h4>You will be redirected to the user page in 3 seconds</h4>
                 </>
             )
@@ -71,17 +71,17 @@ export default function RenderListRestaurants() {
         } else if(friend === 'jon'){
             return <h3>Sounds Amazing!!!!</h3>
         } else if (friend === 'dan'){
-            return <h3>Can he bring the babe?</h3>
+            return <h3>Can he bring the baby?</h3>
         } else if (friend === 'fenix'){
             return <h3>I'm sure he will be hungry!!!</h3>
         } else{
-            return
+            return <h3>Enjoy your meal!!!</h3>
         }
     }
     
     return (
         <section>
-            <h3>you are going on a date with: {friend}</h3>
+            <h3>You are planning a meal with: {friend}</h3>
             {editionFriends()}
             {renderRestaurant()}
         </section>

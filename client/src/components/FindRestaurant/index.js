@@ -3,7 +3,7 @@ import RenderFindRestaurantSolo from '../FindRestaurant_solo'
 import RenderFindRestaurantFriend from '../FindRestaurant_friend'
 import {useState} from 'react'
 
-
+// Renders the Find Restaurant component onto the screen. This component contains the Invite a friend option as well as the Indulge alone option
 export default function RenderFindRestaurant({setProfileComponent}) {
 
     return (
