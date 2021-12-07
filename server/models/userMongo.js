@@ -9,6 +9,7 @@ const userSchema = new Schema(
       unique: true,
       maxlength: 70
     },
+    //validate correct email address to be added to database
     email: {
       type: String,
       required: true,
