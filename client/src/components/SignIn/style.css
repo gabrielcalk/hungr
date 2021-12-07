@@ -1,0 +1,256 @@
+.sign_in_card_main {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.sign_in_card_body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.sign_in_button{
+    background-color: var(--color2);
+    color: var(--color4);
+    width: 140px;
+    padding: 8px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    display: flex;
+    justify-content: center;
+}
+
+.sign_in_button:hover{
+    background-color: var(--color3);
+    color: var(--color4)
+}
+ 
+.signinText{
+    font-Weight:600px;
+    text-Align:center;
+    font-Size:20px
+}
+ 
+.CardActions{
+    justify-content: center;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .sign_in_card_main {
+        margin-left: 34%;
+    }
+    .sign_in_card_body{
+        margin-left: -15%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .sign_in_card_main {
+        margin-left: 39%;
+    }
+    .sign_in_card_body{
+        margin-left: -16%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .sign_in_card_main {
+        margin-left: 39%;
+    }
+    .sign_in_card_body{
+        margin-left: -15%;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .sign_in_card_main {
+        margin-left: 37%;
+        width: 35%;
+    }
+    .sign_in_card_body{
+        margin-left: -17%;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .sign_in_card_main {
+        margin-left: 37%;
+    }
+    .sign_in_card_body{
+        margin-left: -17.5%;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .sign_in_card_main {
+        margin-left: 29.5%;
+    }
+    .sign_in_card_body{
+        margin-left: -20%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sign_in_card_main {
+        margin-left: 37%;
+    }
+    .sign_in_card_body{
+        margin-left: -21.5%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .sign_in_card_main {
+        margin-left: 41%;
+        width: 33%;
+    }
+    .sign_in_card_body{
+        margin-left: -36%;
+    }
+    
+}
+
+@media only screen and (max-width: 485px) {
+    .sign_in_card_main {
+        margin-left: 41%;
+    }
+    .sign_in_card_body{
+        margin-left: -44%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .sign_in_card_main {
+        margin-left: 41%;
+    }
+    .sign_in_card_body{
+        margin-left: -48%;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .sign_in_card_main {
+        margin-left: 41%;
+    }
+    .sign_in_card_body{
+        margin-left: -53%;
+    }
+}
+
+@media only screen and (max-width: 407px) {
+    .sign_in_card_main {
+        margin-left: 41%;
+    }
+    .sign_in_card_body{
+        margin-left: -55%;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .sign_in_card_main {
+        margin-left: 41%;
+    }
+    .sign_in_card_body{
+        margin-left: -57%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .sign_in_card_main {
+        margin-left: 41%;
+    }
+    .sign_in_card_body{
+        margin-left: -64%;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .sign_in_card_main {
+        margin-left: 43%;
+    }
+    .sign_in_card_body{
+        margin-left: -64%;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .sign_in_card_main {
+        margin-left: 43%;
+    }
+    .sign_in_card_body{
+        margin-left: -68%;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .sign_in_card_main {
+        margin-left: 43%;
+    }
+    .sign_in_card_body{
+        margin-left: -68%;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .sign_in_card_main {
+        margin-left: 41%;
+    }
+    .sign_in_card_body{
+        margin-left: -73%;
+    }
+}
+@media only screen and (max-width: 301px) {
+    .sign_in_card_main {
+        margin-left: 40%;
+    }
+    .sign_in_card_body{
+        margin-left: -79%;
+    }
+}
+@media only screen and (max-width: 283px) {
+    .sign_in_card_main {
+        margin-left: 40%;
+    }
+    .sign_in_card_body{
+        margin-left: -86%;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .sign_in_card_main {
+        margin-left: 40%;
+    }
+    .sign_in_card_body{
+        margin-left: -100%;
+    }
+}
+
+@media only screen and (max-width: 224px) {
+    .sign_in_card_main {
+        margin-left: 40%;
+    }
+    .sign_in_card_body{
+        margin-left: -130%;
+    }
+}
+
+@media only screen and (max-width: 220px) {
+    .sign_in_card_main {
+        margin-left: 40%;
+    }
+    .sign_in_card_body{
+        margin-left: -120%;
+    }
+}

@@ -1,0 +1,1025 @@
+.component_right_restaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: -10%;
+}
+
+.invite_friend_title, .indulge_alone_title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.div_title_component_right{
+    background-color: var(--color2);
+    width: 100%;
+    margin-left: 25px;
+    padding: 8px 0;
+}
+
+.title_component_right{
+    font-size: 1.2rem;
+    margin-left: 15px;
+    color: var(--color4);
+}
+
+.options_restaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+    height: 600px;
+    width: 60%;
+    padding: 60px 0px;
+    margin: 100px 0px 100px 0px;
+}
+
+.or_invite{
+    width: 62%; 
+    text-align: center; 
+    border-bottom: 3px solid #000; 
+    line-height: 0.0em;
+    margin: 40px;
+}
+
+.or_invite span {
+    background-color: rgb(226, 226, 226); 
+    padding:0 10px; 
+    font-size: 2rem;
+}
+
+.button_invite{
+    width: 43%;
+    background-color: var(--color3);
+    padding: 8px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: var(--color4);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    text-align: center;
+    font-size: 22px;
+}
+
+.button_invite:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
+/* 
+@media only screen and (max-width: 750px) {
+    .options_restaurant{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(226, 226, 226);
+        width: 100%;
+        padding: 60px 0px;
+        margin: 50px;
+        word-wrap: inherit;
+    }
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1358px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 44px;
+        margin-left: 8%;
+    }
+    .button_invite{
+        font-size: 22px;
+    }
+    .options_restaurant{
+        min-width: 200px;
+    }
+}
+@media only screen and (max-width: 1299px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 43px;
+        margin-left: 8%;
+    }
+    .button_invite{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 1269px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 42px;
+        margin-left: 8%;
+    }
+    .button_invite{
+        font-size: 22px;
+    }
+    .options_restaurant{
+        width: 50%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1239px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 41px;
+        margin-left: 8%;
+    }
+    .button_invite{
+        font-size: 22px;
+    }
+    .options_restaurant{
+        width: 51%;
+        min-width: 200px;
+        max-height: 500px;
+    }
+    
+}
+@media only screen and (max-width: 1210px) {
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 40px;
+        margin-left: 7%;
+    }
+    .button_invite{
+        font-size: 20px;
+    }
+    .options_restaurant{
+        width: 52%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1168px) {
+    .component_right_restaurant{
+        margin-left: 8%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 38px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 20px;
+    }
+    .options_restaurant{
+        width: 53%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1135px) {
+    .component_right_restaurant{
+        margin-left: 8%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 38px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 55%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1097px) {
+    .component_right_restaurant{
+        margin-left: 8%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 37px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 58%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1069px) {
+    .component_right_restaurant{
+        margin-left: 8%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 62%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1040px) {
+    .component_right_restaurant{
+        margin-left: 6%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 65%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1000px) {
+    .component_right_restaurant{
+        margin-left: 5%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 960px) {
+    .component_right_restaurant{
+        margin-left: 3%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+    .component_right_restaurant{
+        margin-top: 70%;
+        margin-left: -42%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 750px) {
+    .component_right_restaurant{
+        margin-top: 75%;
+        margin-left: -45%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 720px) {
+    .component_right_restaurant{
+        margin-top: 79%;
+        margin-left: -45%;
+    }
+    .div_title_component_right{
+        width: 90%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 70%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 690px) {
+    .component_right_restaurant{
+        margin-top: 87%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 660px) {
+    .component_right_restaurant{
+        margin-top: 92%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 630px) {
+    .component_right_restaurant{
+        margin-top: 92%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 590px) {
+    .component_right_restaurant{
+        margin-top: 98%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+    .component_right_restaurant{
+        margin-top: 101%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 520px) {
+    .component_right_restaurant{
+        margin-top: 103%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .component_right_restaurant{
+        margin-top: 106%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 488px) {
+    .component_right_restaurant{
+        margin-top: 109%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 475px) {
+    .component_right_restaurant{
+        margin-top: 109%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 459px) {
+    .component_right_restaurant{
+        margin-top: 112%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 442px) {
+    .component_right_restaurant{
+        margin-top: 115%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 420px) {
+    .component_right_restaurant{
+        margin-top: 118%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 408px) {
+    .component_right_restaurant{
+        margin-top: 122%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 399px) {
+    .component_right_restaurant{
+        margin-top: 125%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 380px) {
+    .component_right_restaurant{
+        margin-top: 128%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 372px) {
+    .component_right_restaurant{
+        margin-top: 132%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 357px) {
+    .component_right_restaurant{
+        margin-top: 137%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 345px) {
+    .component_right_restaurant{
+        margin-top: 141%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 328px) {
+    .component_right_restaurant{
+        margin-top: 149%;
+        margin-left: -50%;
+    }
+    .div_title_component_right{
+        width: 110%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 315px) {
+    .component_right_restaurant{
+        margin-top: 154%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 303px) {
+    .component_right_restaurant{
+        margin-top: 154%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 292px) {
+    .component_right_restaurant{
+        margin-top: 164%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 290px) {
+    .component_right_restaurant{
+        margin-top: 164%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 284px) {
+    .component_right_restaurant{
+        margin-top: 174%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 270px) {
+    .component_right_restaurant{
+        margin-top: 179%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 258px) {
+    .component_right_restaurant{
+        margin-top: 194%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 249px) {
+    .component_right_restaurant{
+        margin-top: 199%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 238px) {
+    .component_right_restaurant{
+        margin-top: 215%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 228px) {
+    .component_right_restaurant{
+        margin-top: 222%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+@media only screen and (max-width: 220px) {
+    .component_right_restaurant{
+        margin-top: 227%;
+        margin-left: -56%;
+    }
+    .div_title_component_right{
+        width: 118%;
+    }
+    .invite_friend_title, .indulge_alone_title {
+        font-size: 36px;
+        margin-left: 6%;
+    }
+    .button_invite{
+        font-size: 18px;
+    }
+    .options_restaurant{
+        width: 90%;
+        min-width: 200px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 395px) {
+    
+}
+
+@media only screen and (max-width: 380px) {
+    
+}
+
+@media only screen and (max-width: 368px) {
+    
+}
+
+@media only screen and (max-width: 355px) {
+    
+}
+
+@media only screen and (max-width: 335px) {
+    
+}
+
+@media only screen and (max-width: 315px) {
+    
+}
+@media only screen and (max-width: 301px) {
+    
+}
+@media only screen and (max-width: 283px) {
+    
+}
+
+@media only screen and (max-width: 250px) {
+    
+}
+
+@media only screen and (max-width: 224px) {
+    
+}
+
+@media only screen and (max-width: 220px) {
+    
+}

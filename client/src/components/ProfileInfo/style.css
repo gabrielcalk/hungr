@@ -1,0 +1,282 @@
+.profile_info{
+    width: 55%;
+    height: 30%;
+    margin-left: -120px;
+    display: flex;
+    columns: 2;
+}
+
+.sectionTitle{
+    background-color: var(--color2);
+    color: var(--color4);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.section_friends{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left: -90px;
+}
+
+.accountInfo{
+    margin-bottom: 40px;
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(214, 214, 214);
+    height: 20vh;
+}
+
+.friendlist{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(214, 214, 214);
+}
+
+.friendlistCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(180, 180, 180);
+    height: 8vh;
+    width: 25vw;
+    padding: 40px;
+}
+
+.friendListImg{
+    margin: 5px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 50%;
+    width: 65px
+}
+
+.favoritesList{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(214, 214, 214);
+}
+
+.favoriteslistCard{
+    display: flex;
+    border: 1px solid rgb(180, 180, 180);
+    height: 15vh;
+    width: 28vw;
+    padding-top: 5px;
+}
+
+.favorite_couple_friend{
+    font-size: 18px;
+    margin-right: 50px;
+    margin-left: 20px
+}
+
+.option_restaurant_match{
+    width: 65%
+}
+
+.scrollingList{
+    background-color: var(--color4);
+    margin: 20px;
+    border: 1px solid rgb(180, 180, 180);
+    overflow-y:scroll;
+    max-height: 40vh;
+}
+
+.nameEmail{
+    width: 80%;
+    vertical-align: middle;
+}
+
+.edit{
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 16px;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 2px black;
+    position: absolute;
+    right: 6%;
+    
+}
+
+.edit:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
+.notes{
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 16px;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 2px black;
+    position: inherit;
+    float: right;   
+}
+
+.notes:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
+.remove{
+    margin: 0px 25px 0px 40px;
+    font-size: 16px;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 2px black;
+    position: inherit;
+    float: right;
+}
+
+.pictures_coming_soon{
+    font-size: 14px;
+    margin-right: 35px
+}
+
+.remove:hover{
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
+/* span.close{
+    position: static;
+    top: 50px;
+    float: right;
+    color: var(--color3);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 750px) {
+    
+}
+
+@media only screen and (max-width: 690px) {
+    
+}
+
+@media only screen and (max-width: 655px) {
+    
+}
+
+@media only screen and (max-width: 625px) {
+    .profile_info{
+        margin-top: 99%;
+        margin-left: -61%;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    
+}
+
+@media only screen and (max-width: 550px) {
+   
+}
+
+@media only screen and (max-width: 520px) {
+   
+}
+
+@media only screen and (max-width: 485px) {
+    
+}
+
+@media only screen and (max-width: 460px) {
+   
+}
+
+@media only screen and (max-width: 435px) {
+    
+}
+
+@media only screen and (max-width: 407px) {
+    
+}
+
+@media only screen and (max-width: 395px) {
+    
+}
+
+@media only screen and (max-width: 380px) {
+    
+}
+
+@media only screen and (max-width: 368px) {
+    
+}
+
+@media only screen and (max-width: 355px) {
+    
+}
+
+@media only screen and (max-width: 335px) {
+    
+}
+
+@media only screen and (max-width: 315px) {
+    
+}
+@media only screen and (max-width: 301px) {
+    
+}
+@media only screen and (max-width: 283px) {
+    
+}
+
+@media only screen and (max-width: 250px) {
+    
+}
+
+@media only screen and (max-width: 224px) {
+    
+}
+
+@media only screen and (max-width: 220px) {
+    
+}

@@ -1,0 +1,78 @@
+/* importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;800&display=swap');
+
+/* setting the default colors */
+:root {
+    --color1: #191919;
+    --color2: #EF1E4A;
+    --color3: #26a691;
+    --color4: white
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem; 
+}
+
+/* Header Styling */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+a:hover{
+    color: var(--color2)
+}
+
+li{
+    margin: 10px;
+    margin: 0 45px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+li:last-child {
+    color: var(--color2);
+}
+
+li:last-child:hover {
+    text-decoration: underline;
+}
+
+.logoHungr{
+    width: 135px;
+    height: 60px;
+    margin-left: 100px;
+}
+
+
+/* Footer Styling */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow: scroll;
+    background-color: whitesmoke;
+}
+
+.footerItem{
+    text-decoration: none;
+    color: black
+}
+

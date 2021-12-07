@@ -1,0 +1,19 @@
+.main_profile{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.logged_out_error {
+    display: flex;
+    justify-content: center;
+    margin: 0 100px 0 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    .main_profile{
+        width: 155%;
+        margin-left: -28%;
+    }
+}

@@ -1,0 +1,36 @@
+.add_friend_invite{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.button_invite_friend{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    color: var(--color4);
+    background-color: var(--color3);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    box-shadow: 0 0 2px black;
+}
+
+.button_invite_friend:hover {
+    background-color: var(--color2);
+    color: var(--color4)
+}
+
+.text_invite{ 
+    color: var(--color2);
+    text-align: center;
+    margin: 10px;  
+}
+
+.input_add_friend{
+    margin: 8px 0;
+    padding: 5px;
+}
