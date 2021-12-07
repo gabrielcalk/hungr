@@ -35,6 +35,22 @@ const resolvers = {
           return userFriends
         }
         throw new AuthenticationError('Not logged in');
+      },
+
+      meRestaurantsRequests: async (_, args, context) =>{
+        if (context.user){
+            return await Meal.find({ guestUsername: context.user.username })
+        }
+        throw new AuthenticationError('Not logged in');
+      },
+
+      meDates: async (_, args, context) =>{
+        if (context.user){
+          return await Meal.find(
+            {status: 'accept', guestUsername: context.user.username},
+          )
+        }
+        throw new AuthenticationError('Not logged in');
       }
     },
   
@@ -108,7 +124,6 @@ const resolvers = {
       },
 
       acceptFriendRequest: async (_, {friendUsername}, context)=>{
-        
         if(context.user){
           // push user id to friends array
           const userUpdate = await User.findOneAndUpdate(
@@ -150,9 +165,10 @@ const resolvers = {
         console.log(inputs)
         if(context.user){
           const newMeal = await Meal.create({
-            principalUser: context.user._id,
+            principalUser: context.user.username,
             guestUsername: guestUsername,
-            inputs: inputs
+            inputs: inputs,
+            status: 'pending'
           })
 
           return newMeal
@@ -164,12 +180,25 @@ const resolvers = {
       addRestaurant: async (_, {principalMealPreferences}, context) =>{
         if(context.user){
           const addRestaurant = await Meal.findOneAndUpdate(
-            { principalUser: context.user._id },
+            { principalUser: context.user.username },
             { $push: { principalMealPreferences: principalMealPreferences } },
             { new: true },
           ).sort({createdAt: -1});
 
           return addRestaurant
+        }
+        throw new AuthenticationError('You need to be logged in!');
+      },
+
+      addMatches: async (_, {_id, restaurantMatches}, context) =>{
+        if(context.user){
+          const addMatches = await Meal.findOneAndUpdate(
+            { _id: _id},
+            { $push: { restaurantMatches: restaurantMatches}, $set: {status: 'accept'}},
+            { new: true },
+          ).sort({createdAt: -1});
+
+          return addMatches
         }
         throw new AuthenticationError('You need to be logged in!');
       },

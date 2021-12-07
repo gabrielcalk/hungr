@@ -52,17 +52,17 @@ export default function RenderListRestaurants() {
             return <RenderEachRestaurant grabImage={grabImage} showRestaurants={showRestaurants} i={i} setI={setI}/>
         }
 
-        if(i === showRestaurants.length){
-            setTimeout(() => {
-                window.location.replace('/user')
-            }, 3000);
-            return (
-                <>
-                    <h3>Your friend/date recieved your invite!</h3>
-                    <h4>You will be redirected to the user page in 3 seconds</h4>
-                </>
-            )
-        }
+        // if(i === showRestaurants.length){
+        //     setTimeout(() => {
+        //         window.location.replace('/user')
+        //     }, 3000);
+        //     return (
+        //         <>
+        //             <h3>Your friend/date recieved your invite!</h3>
+        //             <h4>You will be redirected to the user page in 3 seconds</h4>
+        //         </>
+        //     )
+        // }
     }
 
     function editionFriends(){

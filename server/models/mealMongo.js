@@ -2,8 +2,8 @@ const { Schema, model } = require('mongoose');
 
 const mealSchema = new Schema({
     principalUser:{
-        type: Schema.Types.ObjectId,
-        ref: 'Users',
+            type: String,
+            required: true
     },
     // this is the dinner guest that is being invited to join
     guestUsername:{
@@ -17,14 +17,13 @@ const mealSchema = new Schema({
     principalMealPreferences:[{
         type: String,
     }],
-    // these are the meal selections that the guest prefers from the list that the principal user has previously selected
-    guestMealPreferences:[{
-        type: String,
-    }],
     // these are the restaurants that matches all guest preferences-this list is what is common between both the principal user and the guest user after selection process is complete
     restaurantMatches:[{
         type: String,
-    }]
+    }],
+    status: {
+        type: String
+    }
 },
     {
         timestamps: { currentTime: () => Math.floor(Date.now() / 1000) }
