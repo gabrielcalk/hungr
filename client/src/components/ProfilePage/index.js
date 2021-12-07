@@ -2,7 +2,6 @@ import RenderProfileComponent from '../ProfileUser/index'
 import RenderProfileInfo from '../ProfileInfo';
 import RenderFindRestaurant from '../FindRestaurant/index'
 import RenderFindRestaurantSolo from '../FindRestaurant_solo'
-import RenderFindRestaurantFriend from '../FindRestaurant_friend'
 import { QUERY_ME } from '../../utils/queries';
 import {useState} from 'react'
 import './style.css'
@@ -19,8 +18,6 @@ export default function RenderProfile() {
             return <RenderFindRestaurant setProfileComponent={setProfileComponent}/>
         } else if(profileComponent === 'profile_info'){
             return <RenderProfileInfo/>
-        } else if(profileComponent === 'find_restaurant_friend'){
-            return <RenderFindRestaurantFriend/>
         }else{
            return <RenderFindRestaurantSolo/>
         }
