@@ -56,7 +56,6 @@ const Signup = () => {
                     value={formState.username}
                     onChange={handleChange}
                   />
-                  <br></br>
                   <input
                     className="form-input"
                     placeholder="Your email"
@@ -65,7 +64,6 @@ const Signup = () => {
                     value={formState.email}
                     onChange={handleChange}
                   />
-                  <br></br>
                   <input
                     className="form-input"
                     placeholder="******"
