@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import {ADD_USER_PREFERENCES} from '../../utils/mutations'
 import { useMutation} from '@apollo/client';
+import heart from './images/heart.svg'
+import './style.css'
 
 export default function RenderEachRestaurant({grabImage, showRestaurants, i, setI}) {
     const [addRestaurant] = useMutation(ADD_USER_PREFERENCES)
@@ -11,6 +13,7 @@ export default function RenderEachRestaurant({grabImage, showRestaurants, i, set
     })
 
     async function addRestaurantChoosen(placeChoosen){
+        console.log(placeChoosen)
         setI((prevValue) => prevValue + 1)
         console.log(placeChoosen)
         try{
@@ -24,15 +27,32 @@ export default function RenderEachRestaurant({grabImage, showRestaurants, i, set
 
     return (
         <div key={showRestaurants[i].place_id}>
-            <h3>{showRestaurants[i].name}</h3>
-            <img src={imageState} alt={showRestaurants[i].name}/>
-            <div>
-                <h4>Price Level: {showRestaurants[i].price_level}</h4>
-                <h4>Rating: {showRestaurants[i].rating}</h4>
+            <h3 className="each_restaurant_name">{showRestaurants[i].name}</h3>
+            <div
+                className="card"
+                style={{
+                    backgroundImage: `url(${imageState})`
+                }}
+            >
+                {/* Button to PASS */}
+                <button 
+                    onClick={() => setI((prevValue) => prevValue + 1)}
+                >
+                    <img className="card-btn pass" src={heart} alt="heart"/>
+                </button>
+
+                {/* Button to LIKE */}
+                <button 
+                    onClick={() => addRestaurantChoosen(showRestaurants[i].place_id)}
+                >
+                    <img className="card-btn pick" src={heart} alt="heart"/>
+                </button>
+            </div>
+            <div className="info_restaurant_each">
+                <h4><strong>Price Level:</strong> {showRestaurants[i].price_level}</h4>
+                <h4><strong>Rating:</strong> {showRestaurants[i].rating}</h4>
                 <h4>{showRestaurants[i].vicinity}</h4>
             </div>
-            <button onClick={() => setI((prevValue) => prevValue + 1)}>No</button>
-            <button onClick={() => addRestaurantChoosen(showRestaurants[i].place_id)}>Yes</button>
         </div>
     );
 }

@@ -1,13 +1,9 @@
-/* :root {
-    --color1: #191919;
-    --color2: #EF1E4A;
-    --color3: #26a691;
-    --color4: #ffffff;
-} */
-
 .profile_info{
-    margin-left: 4vw;
-    width: 70%;
+    width: 55%;
+    height: 30%;
+    margin-left: -120px;
+    display: flex;
+    columns: 2;
 }
 
 .sectionTitle{
@@ -41,27 +37,24 @@
 }
 
 .friendlistCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: 1px solid rgb(180, 180, 180);
-    height: 15vh;
-    width: 28vw;
+    height: 8vh;
+    width: 25vw;
 }
-
 
 .friendListImg{
     margin: 5px;
     border: 1px solid rgb(180, 180, 180);
     border-radius: 50%;
-    width: 23%;
+    width: 65px
 }
 
 .favoritesList{
-    /* position: absolute;
-    top: 360px;
-    right: 60px; */
     border: 1px solid rgb(180, 180, 180);
     background-color: rgb(214, 214, 214);
-    /* height: 50vh;
-    width: 33vw; */
 }
 
 .favoriteslistCard{
@@ -134,8 +127,7 @@
 }
 
 .remove{
-    margin-top: 15px;
-    margin-right: 5px;
+    margin: 0px 25px 0px 40px;
     font-size: 16px;
     border: none;
     color: var(--color4);
@@ -150,6 +142,11 @@
     box-shadow: 0 0 2px black;
     position: inherit;
     float: right;
+}
+
+.pictures_coming_soon{
+    font-size: 14px;
+    margin-right: 35px
 }
 
 .remove:hover{
