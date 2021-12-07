@@ -1,3 +1,4 @@
+// reqire path, express, dotenv
 const path = require("path");
 const express = require("express");
 require('dotenv').config();
@@ -25,7 +26,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));
 }
-
+// location, type of food price information from api call
 app.get('/api/place/', async (req, res)=>{
   const location = req.query.location
   const cuisine = req.query.cuisine
@@ -59,7 +60,7 @@ app.get('/api/image/', async (req, res)=>{
     console.log(e)
   }
 })
-
+//when we have application ready for production onto the page
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });

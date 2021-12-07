@@ -19,7 +19,7 @@ export default function RenderFriendRequest() {
     const [acceptFriendRequest] = useMutation(ACCEPT_FRIEND_REQUEST)
 
     // Getting the friends requests
-    const {loading, data} = useQuery(QUERY_FRIENDS_REQUESTS)
+    const {data} = useQuery(QUERY_FRIENDS_REQUESTS)
     const friendsRequestData = data?.meFriendRequest || {}
 
     const Accordion = styled((props) => (
@@ -74,6 +74,7 @@ export default function RenderFriendRequest() {
         title:{
             fontWeight:'bold',
             fontFamily:'Arima Madurai, sans-serif',
+            marginTop: '10px',
         },
         text:{
             fontFamily:'Arima Madurai, sans-serif',

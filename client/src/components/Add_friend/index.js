@@ -42,10 +42,10 @@ export default function RenderAddFriend() {
         <>
             <form onSubmit={handleFormSubmit}>
                 <div className="add_friend_invite">
-                    <h4>Add your friend email</h4>
-                    <input placeholder=" email..." type="email" value={friendEmail} onChange={(e) => setFriendEmail(e.target.value)}/>
+                    <h4>Invite a friend (email)</h4>
+                    <input className="input_add_friend" placeholder=" email..." type="email" value={friendEmail} onChange={(e) => setFriendEmail(e.target.value)}/>
                     
-                        <button className="button_invite_friend" type="submit">Send Invite</button>
+                    <button className="button_invite_friend" type="submit">Send Invite</button>
                     
                     <div className="text_invite">
                         {messageNewFriend}

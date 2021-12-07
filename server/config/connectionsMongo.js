@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+//preperation for deployment
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/hungr_db',
   {

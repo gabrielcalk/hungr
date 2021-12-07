@@ -6,6 +6,7 @@ import RenderJoin from './components/Join/index'
 import RenderSignIn from './components/SignIn/index'
 import RenderProfile from './components/ProfilePage'
 import RenderListRestaurants from './components/ListRestaurants'
+import RenderSpecificRestaurantRequest from './components/SpecificRestaurantRequest/index'
 import RenderFooter from './components/Footer/index'
 import Auth from './utils/auth';
 import { setContext } from '@apollo/client/link/context';
@@ -59,26 +60,27 @@ function App() {
                   <Route exact path="/signin">
                     <RenderSignIn />
                   </Route>
-                <div>
-                  {Auth.loggedIn() ? (
+                  <div>
+                    {Auth.loggedIn() ? (
+                      <>
+                      <Route exact path="/user">
+                      < RenderProfile />
+                      </Route>
+                    </>
+                    ) : (
                     <>
                     {/* If logged in, this renders the user's profile */}
                     <Route exact path="/user">
-                    <RenderProfile />
-                  </Route>
-                  </>
-                  ) : (
-                  <>
-                  {/* If not logged in, this renders the Join/SignUp component */}
-                  <Route exact path="/user">
-                    <RenderJoin />
-                  </Route>
-                  </>
-                  )}
-                </div>
-                  {/* Renders the list of restaurants onto the screen */}
+                      <RenderJoin />
+                    </Route>
+                    </>
+                    )}
+                  </div>
                   <Route exact path="/restaurants">
                     <RenderListRestaurants />
+                  </Route>
+                  <Route exact path="/preferences">
+                    <RenderSpecificRestaurantRequest />
                   </Route>
                 </div>
                 {/* Renders the footer onto the page */}
