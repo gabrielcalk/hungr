@@ -5,6 +5,7 @@ import RenderHome from './components/Home/index'
 import RenderJoin from './components/Join/index'
 import RenderSignIn from './components/SignIn/index'
 import RenderProfile from './components/ProfilePage'
+import RenderAbout from './components/AboutHungr'
 import RenderListRestaurants from './components/ListRestaurants'
 import RenderSpecificRestaurantRequest from './components/SpecificRestaurantRequest/index'
 import RenderFooter from './components/Footer/index'
@@ -51,20 +52,27 @@ function App() {
                   {/* Renders the Home component onto page */}
                   <Route exact path="/">
                     <RenderHome />
+                    <RenderFooter />
                   </Route>
                   {/* Renders the Join/Sign Up component onto the page */}
                   <Route exact path="/join">
                     <RenderJoin />
+                    <RenderFooter />
                   </Route>
                   {/* Renders the Join/Sign Up component onto the page */}
                   <Route exact path="/signin">
                     <RenderSignIn />
+                    <RenderFooter />
+                  </Route>
+                  <Route exact path="/about">
+                    <RenderAbout/>
+                    <RenderFooter />
                   </Route>
                   <div>
                     {Auth.loggedIn() ? (
                       <>
                       <Route exact path="/user">
-                      < RenderProfile />
+                        < RenderProfile />
                       </Route>
                     </>
                     ) : (
@@ -72,6 +80,7 @@ function App() {
                     {/* If logged in, this renders the user's profile */}
                     <Route exact path="/user">
                       <RenderJoin />
+                      <RenderFooter />
                     </Route>
                     </>
                     )}
@@ -84,7 +93,6 @@ function App() {
                   </Route>
                 </div>
                 {/* Renders the footer onto the page */}
-              <RenderFooter />
             </div>
           </Routes>
         </ApolloProvider>

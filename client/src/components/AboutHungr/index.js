@@ -36,7 +36,7 @@ export default function RenderAbout() {
     ]
 
     return (
-        <section>
+        <section className="about_all_section">
             <section className="section_main_about">
                 <h2 className="title_about" id="about_hungr">About Hungr</h2>
                 <h3 className="subtitle_about">"I don't know. What do you want?"</h3>

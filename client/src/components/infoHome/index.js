@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 import './style.css'
 
 
@@ -15,8 +15,13 @@ export default function renderInfo({setcomponentHome}) {
             </p>
             <section className="button_home_section">
                 {/* On click we are changing the componentHome variable to display the component on the page*/}
+                <Link className="navItem" to="/join">
                 <button onClick={() => setcomponentHome('join_component')} className="button_join">Join</button>
-                <button onClick={() => setcomponentHome('signin_component')} className="button_signIn">Sign In</button>
+                </Link>
+                
+                <Link className="navItem" to="/signin">
+                    <button onClick={() => setcomponentHome('signin_component')} className="button_signIn">Sign In</button>
+                </Link>
             </section>
             </div>
         </section>

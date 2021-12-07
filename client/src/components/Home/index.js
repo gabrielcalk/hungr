@@ -11,7 +11,6 @@ import RenderInfo from '../infoHome/index'
 import RenderJoin from '../Join/index'
 import RenderSignIn from '../SignIn/index'
 import RenderButtonToSignIn from '../ButtonToSignIn/index'
-import RenderAbout from '../AboutHungr/index'
 
 
 // function that render the Home Page except the nav
@@ -31,9 +30,6 @@ export default function RenderHome() {
         } else if (componentHome === 'signin_component'){
             return <RenderSignIn/>
         // if componentHome is "about_component", then render the component with the About Hungr component
-        } else if (componentHome === 'about_component'){
-            return <RenderAbout/>
-        // if it is false for the variables above, then show the page that let the user signin
         } else{
             return <RenderButtonToSignIn/>
         }
