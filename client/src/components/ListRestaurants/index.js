@@ -64,7 +64,7 @@ export default function RenderListRestaurants() {
         } else if (friend === 'fenix'){
             return <h3 className="text_going_date">I'm sure he will be hungry!!!</h3>
         } else{
-            return
+            return <h3>Enjoy your meal!!!</h3>
         }
     }
     

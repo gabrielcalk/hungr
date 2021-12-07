@@ -44,15 +44,19 @@ function App() {
   return (
     <ApolloProvider client={client}>
           <Routes>
+            {/* Renders the header at top of page */}
             <RenderHeader/>
             <div className="flex-column justify-flex-start min-100-vh">
                 <div className="container-custom">
+                  {/* Renders the Home component onto page */}
                   <Route exact path="/">
                     <RenderHome />
                   </Route>
+                  {/* Renders the Join/Sign Up component onto the page */}
                   <Route exact path="/join">
                     <RenderJoin />
                   </Route>
+                  {/* Renders the Join/Sign Up component onto the page */}
                   <Route exact path="/signin">
                     <RenderSignIn />
                   </Route>
@@ -65,6 +69,7 @@ function App() {
                     </>
                     ) : (
                     <>
+                    {/* If logged in, this renders the user's profile */}
                     <Route exact path="/user">
                       <RenderJoin />
                     </Route>
@@ -78,7 +83,8 @@ function App() {
                     <RenderSpecificRestaurantRequest />
                   </Route>
                 </div>
-              {/* <RenderFooter /> */}
+                {/* Renders the footer onto the page */}
+              <RenderFooter />
             </div>
           </Routes>
         </ApolloProvider>
