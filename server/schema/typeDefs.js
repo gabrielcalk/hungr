@@ -21,9 +21,10 @@ const typeDefs = gql`
     _id: ID!
     principalUser: String!
     guestUsername: String!
+    inputs: String!
     principalMealPreferences: [String]
-    guestMealPreferences: [String]
     restaurantMatches: [String]
+    status: String!
   }
 
   type Auth {
@@ -35,6 +36,8 @@ const typeDefs = gql`
     me: User!
     meFriendRequest: [FriendsInvitations]!
     meFriends: User
+    meRestaurantsRequests: [Meal]!
+    meDates: [Meal]!
   }
 
   type Mutation {
@@ -46,6 +49,7 @@ const typeDefs = gql`
     deleteFriend(friendUsername: String!): User 
     createOneMeal(guestUsername: String!, inputs: String!): Meal!
     addRestaurant(principalMealPreferences: String): Meal!
+    addMatches(_id: String!, restaurantMatches: String!): Meal!
   }
 
 `

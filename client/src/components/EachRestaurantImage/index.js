@@ -1,9 +1,9 @@
 import {useState} from 'react'
-import {ADD_USER_PREFERENCS} from '../../utils/mutations'
+import {ADD_USER_PREFERENCES} from '../../utils/mutations'
 import { useMutation} from '@apollo/client';
 
 export default function RenderEachRestaurant({grabImage, showRestaurants, i, setI}) {
-    const [addRestaurant] = useMutation(ADD_USER_PREFERENCS)
+    const [addRestaurant] = useMutation(ADD_USER_PREFERENCES)
     const [imageState, setImageState] = useState('')
     
     grabImage(showRestaurants[i].photos[0].photo_reference).then((image) => {
@@ -12,6 +12,7 @@ export default function RenderEachRestaurant({grabImage, showRestaurants, i, set
 
     async function addRestaurantChoosen(placeChoosen){
         setI((prevValue) => prevValue + 1)
+        console.log(placeChoosen)
         try{
             await addRestaurant({
                 variables: { principalMealPreferences: placeChoosen},

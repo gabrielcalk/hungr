@@ -60,11 +60,6 @@ const Footer = () => {
                  Profile
                  </p>
                   </Link>
-                  <Link className="footerItem" to="/restaurants">
-                  <p>
-                  Find Restaurant
-                 </p>
-                  </Link>
                   <Link className="footerItem" to="/">
                   <p onClick={Auth.logout}>
                   Sign Out

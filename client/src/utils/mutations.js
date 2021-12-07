@@ -68,13 +68,21 @@ export const CREATE_NEW_MEAL = gql`
   }
 `
 
-export const ADD_USER_PREFERENCS = gql`
+export const ADD_USER_PREFERENCES = gql`
   mutation addRestaurant($principalMealPreferences: String!) {
     addRestaurant(principalMealPreferences: $principalMealPreferences) {
         _id
         principalUser
         guestUsername
         principalMealPreferences
+    }
+  }
+`
+export const ADD_MATCHES = gql`
+  mutation addMatches($_id: String!, $restaurantMatches: String!) {
+    addMatches(_id: $_id, restaurantMatches: $restaurantMatches) {
+          _id
+          restaurantMatches
     }
   }
 `

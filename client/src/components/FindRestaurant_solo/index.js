@@ -1,11 +1,8 @@
 import './style.css'
 import {useState} from 'react'
-import {QUERY_FRIENDS, ADD_USER_PREFERENCS} from '../../utils/queries';
+import {QUERY_FRIENDS} from '../../utils/queries';
 import {CREATE_NEW_MEAL} from '../../utils/mutations'
 import { useQuery, useMutation} from '@apollo/client';
-
-
-
 
 export default function RendersoloRestaurant(){
     // Getting the users friends
