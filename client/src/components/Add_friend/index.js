@@ -5,6 +5,7 @@ import { useMutation } from '@apollo/client';
 import { ADD_NEW_FRIEND } from '../../utils/mutations';
 import { experimentalStyled } from '@mui/material';
 
+// Renders the Add Friend component onto the screen
 export default function RenderAddFriend() {
 
     const [friendEmail, setFriendEmail] = useState('')
@@ -17,7 +18,7 @@ export default function RenderAddFriend() {
     async function handleFormSubmit (event){
         event.preventDefault();
         if(friendEmail.length === 0){
-            setMessageNewFriend('Please, Provide One Email!')
+            setMessageNewFriend("Please, Provide a Friend's Email Address!")
             setErrorInvite('')
         } else {
             try {

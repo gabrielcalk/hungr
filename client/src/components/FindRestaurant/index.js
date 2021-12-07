@@ -1,6 +1,6 @@
 import './style.css';
 
-
+// Renders the Find Restaurant component onto the screen. This component contains the Invite a friend option as well as the Indulge alone option
 export default function RenderFindRestaurant({setProfileComponent}) {
 
     return (

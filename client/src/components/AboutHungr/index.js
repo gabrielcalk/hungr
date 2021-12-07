@@ -2,6 +2,8 @@ import './style.css'
 import arrow_circle from './images/arrow_circle.svg'
 import photo_restaurant from './images/photo_restaurant.jpg'
 
+
+// This function renders the About Hungr Section onto the page, this section contains all the steps explaining how to use this application
 export default function RenderAbout() {
 
     const tutorial_info = [
