@@ -60,11 +60,11 @@ export default function RenderListRestaurants() {
         } else if(friend === 'jon'){
             return <h3>Sounds Amazing!!!!</h3>
         } else if (friend === 'dan'){
-            return <h3>Can he bring the babe?</h3>
+            return <h3>Can he bring the baby?</h3>
         } else if (friend === 'fenix'){
             return <h3>I'm sure he will be hungry!!!</h3>
         } else{
-            return
+            return <h3>Enjoy your meal!!!</h3>
         }
     }
     
