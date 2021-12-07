@@ -33,7 +33,7 @@ app.get('/api/place/', async (req, res)=>{
   const price = req.query.price
 
   try{
-    fetch(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=50000&type=restaurant&keyword=${cuisine}&maxprice=${price}&key=AIzaSyBs094KFbn1VNf7g8NEjgVeCZapYcbfT08`)
+    fetch(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=50000&type=restaurant&keyword=${cuisine}&maxprice=${price}&key=${process.env.API_KEY_ID}`)
     .then(response => response.json())
     .then(data => {
       res.json(data)
@@ -49,7 +49,7 @@ app.get('/api/image/', async (req, res)=>{
   const photo_reference = req.query.photo_reference
 
   try{
-    fetch(`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=${photo_reference}&key=AIzaSyBs094KFbn1VNf7g8NEjgVeCZapYcbfT08`)
+    fetch(`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=${photo_reference}&key=${process.env.API_KEY_ID}`)
     .then(response => response)
     .then(data => {
       res.json(data.url)
@@ -60,6 +60,8 @@ app.get('/api/image/', async (req, res)=>{
     console.log(e)
   }
 })
+
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 //when we have application ready for production onto the page
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));

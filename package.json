@@ -13,7 +13,7 @@
       "start:prod": "cd server && npm start",
       "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
       "install": "cd server && npm i && cd ../client && npm i",
-      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+      "heroku-postbuild": "npm run install-client && npm run build"
     },
     "repository": {
       "type": "git",
