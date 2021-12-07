@@ -122,8 +122,14 @@ Use React for the front end.
   ![Deployed GIF of Website](assets/images/hungrJWT.png)
 
   
-  ### Images of Deployed Application
-  ![Deployed GIF of Website](assets/images/hungr.gif)
+ ### Deployed Pages
+  ![deployed Homepage](assest/images/../../assets/images/deployedHomepage.png)
+  ![deployed Sign Up](assest/images/../../assets/images/deployedSignUp.png)
+  ![deployed Sign In](assest/images/../../assets/images/deployedSignIn.png)
+  ![deployed Profile](assest/images/../../assets/images/deployedProfile.png)
+   ![deployed Find Restaurant](assest/images/../../assets/images/deployedFindRestaurant.png)
+  ![deployed Questionier](assest/images/../../assets/images/deployedQuestionier.png)
+ 
 
 <br>
 
