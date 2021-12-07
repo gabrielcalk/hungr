@@ -88,49 +88,52 @@ export default function RendersoloRestaurant(){
     }
 
     return (
-        <section>   
-                {/* <h4>Find Restaurant - Indulge Alone!</h4> */}
-                <section className="find_restaurant_solo_card_body">
-                    <form onSubmit={handleSubmitForm}>
-                        <p>Where would you like to look for restaurants?</p>
-                        <select className="location_select" name='location' onChange={handleChange}>
-                            {locationArray.map((location) =>(
-                                <option key={location.name} value={[location.latitude, location.longitute]}>{location.name}</option>
-                            ))}
-                        </select>
-                        <br></br>
+        <>
+            {/* <h4>Find Restaurant - Indulge Alone!</h4> */}
+            <section className="find_restaurant_solo_card_body">
+                <form className="form_invite_restaurant" onSubmit={handleSubmitForm}>
+                    <h3>Where would you like to look for restaurants?</h3>
+                    <select className="location_select" name='location' onChange={handleChange}>
+                        {locationArray.map((location) =>(
+                            <option key={location.name} value={[location.latitude, location.longitute]}>{location.name}</option>
+                        ))}
+                    </select>
+                    <br/><br/>
 
-                        <p>What type of cuisine would you like to eat?</p>
-                        <select className="cuisine_select" name='cuisine' onChange={handleChange}>
-                            {cuisineArray.map((cuisine) =>(
-                                <option value={cuisine} key={cuisine}>{cuisine}</option>
-                            ))}
-                        </select>
-                        <br></br>
+                    <h3>What type of cuisine would you like to eat?</h3>
+                    <select className="cuisine_select" name='cuisine' onChange={handleChange}>
+                        {cuisineArray.map((cuisine) =>(
+                            <option value={cuisine} key={cuisine}>{cuisine}</option>
+                        ))}
+                    </select>
+                    <br/><br/>
 
-                        <p>What would you like to spend(max price)?</p>
-                        <select className="price_select" name='price' onChange={handleChange}>
-                            {priceArray.map((price) =>(
-                                <option value={price} key={price}>{price}</option>
-                            ))}
-                        </select>
-                        <br></br>
+                    <h3>What would you like to spend(max price)?</h3>
+                    <select className="price_select" name='price' onChange={handleChange}>
+                        {priceArray.map((price) =>(
+                            <option value={price} key={price}>{price}</option>
+                        ))}
+                    </select>
+                    <br/><br/>
 
-                        <p>Choose one friend to go with</p>
-                        <p>You chosen: {formState.friend}</p>
+                    <h3>Choose a "friend" to go with</h3>
+                    <p>You chose: {formState.friend}</p>
+                    <div className="buttons_meal_invite">
                         {friendsData.friends && friendsData.friends.map((friend) =>(
-                                <div onClick={() => setFormState({...formState, friend: friend})} key={friend}>
+                                <div className="button_invite_meal" onClick={() => setFormState({...formState, friend: friend})} key={friend}>
                                     <h4>{friend}</h4>
                                     <div>+</div>
                                 </div>
                         ))}
-
-                        <br></br>
+                    </div>
+                    <br></br>
+                        <div className="buttons_div_invite">
                             <button className="find_restaurant_button" type="submit">
                                 Find Restaurant
                             </button>
-                    </form>
-                </section>
-        </section>
+                        </div>
+                </form>
+            </section>
+        </>
     );
 }
