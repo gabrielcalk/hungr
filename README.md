@@ -27,6 +27,7 @@
   * [Usage](#usage) 
   * [Installation](#installation)  
   * [Problems](#problems)
+  * [Future Development](#future)
   * [Visualization](#visualization)
   * [Technologies](#technologies)
   * [Acknowledgements](#acknowledgements)
@@ -97,6 +98,14 @@ Use React for the front end.
   * Ability to pass selected favorite restaurants called by the API onto the friend and match the results.
 <br>
 
+## Future
+
+* Allow user to upload image to their profile
+* Allow user to invite more than one friend
+* Allow user to send a message to a friend.
+* Allow user to save favorate restaurants.
+* Allow site to accept payments for contributions
+* 
 
   ## Visualization
 
