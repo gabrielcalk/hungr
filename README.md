@@ -16,7 +16,7 @@
 
 ### Deployed Page
 
-  [Hungr Deployed Application](https://hungr-back-end-to-the-future.herokuapp.com/)
+  [Hungr Deployed Application](https://hungr-project.herokuapp.com/)
 
 <br>
 
